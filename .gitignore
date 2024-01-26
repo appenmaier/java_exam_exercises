@@ -1,0 +1,9 @@
+# Ignore Everything
+*
+
+# Do not ignore .gitignore
+!.gitignore
+
+# Do not ignore Java Source Code Files
+!*.java
+!*/
