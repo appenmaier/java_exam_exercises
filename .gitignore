@@ -6,4 +6,9 @@
 
 # Do not ignore Java Source Code Files
 !*.java
+
+# Do not ignore Text Files ands CSV Files
+!*.txt
+!*.csv
+
 !*/
