@@ -1,2 +1,0 @@
-The Matrix;SCIFI;1999;VHS;false
-Evil Dead;HORROR;1981;BLURAY;25

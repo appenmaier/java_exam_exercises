@@ -1,3 +1,0 @@
-DE;Haus;EN;House
-DE;Maus;EN;Mouse
-DE;Baum;EN;Tree
