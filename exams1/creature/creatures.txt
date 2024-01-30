@@ -1,0 +1,6 @@
+Frankensteins Monster;MONSTER;0;5
+DOWN;DOWN;LEFT;LEFT
+Dracula;VAMPIRE;3;3
+UP;RIGHT;UP
+Kurt;ZOMBIE;-2;-2
+DOWN
