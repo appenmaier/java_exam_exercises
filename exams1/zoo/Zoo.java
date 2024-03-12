@@ -16,9 +16,9 @@ public class Zoo {
   private final List<Animal> animals;
   private final String name;
 
-  public Zoo(String name) {
+  public Zoo(String name, List<Animal> animals) {
     this.name = name;
-    this.animals = new ArrayList<>();
+    this.animals = animals;
   }
 
   public void addAnimal(Animal animal) {

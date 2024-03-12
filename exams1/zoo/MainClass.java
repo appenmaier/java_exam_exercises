@@ -1,5 +1,7 @@
 package exams1.zoo;
 
+import java.util.ArrayList;
+
 /**
  * MainClass
  *
@@ -11,7 +13,7 @@ public class MainClass {
 
   public static void main(String[] args) {
 
-    Zoo zoo = new Zoo("Berliner Tierpark");
+    Zoo zoo = new Zoo("Berliner Tierpark", new ArrayList<>());
 
     zoo.addAnimal(new Mammal("Tiger", 2.5, 140));
     zoo.addAnimal(new Bird("Weisskopfseeadler", 0.9, 3.7));
