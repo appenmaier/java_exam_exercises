@@ -45,4 +45,15 @@ public class CashierSystem {
         result += "\nTotal price: " + shoppingCart.getTotalInEuro() + "\nVielen Dank für Ihren Einkauf bei " + name + "!";
         System.out.println(result);
     }
+
+    @Override
+    public String toString() {
+        return "CashierSystem{" +
+                "name='" + name + '\'' +
+                ", goods=" + goods +
+                ", cashiers=" + cashiers +
+                ", shoppingCart=" + shoppingCart +
+                ", cashier=" + cashier +
+                '}';
+    }
 }

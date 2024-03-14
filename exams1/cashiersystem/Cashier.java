@@ -13,6 +13,7 @@ public class Cashier {
     public int id() {
         return id;
     }
+    @Override
     public String toString() {
         return "Cashier [id=" + id + ", name=" + name + "]";
     }

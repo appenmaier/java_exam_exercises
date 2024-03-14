@@ -29,6 +29,7 @@ public class Product {
     public double getPriceInEuro() {
         return priceInEuro;
     }
+    @Override
     public String toString() {
         return "Product [id=" + id + ", description=" + description + ", unit=" + unit + ", priceInEuro=" + priceInEuro + "]";
     }

@@ -21,6 +21,7 @@ public class ShoppingCart {
     public List<Item> items() {
         return items;
     }
+    @Override
     public String toString() {
         String result = "ShoppingCart [items=";
         for (Item i : items) {

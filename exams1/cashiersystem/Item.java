@@ -19,6 +19,7 @@ public class Item {
     public Goods goods() {
         return goods;
     }
+    @Override
     public String toString() {
         return "Item [goods=" + goods + ", amount=" + amount + "]";
     }

@@ -9,6 +9,7 @@ public class Goods extends Product{
     public ClassOfGoods classOfGoods() {
         return classOfGoods;
     }
+    @Override
     public String toString() {
         return "Goods [id=" + id() + ", description=" + description() + ", unit=" + getUnit() + ", priceInEuro=" + getPriceInEuro() + ", classOfGoods=" + classOfGoods + "]";
     }
