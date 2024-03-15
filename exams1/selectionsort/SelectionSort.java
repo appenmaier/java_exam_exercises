@@ -5,13 +5,13 @@ import java.util.List;
 import java.util.Random;
 
 /**
- * MainClass
+ * Selectionsort
  *
  * @author Daniel Appenmaier
  * @version 1.0
  *
  */
-public class MainClass {
+public class SelectionSort {
 
   private static List<Integer> data;
 

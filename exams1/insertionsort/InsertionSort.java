@@ -3,13 +3,13 @@ package exams1.insertionsort;
 import java.util.Random;
 
 /**
- * MainClass
+ * Insertionsort
  *
  * @author Daniel Appenmaier
  * @version 1.0
  *
  */
-public class MainClass {
+public class InsertionSort {
 
   private static int counter;
   private static int[] data;
