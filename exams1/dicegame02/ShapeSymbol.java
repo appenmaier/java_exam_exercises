@@ -1,7 +1,7 @@
-package exams1.dicegames;
+package exams1.dicegame02;
 
 /**
- * Form
+ * Geometrische Form
  *
  * @author Daniel Appenmaier
  * @version 1.0

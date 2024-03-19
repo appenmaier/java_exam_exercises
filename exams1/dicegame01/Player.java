@@ -1,4 +1,4 @@
-package exams1.dicegames;
+package exams1.dicegame01;
 
 /**
  * Spieler
@@ -17,20 +17,16 @@ public class Player {
     this.points = points;
   }
 
-  public void addPoints(int points) {
-    this.points += points;
-  }
-
-  public void deductPoints(int points) {
-    this.points -= points;
-  }
-
   public int getPoints() {
     return points;
   }
 
   public String name() {
     return name;
+  }
+
+  public void reducePoints(int value) {
+    points -= value;
   }
 
 }
