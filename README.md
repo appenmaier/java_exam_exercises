@@ -6,7 +6,7 @@
 - Installiere [Eclipse](https://www.eclipse.org/), [BlueJ](https://www.bluej.org/index.html) oder eine andere IDE
 - Installiere [Git](https://git-scm.com/downloads)
 
-## Klone das Remote Repository
+## Klone das remote Repository
 
 - Starte die Kommandozeile (z.B. Windows PowerShell)
 - Führe den Befehl `git clone https://github.com/appenmaier/java_exam_exercises "[Pfad/Der Name Deines lokalen Repositorys]"` aus, um das remote Repository zu klonen
