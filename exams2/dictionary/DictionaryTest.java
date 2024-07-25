@@ -42,7 +42,7 @@ public class DictionaryTest {
 
   @Test
   void testImportEntries() throws FileNotFoundException {
-    dictionary.importEntries(new File("src/jappuccini/exams2/dictionary/dictionary.txt"));
+    dictionary.importEntries(new File("jappuccini/exams2/dictionary/dictionary.txt"));
     assertEquals(new Word("House", Language.EN),
         dictionary.entries().get(new Word("Haus", Language.DE)));
     assertEquals(new Word("Mouse", Language.EN),

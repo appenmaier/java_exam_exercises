@@ -19,7 +19,7 @@ public class JobOfferReaderTest {
   void testGetJobOffers() throws FileNotFoundException {
     assertThrows(FileNotFoundException.class, () -> JobOfferReader.getJobOffers(new File("")));
 
-    File file = new File("src/jappuccini/exams2/joboffer/joboffers.txt");
+    File file = new File("jappuccini/exams2/joboffer/joboffers.txt");
     assertEquals(285, JobOfferReader.getJobOffers(file).get(0).id());
     assertEquals(392, JobOfferReader.getJobOffers(file).get(1).id());
     assertEquals(430, JobOfferReader.getJobOffers(file).get(2).id());
