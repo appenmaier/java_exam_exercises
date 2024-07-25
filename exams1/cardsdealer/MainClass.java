@@ -18,7 +18,7 @@ public class MainClass {
     Player player1 = new Player();
     Player player2 = new Player();
 
-    List<Card> deck = CardsReader.getCards(new File("src/jappuccini/exams1/cardsdealer/cards.txt"));
+    List<Card> deck = CardsReader.getCards(new File("jappuccini/exams1/cardsdealer/cards.txt"));
     CardsDealer cardsDealer = new CardsDealer(deck, player1, player2);
 
     cardsDealer.dealCards(5);

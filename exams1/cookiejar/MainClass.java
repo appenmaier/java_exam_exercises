@@ -16,7 +16,7 @@ public class MainClass {
 
     Recipe dough = new Recipe("Spitzbuben-Teig");
     for (Ingredient i : IngredientsReader
-        .readIngredients(new File("src/jappuccini/exams1/cookiejar/spitzbubenteig.txt"))) {
+        .readIngredients(new File("jappuccini/exams1/cookiejar/spitzbubenteig.txt"))) {
       dough.addIngredient(i);
     }
 
