@@ -2,6 +2,7 @@ package exams2.cornershop;
 
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Optional;
 
 /**
  * Tante-Emma-Laden
@@ -12,26 +13,26 @@ import java.util.Map.Entry;
  */
 public record CornerShop(String name, Map<Goods, Integer> store) {
 
-  public Entry<Goods, Integer> getEntryByDescription(String description) {
+  public Optional<Integer> getAmountByDescription(String description) {
     for (Entry<Goods, Integer> entry : store.entrySet()) {
       if (entry.getKey().description().equals(description)) {
-        return entry;
+        return Optional.ofNullable(entry.getValue());
       }
     }
-    return null;
+    return Optional.empty();
   }
 
-  public void sellGoods(Goods goods, int amount) {
-    Entry<Goods, Integer> entry = getEntryByDescription(goods.description());
-    if (entry != null) {
-      entry.setValue(entry.getValue() - amount);
+  public void sellGoods(Goods goods, int amount) throws OutofStockException {
+    if (!store.containsKey(goods) || store.get(goods) < amount) {
+      throw new OutofStockException();
     }
+
+    store.put(goods, store.get(goods) - amount);
   }
 
   public void buyGoods(Goods goods, int amount) {
-    Entry<Goods, Integer> entry = getEntryByDescription(goods.description());
-    if (entry != null) {
-      entry.setValue(entry.getValue() + amount);
+    if (store.containsKey(goods)) {
+      store.put(goods, store.get(goods) + amount);
     } else {
       store.put(goods, amount);
     }

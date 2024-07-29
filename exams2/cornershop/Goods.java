@@ -14,8 +14,9 @@ public class Goods extends Product implements Comparable<Goods> {
   private final ClassOfGoods classOfGoods;
   private final String unit;
 
-  public Goods(String description, ClassOfGoods classOfGoods, double price, String unit) {
-    super(description, price);
+  public Goods(String description, double price, String currency, ClassOfGoods classOfGoods,
+      String unit) {
+    super(description, price, currency);
     this.classOfGoods = classOfGoods;
     this.unit = unit;
   }
@@ -27,6 +28,18 @@ public class Goods extends Product implements Comparable<Goods> {
   @Override
   public int compareTo(Goods other) {
     return description().compareTo(other.description());
+  }
+
+  public String unit() {
+    return unit;
+  }
+
+  @Override
+  public int hashCode() {
+    final int prime = 31;
+    int result = super.hashCode();
+    result = prime * result + Objects.hash(classOfGoods, unit);
+    return result;
   }
 
   @Override
@@ -42,21 +55,8 @@ public class Goods extends Product implements Comparable<Goods> {
   }
 
   @Override
-  public int hashCode() {
-    final int prime = 31;
-    int result = super.hashCode();
-    result = prime * result + Objects.hash(classOfGoods, unit);
-    return result;
-  }
-
-  @Override
   public String toString() {
-    return "Goods [classOfGoods=" + classOfGoods + ", unit=" + unit + ", description()="
-        + description() + ", price()=" + price() + "]";
-  }
-
-  public String unit() {
-    return unit;
+    return "Goods [classOfGoods=" + classOfGoods + ", unit=" + unit + "]";
   }
 
 }
