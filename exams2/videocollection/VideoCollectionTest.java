@@ -40,7 +40,7 @@ public class VideoCollectionTest {
   void testImportVideos() throws FileNotFoundException {
     assertThrows(FileNotFoundException.class, () -> collection.importVideos(new File("")));
 
-    collection.importVideos(new File("jappuccini/exams2/videocollection/videos.txt"));
+    collection.importVideos(new File("exams2/videocollection/videos.txt"));
     assertEquals(2, collection.videos().size());
   }
 
