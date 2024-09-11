@@ -41,15 +41,15 @@ public record Dictionary(Language sourceLanguage, Language targetLanguage,
     scanner.close();
   }
 
-  public String getTranslation(String word) {
-    for (Entry<Word, Word> entry : entries.entrySet()) {
-      if (entry.getKey().value().equals(word)) {
-        return entry.getValue().value();
-      } else if (entry.getValue().value().equals(word)) {
-        return entry.getKey().value();
-      }
-    }
-    return null;
-  }
+  public Optional<String> getTranslation(String word) {
+        for (Map.Entry<Word, Word> entry : entries.entrySet()) {
+            if (entry.getKey().value().equals(word)) {
+                return Optional.of(entry.getValue().value());
+            } else if (entry.getValue().value().equals(word)) {
+                return Optional.of(entry.getKey().value());
+            }
+        }
+        return Optional.empty();
+   }
 
 }
