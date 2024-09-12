@@ -2,6 +2,7 @@ package exams2.spacestation;
 
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Optional;
 
 /**
  * Raumstation
@@ -25,7 +26,7 @@ public record SpaceStation(String name, Map<Integer, SpaceFighter> bays) {
     bays.put(bayNumber, spaceFighter);
   }
 
-  public SpaceFighter getFastestSpaceFighter() {
+  public Optional<SpaceFighter> getFastestSpaceFighter() {
     SpaceFighter fastestSpaceFighter = null;
     int maxSpeed = 0;
     for (SpaceFighter s : bays.values()) {
@@ -34,7 +35,7 @@ public record SpaceStation(String name, Map<Integer, SpaceFighter> bays) {
         fastestSpaceFighter = s;
       }
     }
-    return fastestSpaceFighter;
+    return Optional.ofNullable(fastestSpaceFighter);
   }
 
 }

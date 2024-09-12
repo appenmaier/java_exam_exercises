@@ -3,6 +3,7 @@ package exams2.videocollection;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.List;
+import java.util.Optional;
 import java.util.Scanner;
 
 /**
@@ -40,13 +41,13 @@ public record VideoCollection(List<Video> videos) {
     scanner.close();
   }
 
-  public Video getVideoByMovieTitle(String title) {
+  public Optional<Video> getVideoByMovieTitle(String title) {
     for (Video v : videos) {
       if (v.movie().title().equals(title)) {
-        return v;
+        return Optional.of(v);
       }
     }
-    return null;
+    return Optional.empty();
   }
 
 }

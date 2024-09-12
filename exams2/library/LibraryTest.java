@@ -2,6 +2,7 @@ package exams2.library;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import java.util.HashMap;
+import java.util.Optional;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -29,7 +30,7 @@ public class LibraryTest {
 
   @Test
   void testGetBookByTitle() {
-    assertEquals(misery, library.getBookByTitle("Misery"));
+    assertEquals(Optional.of(misery), library.getBookByTitle("Misery"));
   }
 
   @Test

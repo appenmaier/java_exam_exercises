@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Optional;
 
 /**
  * Buecherei
@@ -18,13 +19,13 @@ public record Library(String name, Map<Book, Status> books) {
     books.put(book, Status.AVAILABLE);
   }
 
-  public Book getBookByTitle(String title) {
+  public Optional<Book> getBookByTitle(String title) {
     for (Book b : books.keySet()) {
       if (b.title().equals(title)) {
-        return b;
+        return Optional.of(b);
       }
     }
-    return null;
+    return Optional.empty();
   }
 
   public List<PaperBook> getPaperBooksByStatus(Status status) {

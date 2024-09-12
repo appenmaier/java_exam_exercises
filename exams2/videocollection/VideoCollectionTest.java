@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Optional;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -32,8 +33,8 @@ public class VideoCollectionTest {
   void testGetVideoByMovieTitle() {
     collection.addVideo(theMatrix);
     collection.addVideo(evilDead);
-    assertEquals(evilDead, collection.getVideoByMovieTitle("Evil Dead"));
-    assertEquals(null, collection.getVideoByMovieTitle("Evil Dead 2"));
+    assertEquals(Optional.of(evilDead), collection.getVideoByMovieTitle("Evil Dead"));
+    assertEquals(Optional.empty(), collection.getVideoByMovieTitle("Evil Dead 2"));
   }
 
   @Test

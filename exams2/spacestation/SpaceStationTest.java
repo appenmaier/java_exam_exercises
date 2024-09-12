@@ -3,6 +3,7 @@ package exams2.spacestation;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import java.util.HashMap;
+import java.util.Optional;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -34,7 +35,7 @@ public class SpaceStationTest {
 
   @Test
   void testGetFastestSpaceFighter() {
-    assertEquals(sf1, spaceStation.getFastestSpaceFighter());
+    assertEquals(Optional.of(sf1), spaceStation.getFastestSpaceFighter());
   }
 
   @Test
