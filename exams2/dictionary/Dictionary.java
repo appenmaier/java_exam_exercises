@@ -3,7 +3,7 @@ package exams2.dictionary;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Map;
-import java.util.Map.Entry;
+import java.util.Optional;
 import java.util.Scanner;
 
 /**
@@ -17,8 +17,10 @@ public record Dictionary(Language sourceLanguage, Language targetLanguage,
     Map<Word, Word> entries) {
 
   public void addEntry(Word sourceWord, Word targetWord) throws InvalidLanguageException {
-    if (!sourceWord.language().equals(sourceLanguage)
-        || !targetWord.language().equals(targetLanguage)) {
+    if (!sourceWord.language()
+        .equals(sourceLanguage)
+        || !targetWord.language()
+            .equals(targetLanguage)) {
       throw new InvalidLanguageException();
     }
 
@@ -42,14 +44,20 @@ public record Dictionary(Language sourceLanguage, Language targetLanguage,
   }
 
   public Optional<String> getTranslation(String word) {
-        for (Map.Entry<Word, Word> entry : entries.entrySet()) {
-            if (entry.getKey().value().equals(word)) {
-                return Optional.of(entry.getValue().value());
-            } else if (entry.getValue().value().equals(word)) {
-                return Optional.of(entry.getKey().value());
-            }
-        }
-        return Optional.empty();
-   }
+    for (Map.Entry<Word, Word> entry : entries.entrySet()) {
+      if (entry.getKey()
+          .value()
+          .equals(word)) {
+        return Optional.of(entry.getValue()
+            .value());
+      } else if (entry.getValue()
+          .value()
+          .equals(word)) {
+        return Optional.of(entry.getKey()
+            .value());
+      }
+    }
+    return Optional.empty();
+  }
 
 }
