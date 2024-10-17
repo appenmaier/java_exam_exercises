@@ -26,7 +26,7 @@
 - Führe die Funktion `Projekt - Fremdprojekt öffnen...` aus
 - Navigiere zu `[Pfad/Der Name Deines lokalen Repositorys]` betätige die Drucktaste `Select Folder`
 
-## Aktualisiere das lokale Repository
+## Aktualisiere das lokale Repository (bei Bedarf)
 
 - Starte die Kommandozeile (z.B. Windows PowerShell)
 - Führe den Befehl `cd "[Pfad/Der Name Deines lokalen Repositorys]"` aus, um zum Arbeitsbereich Deines lokalen Repositorys zu wechseln
