@@ -5,6 +5,13 @@ import java.util.Map;
 import java.util.OptionalDouble;
 import java.util.stream.Collectors;
 
+/**
+ * Smartphone-Shop
+ *
+ * @author Daniel Appenmaier
+ * @version 1.0
+ *
+ */
 public record PhoneStore(List<Phone> phones) {
 
   public List<Phone> query1() {
