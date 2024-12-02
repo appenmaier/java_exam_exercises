@@ -14,7 +14,7 @@ public class MainClass {
 
   public static void main(String[] args) throws FileNotFoundException {
 
-    ShapeReader shapeReader = new ShapeReader(new File("jappuccini/exams1/shape/shapes.txt"));
+    ShapeReader shapeReader = new ShapeReader(new File("exams1/classdiagrams/shape/shapes.txt"));
 
     System.out.println("Alle Kreise: " + shapeReader.getCircles());
     System.out.println("Alle geometrischen Figuren mit einer Flaeche von min. 4: "
