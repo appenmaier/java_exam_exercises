@@ -9,6 +9,6 @@ package exams1.classdiagrams.gametokens;
  */
 public enum GameTokenColor {
 
-  RED, BLUE, GREEN, WHITE, BLACK;
+   RED, BLUE, GREEN, WHITE, BLACK;
 
 }

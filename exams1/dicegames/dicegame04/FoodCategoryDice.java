@@ -9,8 +9,8 @@ package exams1.dicegames.dicegame04;
  */
 public class FoodCategoryDice {
 
-  public FoodCategory rollTheDice() {
-    return FoodCategory.X;
-  }
+   public FoodCategory rollTheDice() {
+      return FoodCategory.X;
+   }
 
 }

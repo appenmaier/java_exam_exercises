@@ -11,52 +11,52 @@ import java.util.Objects;
  */
 public class Candle {
 
-  private final String colour;
-  protected boolean isBurning;
+   private final String colour;
+   protected boolean isBurning;
 
-  public Candle(String colour) {
-    this.colour = colour;
-  }
+   public Candle(String colour) {
+      this.colour = colour;
+   }
 
-  public String colour() {
-    return colour;
-  }
+   public String colour() {
+      return colour;
+   }
 
-  @Override
-  public boolean equals(Object obj) {
-    if (this == obj) {
-      return true;
-    }
-    if (obj == null) {
-      return false;
-    }
-    if (getClass() != obj.getClass()) {
-      return false;
-    }
-    Candle other = (Candle) obj;
-    return Objects.equals(colour, other.colour) && isBurning == other.isBurning;
-  }
+   @Override
+   public boolean equals(Object obj) {
+      if (this == obj) {
+         return true;
+      }
+      if (obj == null) {
+         return false;
+      }
+      if (getClass() != obj.getClass()) {
+         return false;
+      }
+      Candle other = (Candle) obj;
+      return Objects.equals(colour, other.colour) && isBurning == other.isBurning;
+   }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(colour, isBurning);
-  }
+   @Override
+   public int hashCode() {
+      return Objects.hash(colour, isBurning);
+   }
 
-  public boolean isBurning() {
-    return isBurning;
-  }
+   public boolean isBurning() {
+      return isBurning;
+   }
 
-  public void lightACandle() {
-    isBurning = true;
-  }
+   public void lightACandle() {
+      isBurning = true;
+   }
 
-  @Override
-  public String toString() {
-    return "Candle [colour=" + colour + ", isBurning=" + isBurning + "]";
-  }
+   @Override
+   public String toString() {
+      return "Candle [colour=" + colour + ", isBurning=" + isBurning + "]";
+   }
 
-  public void turnOffACandle() {
-    isBurning = false;
-  }
+   public void turnOffACandle() {
+      isBurning = false;
+   }
 
 }

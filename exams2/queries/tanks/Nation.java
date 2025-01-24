@@ -9,6 +9,6 @@ package exams2.queries.tanks;
  */
 public enum Nation {
 
-  CHN, FRA, GER, SWE, USA;
+   CHN, FRA, GER, SWE, USA;
 
 }

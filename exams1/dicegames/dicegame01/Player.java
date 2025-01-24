@@ -9,24 +9,24 @@ package exams1.dicegames.dicegame01;
  */
 public class Player {
 
-  private final String name;
-  private int points;
+   private final String name;
+   private int points;
 
-  public Player(String name, int points) {
-    this.name = name;
-    this.points = points;
-  }
+   public Player(String name, int points) {
+      this.name = name;
+      this.points = points;
+   }
 
-  public int getPoints() {
-    return points;
-  }
+   public int getPoints() {
+      return points;
+   }
 
-  public String name() {
-    return name;
-  }
+   public String name() {
+      return name;
+   }
 
-  public void reducePoints(int value) {
-    points -= value;
-  }
+   public void reducePoints(int value) {
+      points -= value;
+   }
 
 }

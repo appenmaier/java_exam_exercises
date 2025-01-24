@@ -9,6 +9,6 @@ package exams1.classdiagrams.creature;
  */
 public enum Type {
 
-  MONSTER, SKELETON, VAMPIRE, ZOMBIE;
+   MONSTER, SKELETON, VAMPIRE, ZOMBIE;
 
 }

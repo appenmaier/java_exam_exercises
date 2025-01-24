@@ -15,19 +15,19 @@ import java.util.Scanner;
  */
 public class IngredientsReader {
 
-  public static List<Ingredient> readIngredients(File file) throws FileNotFoundException {
-    Scanner sc = new Scanner(file);
+   public static List<Ingredient> readIngredients(File file) throws FileNotFoundException {
+      Scanner sc = new Scanner(file);
 
-    ArrayList<Ingredient> ingredients = new ArrayList<>();
-    while (sc.hasNextLine()) {
-      String line = sc.nextLine();
-      Ingredient i = new Ingredient(line);
-      ingredients.add(i);
-    }
+      ArrayList<Ingredient> ingredients = new ArrayList<>();
+      while (sc.hasNextLine()) {
+         String line = sc.nextLine();
+         Ingredient i = new Ingredient(line);
+         ingredients.add(i);
+      }
 
-    sc.close();
+      sc.close();
 
-    return ingredients;
-  }
+      return ingredients;
+   }
 
 }

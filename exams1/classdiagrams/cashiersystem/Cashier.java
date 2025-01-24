@@ -9,25 +9,25 @@ package exams1.classdiagrams.cashiersystem;
  */
 public class Cashier {
 
-  private final int id;
-  private final String name;
+   private final int id;
+   private final String name;
 
-  public Cashier(int id, String name) {
-    this.id = id;
-    this.name = name;
-  }
+   public Cashier(int id, String name) {
+      this.id = id;
+      this.name = name;
+   }
 
-  public int id() {
-    return id;
-  }
+   public int id() {
+      return id;
+   }
 
-  public String name() {
-    return name;
-  }
+   public String name() {
+      return name;
+   }
 
-  @Override
-  public String toString() {
-    return "Cashier [id=" + id + ", name=" + name + "]";
-  }
+   @Override
+   public String toString() {
+      return "Cashier [id=" + id + ", name=" + name + "]";
+   }
 
 }

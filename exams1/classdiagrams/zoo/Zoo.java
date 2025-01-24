@@ -13,74 +13,77 @@ import java.util.Objects;
  */
 public class Zoo {
 
-  private final List<Animal> animals;
-  private final String name;
+   private final List<Animal> animals;
+   private final String name;
 
-  public Zoo(String name, List<Animal> animals) {
-    this.name = name;
-    this.animals = animals;
-  }
+   public Zoo(String name, List<Animal> animals) {
+      this.name = name;
+      this.animals = animals;
+   }
 
-  public void addAnimal(Animal animal) {
-    animals.add(animal);
-  }
+   public void addAnimal(Animal animal) {
+      animals.add(animal);
+   }
 
-  public List<Animal> animals() {
-    return animals;
-  }
+   public List<Animal> animals() {
+      return animals;
+   }
 
-  @Override
-  public boolean equals(Object obj) {
-    if (this == obj)
-      return true;
-    if (obj == null)
-      return false;
-    if (getClass() != obj.getClass())
-      return false;
-    Zoo other = (Zoo) obj;
-    return Objects.equals(animals, other.animals) && Objects.equals(name, other.name);
-  }
-
-  public Animal getBiggestAnimal() {
-    double sizeInM = 0;
-    Animal animal = null;
-
-    for (Animal a : animals) {
-      if (a.sizeInM() > sizeInM) {
-        animal = a;
-        sizeInM = a.sizeInM();
+   @Override
+   public boolean equals(Object obj) {
+      if (this == obj) {
+         return true;
       }
-    }
-
-    return animal;
-  }
-
-  public List<Fish> getFishesByColor(String color) {
-    List<Fish> fishes = new ArrayList<>();
-
-    for (Animal a : animals) {
-      if (a instanceof Fish f) {
-        if (f.color.equals(color)) {
-          fishes.add(f);
-        }
+      if (obj == null) {
+         return false;
       }
-    }
+      if (getClass() != obj.getClass()) {
+         return false;
+      }
+      Zoo other = (Zoo) obj;
+      return Objects.equals(animals, other.animals) && Objects.equals(name, other.name);
+   }
 
-    return fishes;
-  }
+   public Animal getBiggestAnimal() {
+      double sizeInM = 0;
+      Animal animal = null;
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(animals, name);
-  }
+      for (Animal a : animals) {
+         if (a.sizeInM() > sizeInM) {
+            animal = a;
+            sizeInM = a.sizeInM();
+         }
+      }
 
-  public String name() {
-    return name;
-  }
+      return animal;
+   }
 
-  @Override
-  public String toString() {
-    return "Zoo [animals=" + animals + ", name=" + name + "]";
-  }
+   public List<Fish> getFishesByColor(String color) {
+      List<Fish> fishes = new ArrayList<>();
+
+      for (Animal a : animals) {
+         if (a instanceof Fish f) {
+            if (f.color.equals(color)) {
+               fishes.add(f);
+            }
+         }
+      }
+
+      return fishes;
+   }
+
+   @Override
+   public int hashCode() {
+      return Objects.hash(animals, name);
+   }
+
+   public String name() {
+      return name;
+   }
+
+   @Override
+   public String toString() {
+      return "Zoo [animals=" + animals + ", name=" + name + "]";
+   }
 
 }

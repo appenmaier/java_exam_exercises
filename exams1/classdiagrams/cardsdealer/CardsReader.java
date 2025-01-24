@@ -15,21 +15,21 @@ import java.util.Scanner;
  */
 public class CardsReader {
 
-  public static List<Card> getCards(File file) throws FileNotFoundException {
-    List<Card> cards = new ArrayList<>();
-    Scanner sc = new Scanner(file);
+   public static List<Card> getCards(File file) throws FileNotFoundException {
+      List<Card> cards = new ArrayList<>();
+      Scanner sc = new Scanner(file);
 
-    while (sc.hasNextLine()) {
-      String line = sc.next();
-      String[] tokens = line.split(";");
-      String colour = tokens[0];
-      int value = Integer.valueOf(tokens[1]);
-      Card card = new Card(colour, value);
-      cards.add(card);
-    }
+      while (sc.hasNextLine()) {
+         String line = sc.next();
+         String[] tokens = line.split(";");
+         String colour = tokens[0];
+         int value = Integer.valueOf(tokens[1]);
+         Card card = new Card(colour, value);
+         cards.add(card);
+      }
 
-    sc.close();
-    return cards;
-  }
+      sc.close();
+      return cards;
+   }
 
 }

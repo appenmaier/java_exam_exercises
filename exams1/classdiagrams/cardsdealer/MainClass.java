@@ -13,22 +13,23 @@ import java.util.List;
  */
 public class MainClass {
 
-  public static void main(String[] args) throws FileNotFoundException {
+   public static void main(String[] args) throws FileNotFoundException {
 
-    Player player1 = new Player();
-    Player player2 = new Player();
+      Player player1 = new Player();
+      Player player2 = new Player();
 
-    List<Card> deck = CardsReader.getCards(new File("exams1/classdiagrams/cardsdealer/cards.txt"));
-    CardsDealer cardsDealer = new CardsDealer(deck, player1, player2);
+      List<Card> deck =
+            CardsReader.getCards(new File("exams1/classdiagrams/cardsdealer/cards.txt"));
+      CardsDealer cardsDealer = new CardsDealer(deck, player1, player2);
 
-    cardsDealer.dealCards(5);
+      cardsDealer.dealCards(5);
 
-    System.out.println("Kartenstapel: " + deck);
-    System.out.println("Karten von Spieler 1: " + player1.cards());
-    System.out.println("Karten von Spieler 2: " + player2.cards());
-    System.out.println("Alle Kreuzkarten von Spieler 1: " + player1.getCardsByColour("Kreuz"));
-    System.out.println("Die hoechste Karte von Spieler 2: " + player2.getCardWithHighestValue());
+      System.out.println("Kartenstapel: " + deck);
+      System.out.println("Karten von Spieler 1: " + player1.cards());
+      System.out.println("Karten von Spieler 2: " + player2.cards());
+      System.out.println("Alle Kreuzkarten von Spieler 1: " + player1.getCardsByColour("Kreuz"));
+      System.out.println("Die hoechste Karte von Spieler 2: " + player2.getCardWithHighestValue());
 
-  }
+   }
 
 }

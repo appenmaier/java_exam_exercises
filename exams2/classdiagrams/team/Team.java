@@ -15,37 +15,37 @@ import java.util.Optional;
  */
 public record Team<T extends Sportsman>(String name, Map<T, Position> members) {
 
-  public void addTeamMember(T member, Position position) throws DuplicateKeyException {
-    if (members.containsKey(member)) {
-      throw new DuplicateKeyException();
-    }
-    members.put(member, position);
-  }
-
-  public Optional<T> getBestScorer() {
-    T bestScorer = null;
-    int score = 0;
-
-    for (T t : members.keySet()) {
-      if (t.getScorerPoints() > score) {
-        bestScorer = t;
-        score = t.getScorerPoints();
+   public void addTeamMember(T member, Position position) throws DuplicateKeyException {
+      if (members.containsKey(member)) {
+         throw new DuplicateKeyException();
       }
-    }
+      members.put(member, position);
+   }
 
-    return Optional.ofNullable(bestScorer);
-  }
+   public Optional<T> getBestScorer() {
+      T bestScorer = null;
+      int score = 0;
 
-  public List<T> getAllTeamMembersByPosition(Position position) {
-    List<T> membersByPosition = new ArrayList<>();
-
-    for (Entry<T, Position> entry : members.entrySet()) {
-      if (entry.getValue().equals(position)) {
-        membersByPosition.add(entry.getKey());
+      for (T t : members.keySet()) {
+         if (t.getScorerPoints() > score) {
+            bestScorer = t;
+            score = t.getScorerPoints();
+         }
       }
-    }
 
-    return membersByPosition;
-  }
+      return Optional.ofNullable(bestScorer);
+   }
+
+   public List<T> getAllTeamMembersByPosition(Position position) {
+      List<T> membersByPosition = new ArrayList<>();
+
+      for (Entry<T, Position> entry : members.entrySet()) {
+         if (entry.getValue().equals(position)) {
+            membersByPosition.add(entry.getKey());
+         }
+      }
+
+      return membersByPosition;
+   }
 
 }

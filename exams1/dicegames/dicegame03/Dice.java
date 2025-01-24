@@ -11,10 +11,10 @@ import java.util.Random;
  */
 public class Dice {
 
-  public int rollTheDice() {
-    Random random = new Random();
-    int randomNumber = random.nextInt(1, 7);
-    return randomNumber;
-  }
+   public int rollTheDice() {
+      Random random = new Random();
+      int randomNumber = random.nextInt(1, 7);
+      return randomNumber;
+   }
 
 }

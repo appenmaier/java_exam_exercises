@@ -8,6 +8,6 @@ package exams2.queries.phonestore;
  *
  */
 public record Phone(String description, Brand brand, ConnectionType connectionType,
-    int numberOfCameras, int batteryCapacityInMAh, double cpuPowerInGHz, double priceInEuro) {
+      int numberOfCameras, int batteryCapacityInMah, double cpuPowerInGhz, double priceInEuro) {
 
 }

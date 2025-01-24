@@ -13,39 +13,39 @@ import java.util.Random;
  */
 public class SelectionSort {
 
-  private static List<Integer> data;
+   private static List<Integer> data;
 
-  public static void main(String[] args) {
+   public static void main(String[] args) {
 
-    data = new ArrayList<>();
+      data = new ArrayList<>();
 
-    Random random = new Random();
-    for (int i = 0; i < 1000; i++) {
-      data.add(random.nextInt(1, 101));
-    }
-
-    System.out.println(data);
-    sort();
-    System.out.println(data);
-
-  }
-
-  private static void sort() {
-    int i = 0;
-    while (i < data.size() - 1) {
-      int index = i;
-      int j = i + 1;
-      while (j < data.size()) {
-        if (data.get(j) < data.get(index)) {
-          index = j;
-        }
-        j++;
+      Random random = new Random();
+      for (int i = 0; i < 1000; i++) {
+         data.add(random.nextInt(1, 101));
       }
-      int tmp = data.get(index);
-      data.set(index, data.get(i));
-      data.set(i, tmp);
-      i++;
-    }
-  }
+
+      System.out.println(data);
+      sort();
+      System.out.println(data);
+
+   }
+
+   private static void sort() {
+      int i = 0;
+      while (i < data.size() - 1) {
+         int index = i;
+         int j = i + 1;
+         while (j < data.size()) {
+            if (data.get(j) < data.get(index)) {
+               index = j;
+            }
+            j++;
+         }
+         int tmp = data.get(index);
+         data.set(index, data.get(i));
+         data.set(i, tmp);
+         i++;
+      }
+   }
 
 }

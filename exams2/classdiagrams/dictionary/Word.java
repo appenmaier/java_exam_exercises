@@ -9,9 +9,9 @@ package exams2.classdiagrams.dictionary;
  */
 public record Word(String value, Language language) implements Comparable<Word> {
 
-  @Override
-  public int compareTo(Word other) {
-    return this.value().compareTo(other.value());
-  }
+   @Override
+   public int compareTo(Word other) {
+      return this.value().compareTo(other.value());
+   }
 
 }

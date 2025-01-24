@@ -9,6 +9,6 @@ package exams2.queries.planets;
  */
 public enum Type {
 
-  GAS_PLANET, TERRESTRIAL_PLANET, DWARF_PLANET;
+   GAS_PLANET, TERRESTRIAL_PLANET, DWARF_PLANET;
 
 }

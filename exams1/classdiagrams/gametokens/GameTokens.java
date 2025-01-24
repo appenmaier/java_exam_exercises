@@ -16,24 +16,24 @@ import java.util.Scanner;
  */
 public class GameTokens {
 
-  public static List<GameToken> getGameTokens(File file) throws FileNotFoundException {
-    List<GameToken> gameTokens = new ArrayList<GameToken>();
-    Scanner sc = new Scanner(file);
-    Random random = new Random();
+   public static List<GameToken> getGameTokens(File file) throws FileNotFoundException {
+      List<GameToken> gameTokens = new ArrayList<GameToken>();
+      Scanner sc = new Scanner(file);
+      Random random = new Random();
 
-    while (sc.hasNextLine()) {
-      String line = sc.next();
-      String[] tokens = line.split(";");
-      GameTokenType type = GameTokenType.valueOf(tokens[0]);
-      GameTokenColor color = GameTokenColor.valueOf(tokens[1]);
-      Integer value = Integer.valueOf(tokens[2]);
-      GameToken gameToken = new GameToken(type, color, value);
-      int index = gameTokens.size() == 0 ? 0 : random.nextInt(gameTokens.size());
-      gameTokens.add(index, gameToken);
-    }
+      while (sc.hasNextLine()) {
+         String line = sc.next();
+         String[] tokens = line.split(";");
+         GameTokenType type = GameTokenType.valueOf(tokens[0]);
+         GameTokenColor color = GameTokenColor.valueOf(tokens[1]);
+         Integer value = Integer.valueOf(tokens[2]);
+         GameToken gameToken = new GameToken(type, color, value);
+         int index = gameTokens.size() == 0 ? 0 : random.nextInt(gameTokens.size());
+         gameTokens.add(index, gameToken);
+      }
 
-    sc.close();
-    return gameTokens;
-  }
+      sc.close();
+      return gameTokens;
+   }
 
 }

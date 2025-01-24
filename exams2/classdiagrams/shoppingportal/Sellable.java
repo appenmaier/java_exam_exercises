@@ -9,6 +9,6 @@ package exams2.classdiagrams.shoppingportal;
  */
 public interface Sellable {
 
-  double price();
+   double price();
 
 }

@@ -9,6 +9,6 @@ package exams2.classdiagrams.cornershop;
  */
 public class OutofStockException extends Exception {
 
-  private static final long serialVersionUID = 1L;
+   private static final long serialVersionUID = 1L;
 
 }

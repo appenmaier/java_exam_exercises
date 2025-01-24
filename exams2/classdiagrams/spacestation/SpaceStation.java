@@ -13,29 +13,29 @@ import java.util.Optional;
  */
 public record SpaceStation(String name, Map<Integer, SpaceFighter> bays) {
 
-  public void land(SpaceFighter spaceFighter, Integer bayNumber)
-      throws SpaceFighterAlreadyLandedException, BayAlreadyLoadedException {
-    for (Entry<Integer, SpaceFighter> entry : bays.entrySet()) {
-      if (entry.getKey().equals(bayNumber) && entry.getValue() != null) {
-        throw new BayAlreadyLoadedException();
+   public void land(SpaceFighter spaceFighter, Integer bayNumber)
+         throws SpaceFighterAlreadyLandedException, BayAlreadyLoadedException {
+      for (Entry<Integer, SpaceFighter> entry : bays.entrySet()) {
+         if (entry.getKey().equals(bayNumber) && entry.getValue() != null) {
+            throw new BayAlreadyLoadedException();
+         }
+         if (entry.getValue() != null && entry.getValue().equals(spaceFighter)) {
+            throw new SpaceFighterAlreadyLandedException();
+         }
       }
-      if (entry.getValue() != null && entry.getValue().equals(spaceFighter)) {
-        throw new SpaceFighterAlreadyLandedException();
-      }
-    }
-    bays.put(bayNumber, spaceFighter);
-  }
+      bays.put(bayNumber, spaceFighter);
+   }
 
-  public Optional<SpaceFighter> getFastestSpaceFighter() {
-    SpaceFighter fastestSpaceFighter = null;
-    int maxSpeed = 0;
-    for (SpaceFighter s : bays.values()) {
-      if (s != null && s.type().maxSpeed() > maxSpeed) {
-        maxSpeed = s.type().maxSpeed();
-        fastestSpaceFighter = s;
+   public Optional<SpaceFighter> getFastestSpaceFighter() {
+      SpaceFighter fastestSpaceFighter = null;
+      int maxSpeed = 0;
+      for (SpaceFighter s : bays.values()) {
+         if (s != null && s.type().maxSpeed() > maxSpeed) {
+            maxSpeed = s.type().maxSpeed();
+            fastestSpaceFighter = s;
+         }
       }
-    }
-    return Optional.ofNullable(fastestSpaceFighter);
-  }
+      return Optional.ofNullable(fastestSpaceFighter);
+   }
 
 }

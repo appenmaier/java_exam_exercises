@@ -15,42 +15,42 @@ import java.util.stream.Collectors;
  */
 public record TankQueries(List<Tank> tanks) {
 
-  public void printAllTanksWithWeightBT25TonsByType() {
-    Map<Type, List<Tank>> filteredTanks = tanks.stream()
-        .filter(t -> t.weightInTons() > 25)
-        .collect(Collectors.groupingBy(Tank::type));
+   public void printAllTanksWithWeightBT25TonsByType() {
+      Map<Type, List<Tank>> filteredTanks = tanks.stream()
+            .filter(t -> t.weightInTons() > 25)
+            .collect(Collectors.groupingBy(Tank::type));
 
-    filteredTanks.forEach((t, ts) -> System.out.println(t + ": " + ts));
-  }
+      filteredTanks.forEach((t, ts) -> System.out.println(t + ": " + ts));
+   }
 
-  public OptionalDouble getAveragePerformanceInHorsePower() {
-    OptionalDouble averagePerformance =
-        tanks.stream().mapToInt(Tank::performanceInHorsePower).average();
+   public OptionalDouble getAveragePerformanceInHorsePower() {
+      OptionalDouble averagePerformance =
+            tanks.stream().mapToInt(Tank::performanceInHorsePower).average();
 
-    return averagePerformance;
-  }
+      return averagePerformance;
+   }
 
-  public List<Nation> getAllNations() {
-    List<Nation> nations = tanks.stream().map(Tank::nation).distinct().toList();
+   public List<Nation> getAllNations() {
+      List<Nation> nations = tanks.stream().map(Tank::nation).distinct().toList();
 
-    return nations;
-  }
+      return nations;
+   }
 
-  public boolean isAllTanksMaxSpeedBE50KMH() {
-    boolean exists = tanks.stream()
-        .filter(t -> t.type().equals(Type.BATTLE_TANK))
-        .allMatch(t -> t.maxSpeedInKMH() >= 50);
+   public boolean isAllTanksMaxSpeedBE50KMH() {
+      boolean exists = tanks.stream()
+            .filter(t -> t.type().equals(Type.BATTLE_TANK))
+            .allMatch(t -> t.maxSpeedInKMH() >= 50);
 
-    return exists;
-  }
+      return exists;
+   }
 
-  public void printLongestTankFromGermany() {
-    Optional<Tank> longestTank = tanks.stream()
-        .filter(t -> t.nation().equals(Nation.GER))
-        .max((t1, t2) -> Double.valueOf(t1.lengthInMeters()).compareTo(t2.lengthInMeters()));
+   public void printLongestTankFromGermany() {
+      Optional<Tank> longestTank = tanks.stream()
+            .filter(t -> t.nation().equals(Nation.GER))
+            .max((t1, t2) -> Double.valueOf(t1.lengthInMeters()).compareTo(t2.lengthInMeters()));
 
-    longestTank.ifPresentOrElse(t -> System.out.println(t.name()),
-        () -> System.out.println("null"));
-  }
+      longestTank.ifPresentOrElse(t -> System.out.println(t.name()),
+            () -> System.out.println("null"));
+   }
 
 }

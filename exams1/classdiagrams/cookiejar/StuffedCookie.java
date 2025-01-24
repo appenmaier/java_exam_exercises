@@ -12,49 +12,52 @@ import java.util.Objects;
  */
 public class StuffedCookie extends Cookie {
 
-  private final Recipe jam;
+   private final Recipe jam;
 
-  public StuffedCookie(String name, Recipe dough, Recipe jam) {
-    super(name, dough);
-    this.jam = jam;
-  }
+   public StuffedCookie(String name, Recipe dough, Recipe jam) {
+      super(name, dough);
+      this.jam = jam;
+   }
 
-  @Override
-  public boolean equals(Object obj) {
-    if (this == obj)
-      return true;
-    if (!super.equals(obj))
-      return false;
-    if (getClass() != obj.getClass())
-      return false;
-    StuffedCookie other = (StuffedCookie) obj;
-    return Objects.equals(jam, other.jam);
-  }
-
-  @Override
-  public List<Ingredient> getIngredients() {
-    List<Ingredient> ingredients = super.getIngredients();
-    for (int i = 0; i < jam.ingredients().size(); i++) {
-      Ingredient ingredient = jam.ingredients().get(i);
-      if (ingredients.contains(ingredient)) {
-        continue;
+   @Override
+   public boolean equals(Object obj) {
+      if (this == obj) {
+         return true;
       }
-      ingredients.add(ingredient);
-    }
-    return ingredients;
-  }
+      if (!super.equals(obj)) {
+         return false;
+      }
+      if (getClass() != obj.getClass()) {
+         return false;
+      }
+      StuffedCookie other = (StuffedCookie) obj;
+      return Objects.equals(jam, other.jam);
+   }
 
-  @Override
-  public int hashCode() {
-    final int prime = 31;
-    int result = super.hashCode();
-    result = prime * result + Objects.hash(jam);
-    return result;
-  }
+   @Override
+   public List<Ingredient> getIngredients() {
+      List<Ingredient> ingredients = super.getIngredients();
+      for (int i = 0; i < jam.ingredients().size(); i++) {
+         Ingredient ingredient = jam.ingredients().get(i);
+         if (ingredients.contains(ingredient)) {
+            continue;
+         }
+         ingredients.add(ingredient);
+      }
+      return ingredients;
+   }
 
-  @Override
-  public String toString() {
-    return "StuffedCookie [jam=" + jam + ", dough()=" + dough() + ", name()=" + name() + "]";
-  }
+   @Override
+   public int hashCode() {
+      final int prime = 31;
+      int result = super.hashCode();
+      result = prime * result + Objects.hash(jam);
+      return result;
+   }
+
+   @Override
+   public String toString() {
+      return "StuffedCookie [jam=" + jam + ", dough()=" + dough() + ", name()=" + name() + "]";
+   }
 
 }

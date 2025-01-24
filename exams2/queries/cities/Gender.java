@@ -9,6 +9,6 @@ package exams2.queries.cities;
  */
 public enum Gender {
 
-  MALE, FEMALE, INTERSEX
+   MALE, FEMALE, INTERSEX
 
 }

@@ -9,22 +9,22 @@ package exams2.classdiagrams.dictionary;
  */
 public enum Language {
 
-  DE("DE", "Deutsch"), EN("EN", "Englisch"), FR("FR", "Franzoesisch");
+   DE("DE", "Deutsch"), EN("EN", "Englisch"), FR("FR", "Franzoesisch");
 
-  private final String code;
-  private final String description;
+   private final String code;
+   private final String description;
 
-  Language(String code, String description) {
-    this.code = code;
-    this.description = description;
-  }
+   Language(String code, String description) {
+      this.code = code;
+      this.description = description;
+   }
 
-  public String code() {
-    return code;
-  }
+   public String code() {
+      return code;
+   }
 
-  public String description() {
-    return description;
-  }
+   public String description() {
+      return description;
+   }
 
 }

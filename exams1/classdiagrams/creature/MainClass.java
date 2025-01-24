@@ -13,13 +13,13 @@ import java.util.List;
  */
 public class MainClass {
 
-  public static void main(String[] args) throws FileNotFoundException {
+   public static void main(String[] args) throws FileNotFoundException {
 
-    List<Creature> creatures =
-        CreaturesReader.getCreatures(new File("exams1/classdiagrams/creature/creatures.txt"));
+      List<Creature> creatures =
+            CreaturesReader.getCreatures(new File("exams1/classdiagrams/creature/creatures.txt"));
 
-    System.out.println("Alle Kreaturen: " + creatures);
+      System.out.println("Alle Kreaturen: " + creatures);
 
-  }
+   }
 
 }

@@ -3,23 +3,19 @@ package exams2.classdiagrams.videocollection;
 import java.util.Objects;
 
 /**
- * Blu-Ray
+ * VHS
  *
  * @author Daniel Appenmaier
  * @version 1.0
  *
  */
-public class BluRay extends Video {
+public class Vhs extends Video {
 
-   private final double capacity;
+   private final boolean isRewritable;
 
-   public BluRay(Movie movie, double capacity) {
+   public Vhs(Movie movie, boolean isRewritable) {
       super(movie);
-      this.capacity = capacity;
-   }
-
-   public double capacity() {
-      return capacity;
+      this.isRewritable = isRewritable;
    }
 
    @Override
@@ -33,21 +29,25 @@ public class BluRay extends Video {
       if (getClass() != obj.getClass()) {
          return false;
       }
-      BluRay other = (BluRay) obj;
-      return Double.doubleToLongBits(capacity) == Double.doubleToLongBits(other.capacity);
+      Vhs other = (Vhs) obj;
+      return isRewritable == other.isRewritable;
    }
 
    @Override
    public int hashCode() {
       final int prime = 31;
       int result = super.hashCode();
-      result = prime * result + Objects.hash(capacity);
+      result = prime * result + Objects.hash(isRewritable);
       return result;
+   }
+
+   public boolean isRewritable() {
+      return isRewritable;
    }
 
    @Override
    public String toString() {
-      return "BluRay [capacity=" + capacity + ", movie()=" + movie() + "]";
+      return "VHS [isRewritable=" + isRewritable + ", movie()=" + movie() + "]";
    }
 
 }

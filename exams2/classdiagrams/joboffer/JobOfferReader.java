@@ -15,19 +15,19 @@ import java.util.Scanner;
  */
 public class JobOfferReader {
 
-  public static List<JobOffer> getJobOffers(File file) throws FileNotFoundException {
-    List<JobOffer> jobOffers = new ArrayList<>();
-    Scanner scanner = new Scanner(file);
-    while (scanner.hasNextLine()) {
-      String line = scanner.nextLine();
-      String[] tokens = line.split(";");
-      int id = Integer.valueOf(tokens[0]);
-      String title = tokens[1];
-      JobOffer jobOffer = new JobOffer(id, title, null);
-      jobOffers.add(jobOffer);
-    }
-    scanner.close();
-    return jobOffers;
-  }
+   public static List<JobOffer> getJobOffers(File file) throws FileNotFoundException {
+      List<JobOffer> jobOffers = new ArrayList<>();
+      Scanner scanner = new Scanner(file);
+      while (scanner.hasNextLine()) {
+         String line = scanner.nextLine();
+         String[] tokens = line.split(";");
+         int id = Integer.valueOf(tokens[0]);
+         String title = tokens[1];
+         JobOffer jobOffer = new JobOffer(id, title, null);
+         jobOffers.add(jobOffer);
+      }
+      scanner.close();
+      return jobOffers;
+   }
 
 }

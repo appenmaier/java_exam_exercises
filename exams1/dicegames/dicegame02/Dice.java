@@ -11,14 +11,14 @@ import java.util.Random;
  */
 public class Dice {
 
-  public ShapeSymbol rollTheDice() {
-    Random random = new Random();
-    int randomNumber = random.nextInt(3);
-    return switch (randomNumber) {
-      case 0 -> ShapeSymbol.CIRCLE;
-      case 1 -> ShapeSymbol.TRIANGLE;
-      default -> ShapeSymbol.RECTANGLE;
-    };
-  }
+   public ShapeSymbol rollTheDice() {
+      Random random = new Random();
+      int randomNumber = random.nextInt(3);
+      return switch (randomNumber) {
+         case 0  -> ShapeSymbol.CIRCLE;
+         case 1  -> ShapeSymbol.TRIANGLE;
+         default -> ShapeSymbol.RECTANGLE;
+      };
+   }
 
 }

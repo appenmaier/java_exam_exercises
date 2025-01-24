@@ -11,22 +11,22 @@ import java.util.Random;
  */
 public class WeaponDice {
 
-  private Weapon weapon;
+   private Weapon weapon;
 
-  public Weapon getWeapon() {
-    return weapon;
-  }
+   public Weapon getWeapon() {
+      return weapon;
+   }
 
-  public void rollTheDice() {
-    Random random = new Random();
-    int randomNumber = random.nextInt(4);
-    weapon = switch (randomNumber) {
-      case 0 -> Weapon.SWORD;
-      case 1 -> Weapon.AXE;
-      case 2 -> Weapon.SPEAR;
-      default -> Weapon.CLUB;
-    };
+   public void rollTheDice() {
+      Random random = new Random();
+      int randomNumber = random.nextInt(4);
+      weapon = switch (randomNumber) {
+         case 0  -> Weapon.SWORD;
+         case 1  -> Weapon.AXE;
+         case 2  -> Weapon.SPEAR;
+         default -> Weapon.CLUB;
+      };
 
-  }
+   }
 
 }

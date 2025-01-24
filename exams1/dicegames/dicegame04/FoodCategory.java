@@ -9,22 +9,22 @@ package exams1.dicegames.dicegame04;
  */
 public enum FoodCategory {
 
-  X("X", 3), Y("Y", 2), Z("Z", 3);
+   X("X", 3), Y("Y", 2), Z("Z", 3);
 
-  private final String description;
-  private final int points;
+   private final String description;
+   private final int points;
 
-  FoodCategory(String description, int points) {
-    this.description = description;
-    this.points = points;
-  }
+   FoodCategory(String description, int points) {
+      this.description = description;
+      this.points = points;
+   }
 
-  public String description() {
-    return description;
-  }
+   public String description() {
+      return description;
+   }
 
-  public int points() {
-    return points;
-  }
+   public int points() {
+      return points;
+   }
 
 }

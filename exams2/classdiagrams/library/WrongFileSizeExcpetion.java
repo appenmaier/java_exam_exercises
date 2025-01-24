@@ -9,6 +9,6 @@ package exams2.classdiagrams.library;
  */
 public class WrongFileSizeExcpetion extends Exception {
 
-  private static final long serialVersionUID = 1L;
+   private static final long serialVersionUID = 1L;
 
 }

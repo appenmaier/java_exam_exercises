@@ -13,29 +13,29 @@ import java.util.Optional;
  */
 public record CornerShop(String name, Map<Goods, Integer> store) {
 
-  public Optional<Integer> getAmountByDescription(String description) {
-    for (Entry<Goods, Integer> entry : store.entrySet()) {
-      if (entry.getKey().description().equals(description)) {
-        return Optional.ofNullable(entry.getValue());
+   public Optional<Integer> getAmountByDescription(String description) {
+      for (Entry<Goods, Integer> entry : store.entrySet()) {
+         if (entry.getKey().description().equals(description)) {
+            return Optional.ofNullable(entry.getValue());
+         }
       }
-    }
-    return Optional.empty();
-  }
+      return Optional.empty();
+   }
 
-  public void sellGoods(Goods goods, int amount) throws OutofStockException {
-    if (!store.containsKey(goods) || store.get(goods) < amount) {
-      throw new OutofStockException();
-    }
+   public void sellGoods(Goods goods, int amount) throws OutofStockException {
+      if (!store.containsKey(goods) || store.get(goods) < amount) {
+         throw new OutofStockException();
+      }
 
-    store.put(goods, store.get(goods) - amount);
-  }
+      store.put(goods, store.get(goods) - amount);
+   }
 
-  public void buyGoods(Goods goods, int amount) {
-    if (store.containsKey(goods)) {
-      store.put(goods, store.get(goods) + amount);
-    } else {
-      store.put(goods, amount);
-    }
-  }
+   public void buyGoods(Goods goods, int amount) {
+      if (store.containsKey(goods)) {
+         store.put(goods, store.get(goods) + amount);
+      } else {
+         store.put(goods, amount);
+      }
+   }
 
 }

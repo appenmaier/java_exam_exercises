@@ -11,41 +11,44 @@ import java.util.Objects;
  */
 public class Fish extends Animal {
 
-  public String color;
+   public String color;
 
-  public Fish(String description, double sizeInM, double weightInKG, String color) {
-    super(description, sizeInM, weightInKG);
-    this.color = color;
-  }
+   public Fish(String description, double sizeInM, double weightInKG, String color) {
+      super(description, sizeInM, weightInKG);
+      this.color = color;
+   }
 
-  @Override
-  public boolean equals(Object obj) {
-    if (this == obj)
-      return true;
-    if (!super.equals(obj))
-      return false;
-    if (getClass() != obj.getClass())
-      return false;
-    Fish other = (Fish) obj;
-    return Objects.equals(color, other.color);
-  }
+   @Override
+   public boolean equals(Object obj) {
+      if (this == obj) {
+         return true;
+      }
+      if (!super.equals(obj)) {
+         return false;
+      }
+      if (getClass() != obj.getClass()) {
+         return false;
+      }
+      Fish other = (Fish) obj;
+      return Objects.equals(color, other.color);
+   }
 
-  @Override
-  public int hashCode() {
-    final int prime = 31;
-    int result = super.hashCode();
-    result = prime * result + Objects.hash(color);
-    return result;
-  }
+   @Override
+   public int hashCode() {
+      final int prime = 31;
+      int result = super.hashCode();
+      result = prime * result + Objects.hash(color);
+      return result;
+   }
 
-  public void swim() {
-    System.out.println("schwimm, schwimm");
-  }
+   public void swim() {
+      System.out.println("schwimm, schwimm");
+   }
 
-  @Override
-  public String toString() {
-    return "Fish [color=" + color + ", description()=" + description() + ", sizeInM()=" + sizeInM()
-        + ", weightInKG()=" + weightInKG() + "]";
-  }
+   @Override
+   public String toString() {
+      return "Fish [color=" + color + ", description()=" + description() + ", sizeInM()="
+            + sizeInM() + ", weightInKG()=" + weightInKG() + "]";
+   }
 
 }

@@ -9,16 +9,16 @@ package exams1.classdiagrams.studentcourse;
  */
 public enum CourseOfStudies {
 
-  BWL("BWL"), INF("Informatik"), WI("Wirtschaftsinformatik");
+   BWL("BWL"), INF("Informatik"), WI("Wirtschaftsinformatik");
 
-  private final String description;
+   private final String description;
 
-  private CourseOfStudies(String description) {
-    this.description = description;
-  }
+   private CourseOfStudies(String description) {
+      this.description = description;
+   }
 
-  public String description() {
-    return description;
-  }
+   public String description() {
+      return description;
+   }
 
 }

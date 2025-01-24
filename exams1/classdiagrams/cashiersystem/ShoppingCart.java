@@ -12,31 +12,31 @@ import java.util.List;
  */
 public class ShoppingCart {
 
-  private final List<Item> items;
+   private final List<Item> items;
 
-  public ShoppingCart() {
-    items = new ArrayList<>();
-  }
+   public ShoppingCart() {
+      items = new ArrayList<>();
+   }
 
-  public void createItem(Goods goods, int amount) {
-    items.add(new Item(goods, amount));
-  }
+   public void createItem(Goods goods, int amount) {
+      items.add(new Item(goods, amount));
+   }
 
-  public double getTotalInEuro() {
-    double sum = 0;
-    for (Item i : items) {
-      sum += i.getSubTotalInEuro();
-    }
-    return sum;
-  }
+   public double getTotalInEuro() {
+      double sum = 0;
+      for (Item i : items) {
+         sum += i.getSubTotalInEuro();
+      }
+      return sum;
+   }
 
-  public List<Item> items() {
-    return items;
-  }
+   public List<Item> items() {
+      return items;
+   }
 
-  @Override
-  public String toString() {
-    return "ShoppingCart [items=" + items + "]";
-  }
+   @Override
+   public String toString() {
+      return "ShoppingCart [items=" + items + "]";
+   }
 
 }

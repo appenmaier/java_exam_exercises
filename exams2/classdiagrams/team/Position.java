@@ -9,6 +9,6 @@ package exams2.classdiagrams.team;
  */
 public enum Position {
 
-  DEFENDER, GOALKEEPER, MIDFIELDER, STRIKER;
+   DEFENDER, GOALKEEPER, MIDFIELDER, STRIKER;
 
 }

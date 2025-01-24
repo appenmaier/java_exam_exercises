@@ -12,49 +12,49 @@ import java.util.Objects;
  */
 public class Player {
 
-  private final String name;
-  private final List<GameToken> gameTokens;
+   private final String name;
+   private final List<GameToken> gameTokens;
 
-  public Player(String name, List<GameToken> gameTokens) {
-    this.name = name;
-    this.gameTokens = gameTokens;
-  }
+   public Player(String name, List<GameToken> gameTokens) {
+      this.name = name;
+      this.gameTokens = gameTokens;
+   }
 
-  public void addGameToken(GameToken gameToken) {
-    gameTokens.add(gameToken);
-  }
+   public void addGameToken(GameToken gameToken) {
+      gameTokens.add(gameToken);
+   }
 
-  @Override
-  public boolean equals(Object obj) {
-    if (this == obj) {
-      return true;
-    }
-    if (obj == null) {
-      return false;
-    }
-    if (getClass() != obj.getClass()) {
-      return false;
-    }
-    Player other = (Player) obj;
-    return Objects.equals(gameTokens, other.gameTokens) && Objects.equals(name, other.name);
-  }
+   @Override
+   public boolean equals(Object obj) {
+      if (this == obj) {
+         return true;
+      }
+      if (obj == null) {
+         return false;
+      }
+      if (getClass() != obj.getClass()) {
+         return false;
+      }
+      Player other = (Player) obj;
+      return Objects.equals(gameTokens, other.gameTokens) && Objects.equals(name, other.name);
+   }
 
-  public List<GameToken> gameTokens() {
-    return gameTokens;
-  }
+   public List<GameToken> gameTokens() {
+      return gameTokens;
+   }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(gameTokens, name);
-  }
+   @Override
+   public int hashCode() {
+      return Objects.hash(gameTokens, name);
+   }
 
-  public String name() {
-    return name;
-  }
+   public String name() {
+      return name;
+   }
 
-  @Override
-  public String toString() {
-    return "Player [name=" + name + ", gameTokens=" + gameTokens + "]";
-  }
+   @Override
+   public String toString() {
+      return "Player [name=" + name + ", gameTokens=" + gameTokens + "]";
+   }
 
 }

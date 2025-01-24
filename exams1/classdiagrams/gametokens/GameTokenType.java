@@ -9,6 +9,6 @@ package exams1.classdiagrams.gametokens;
  */
 public enum GameTokenType {
 
-  KNIGHT, PIRATE, VIKING;
+   KNIGHT, PIRATE, VIKING;
 
 }

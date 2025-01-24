@@ -9,17 +9,17 @@ package exams1.classdiagrams.cashiersystem;
  */
 public enum ClassOfGoods {
 
-  BAKERY_PRODUCTS("Backwaren"), DAIRY_PRODUCTS("Milchprodukte"), FRUITS("Obst"),
-  VEGETABLES("Gemuese");
+   BAKERY_PRODUCTS("Backwaren"), DAIRY_PRODUCTS("Milchprodukte"), FRUITS("Obst"), VEGETABLES(
+         "Gemuese");
 
-  private final String description;
+   private final String description;
 
-  ClassOfGoods(String description) {
-    this.description = description;
-  }
+   ClassOfGoods(String description) {
+      this.description = description;
+   }
 
-  public String getDescription() {
-    return description;
-  }
+   public String getDescription() {
+      return description;
+   }
 
 }

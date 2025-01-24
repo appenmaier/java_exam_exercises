@@ -9,16 +9,16 @@ package exams2.classdiagrams.library;
  */
 public enum FileFormat {
 
-  AZW("Amazon Kindle"), EPUB("Electronic Publication"), LRF("Portable Reader File");
+   AZW("Amazon Kindle"), EPUB("Electronic Publication"), LRF("Portable Reader File");
 
-  private final String description;
+   private final String description;
 
-  FileFormat(String description) {
-    this.description = description;
-  }
+   FileFormat(String description) {
+      this.description = description;
+   }
 
-  public String description() {
-    return description;
-  }
+   public String description() {
+      return description;
+   }
 
 }

@@ -9,16 +9,16 @@ package exams2.classdiagrams.library;
  */
 public enum Status {
 
-  AVAILABLE("verfuegbar"), LENT("verliehen");
+   AVAILABLE("verfuegbar"), LENT("verliehen");
 
-  private String description;
+   private String description;
 
-  Status(String description) {
-    this.description = description;
-  }
+   Status(String description) {
+      this.description = description;
+   }
 
-  public String description() {
-    return description;
-  }
+   public String description() {
+      return description;
+   }
 
 }

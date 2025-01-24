@@ -13,72 +13,75 @@ import java.util.Objects;
  */
 public class ChristmasTree {
 
-  private final List<Candle> candles;
-  private final double size;
-  private final String type;
+   private final List<Candle> candles;
+   private final double size;
+   private final String type;
 
-  public ChristmasTree(String type, double size) {
-    this.type = type;
-    this.size = size;
-    candles = new ArrayList<>();
-  }
+   public ChristmasTree(String type, double size) {
+      this.type = type;
+      this.size = size;
+      candles = new ArrayList<>();
+   }
 
-  public void addCandle(Candle candle) {
-    candles.add(candle);
-  }
+   public void addCandle(Candle candle) {
+      candles.add(candle);
+   }
 
-  public List<Candle> candles() {
-    return candles;
-  }
+   public List<Candle> candles() {
+      return candles;
+   }
 
-  @Override
-  public boolean equals(Object obj) {
-    if (this == obj)
-      return true;
-    if (obj == null)
-      return false;
-    if (getClass() != obj.getClass())
-      return false;
-    ChristmasTree other = (ChristmasTree) obj;
-    return Objects.equals(candles, other.candles)
-        && Double.doubleToLongBits(size) == Double.doubleToLongBits(other.size)
-        && Objects.equals(type, other.type);
-  }
-
-  public int getNumberOfElectricCandles() {
-    int numberOfElectricCandles = 0;
-
-    for (Candle c : candles) {
-      if (c instanceof ElectricCandle) {
-        numberOfElectricCandles++;
+   @Override
+   public boolean equals(Object obj) {
+      if (this == obj) {
+         return true;
       }
-    }
+      if (obj == null) {
+         return false;
+      }
+      if (getClass() != obj.getClass()) {
+         return false;
+      }
+      ChristmasTree other = (ChristmasTree) obj;
+      return Objects.equals(candles, other.candles)
+            && Double.doubleToLongBits(size) == Double.doubleToLongBits(other.size)
+            && Objects.equals(type, other.type);
+   }
 
-    return numberOfElectricCandles;
-  }
+   public int getNumberOfElectricCandles() {
+      int numberOfElectricCandles = 0;
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(candles, size, type);
-  }
+      for (Candle c : candles) {
+         if (c instanceof ElectricCandle) {
+            numberOfElectricCandles++;
+         }
+      }
 
-  public void lightChristmasTree() {
-    for (Candle c : candles) {
-      c.lightACandle();
-    }
-  }
+      return numberOfElectricCandles;
+   }
 
-  public double size() {
-    return size;
-  }
+   @Override
+   public int hashCode() {
+      return Objects.hash(candles, size, type);
+   }
 
-  @Override
-  public String toString() {
-    return "ChristmasTree [candles=" + candles + ", size=" + size + ", type=" + type + "]";
-  }
+   public void lightChristmasTree() {
+      for (Candle c : candles) {
+         c.lightACandle();
+      }
+   }
 
-  public String type() {
-    return type;
-  }
+   public double size() {
+      return size;
+   }
+
+   @Override
+   public String toString() {
+      return "ChristmasTree [candles=" + candles + ", size=" + size + ", type=" + type + "]";
+   }
+
+   public String type() {
+      return type;
+   }
 
 }

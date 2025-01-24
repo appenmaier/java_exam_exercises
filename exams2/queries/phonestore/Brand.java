@@ -9,6 +9,6 @@ package exams2.queries.phonestore;
  */
 public enum Brand {
 
-  APPLE, HUAWEI, SAMSUNG;
+   APPLE, HUAWEI, SAMSUNG;
 
 }

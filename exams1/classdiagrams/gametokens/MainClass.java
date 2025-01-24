@@ -13,13 +13,13 @@ import java.util.List;
  */
 public class MainClass {
 
-  public static void main(String[] args) throws FileNotFoundException {
+   public static void main(String[] args) throws FileNotFoundException {
 
-    List<GameToken> gameTokens =
-        GameTokens.getGameTokens(new File("exams1/classdiagrams/gametokens/gametokens.txt"));
+      List<GameToken> gameTokens =
+            GameTokens.getGameTokens(new File("exams1/classdiagrams/gametokens/gametokens.txt"));
 
-    System.out.println("Alle Spielfiguren: " + gameTokens);
+      System.out.println("Alle Spielfiguren: " + gameTokens);
 
-  }
+   }
 
 }

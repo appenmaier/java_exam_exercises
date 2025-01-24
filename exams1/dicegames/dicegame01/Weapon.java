@@ -9,22 +9,22 @@ package exams1.dicegames.dicegame01;
  */
 public enum Weapon {
 
-  SWORD("Schwert", 4), SPEAR("Speer", 2), AXE("Axt", 3), CLUB("Keule", 1);
+   SWORD("Schwert", 4), SPEAR("Speer", 2), AXE("Axt", 3), CLUB("Keule", 1);
 
-  private final String description;
-  private final int power;
+   private final String description;
+   private final int power;
 
-  Weapon(String description, int power) {
-    this.description = description;
-    this.power = power;
-  }
+   Weapon(String description, int power) {
+      this.description = description;
+      this.power = power;
+   }
 
-  public String description() {
-    return description;
-  }
+   public String description() {
+      return description;
+   }
 
-  public int power() {
-    return power;
-  }
+   public int power() {
+      return power;
+   }
 
 }
