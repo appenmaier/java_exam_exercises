@@ -1,4 +1,4 @@
-package exams1.classdiagrams.gametokens;
+package exams1.classdiagrams.player;
 
 import java.io.File;
 import java.io.FileNotFoundException;

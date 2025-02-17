@@ -1,4 +1,4 @@
-package exams1.classdiagrams.gametokens;
+package exams1.classdiagrams.player;
 
 import java.util.List;
 import java.util.Objects;
