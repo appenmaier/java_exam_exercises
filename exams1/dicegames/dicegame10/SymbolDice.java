@@ -11,10 +11,20 @@ import java.util.Random;
  */
 public class SymbolDice {
 
-   public Symbol rollTheDice() {
+   private Symbol symbol;
+
+   public SymbolDice() {
+      rollTheDice();
+   }
+
+   public void rollTheDice() {
       Random random = new Random();
       boolean randomNumber = random.nextBoolean();
-      return randomNumber ? Symbol.SHIELD : Symbol.SWORD;
+      symbol = randomNumber ? Symbol.SHIELD : Symbol.SWORD;
+   }
+
+   public Symbol getSymbol() {
+      return symbol;
    }
 
 }
