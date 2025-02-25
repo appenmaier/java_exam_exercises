@@ -2,6 +2,13 @@ package exams1.dicegames.dicegame03;
 
 import java.util.Scanner;
 
+/**
+ * MainClass
+ *
+ * @author Daniel Appenmaier
+ * @version 1.0
+ *
+ */
 public class MainClass {
 
    private static Player player1;
@@ -9,7 +16,6 @@ public class MainClass {
    private static Scanner scanner;
 
    public static void main(String[] args) {
-
       scanner = new Scanner(System.in);
 
       System.out.print("Spieler 1, gib bitte Deinen Namen ein: ");
@@ -21,7 +27,6 @@ public class MainClass {
       player2 = new Player(name2);
 
       System.out.println();
-
       while (player1.getHealthPoints() > 0 && player2.getHealthPoints() > 0) {
          System.out.println(player1.name() + " hat " + player1.getHealthPoints() + " Lebenspunkte");
          System.out.println(player2.name() + " hat " + player2.getHealthPoints() + " Lebenspunkte");
@@ -38,13 +43,11 @@ public class MainClass {
          }
          System.out.println();
       }
-
       if (player1.getHealthPoints() > player2.getHealthPoints()) {
          System.out.println(player1.name() + " gewinnt");
       } else {
          System.out.println(player2.name() + " gewinnt");
       }
-
    }
 
 }

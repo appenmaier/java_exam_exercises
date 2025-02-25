@@ -1,5 +1,7 @@
 package exams1.dicegames.dicegame04;
 
+import java.util.Random;
+
 /**
  * Lebensmittelkatgorie-Wuerfel
  *
@@ -10,7 +12,10 @@ package exams1.dicegames.dicegame04;
 public class FoodCategoryDice {
 
    public FoodCategory rollTheDice() {
-      return FoodCategory.X;
+      Random random = new Random();
+      FoodCategory foodCategory =
+            FoodCategory.values()[random.nextInt(FoodCategory.values().length)];
+      return foodCategory;
    }
 
 }

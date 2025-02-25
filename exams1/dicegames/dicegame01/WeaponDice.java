@@ -3,7 +3,7 @@ package exams1.dicegames.dicegame01;
 import java.util.Random;
 
 /**
- * Waffensymbol-Wuerfel
+ * Waffen-Wuerfel
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -12,6 +12,10 @@ import java.util.Random;
 public class WeaponDice {
 
    private Weapon weapon;
+
+   public WeaponDice() {
+      rollTheDice();
+   }
 
    public Weapon getWeapon() {
       return weapon;
@@ -26,7 +30,6 @@ public class WeaponDice {
          case 2  -> Weapon.SPEAR;
          default -> Weapon.CLUB;
       };
-
    }
 
 }

@@ -14,19 +14,17 @@ import java.util.Scanner;
 public class MainClass {
 
    private static Scanner scanner;
-   private static List<Dice> dices;
+   private static List<ShapeDice> dices;
    private static int points;
    private static int rounds;
 
    public static void main(String[] args) {
-
       scanner = new Scanner(System.in);
 
       dices = new ArrayList<>();
       for (int i = 0; i < 5; i++) {
-         dices.add(new Dice());
+         dices.add(new ShapeDice());
       }
-
       boolean repeat;
       do {
          rounds++;
@@ -34,7 +32,7 @@ public class MainClass {
          String tip = scanner.next();
          int total = 0;
          for (int i = 0; i < dices.size(); i++) {
-            Dice d = dices.get(i);
+            ShapeDice d = dices.get(i);
             ShapeSymbol shapeSymbol = d.rollTheDice();
             total += shapeSymbol.corners();
          }
@@ -48,10 +46,8 @@ public class MainClass {
          repeat = scanner.next().equals("Ja");
          System.out.println();
       } while (repeat);
-
       System.out.println("Gespielte Runden: " + rounds);
       System.out.println("Erzielte Punkte: " + points);
-
    }
 
 }

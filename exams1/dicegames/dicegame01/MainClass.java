@@ -30,7 +30,6 @@ public class MainClass {
       weaponDice = new WeaponDice();
 
       System.out.println();
-
       while (player1.getPoints() > 0 && player2.getPoints() > 0) {
          System.out.println("Punkte " + player1.name() + ": " + player1.getPoints());
          System.out.println("Punkte " + player2.name() + ": " + player2.getPoints());
@@ -43,7 +42,6 @@ public class MainClass {
          int total2 = weaponDice.getWeapon().power();
          System.out.println(
                "Waffen-Symbol " + player2.name() + ": " + weaponDice.getWeapon().description());
-
          if (total1 > total2) {
             player2.reducePoints(total1 - total2);
             System.out.println("Punkte " + player2.name() + ": " + player2.getPoints());
@@ -53,13 +51,11 @@ public class MainClass {
          }
          System.out.println();
       }
-
       if (player1.getPoints() > player2.getPoints()) {
          System.out.println(player1.name() + " gewinnt");
       } else {
          System.out.println(player2.name() + " gewinnt");
       }
-
    }
 
 }

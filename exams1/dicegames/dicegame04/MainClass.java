@@ -2,6 +2,13 @@ package exams1.dicegames.dicegame04;
 
 import java.util.Scanner;
 
+/**
+ * MainClass
+ *
+ * @author Daniel Appenmaier
+ * @version 1.0
+ *
+ */
 public class MainClass {
 
    private static Player player1;
@@ -12,7 +19,6 @@ public class MainClass {
    private static int rounds;
 
    public static void main(String[] args) {
-
       scanner = new Scanner(System.in);
 
       System.out.print("Spieler 1, gib bitte Deinen Namen ein: ");
@@ -28,7 +34,6 @@ public class MainClass {
 
       foodCategoryDice = new FoodCategoryDice();
       amountDice = new AmountDice();
-
       while (player1.getPoints() > 0 && player2.getPoints() > 0) {
          rounds++;
          System.out.println("Runde " + rounds);
@@ -57,16 +62,13 @@ public class MainClass {
             player1.setPoints(player1.getPoints() - difference);
             System.out.println(player1.name() + " werden " + difference + " Punkte abgezogen");
          }
-
          System.out.println();
       }
-
       if (player1.getPoints() > player2.getPoints()) {
          System.out.println(player1.name() + " hat gewonnen");
       } else {
          System.out.println(player2.name() + " hat gewonnen");
       }
-
    }
 
 }

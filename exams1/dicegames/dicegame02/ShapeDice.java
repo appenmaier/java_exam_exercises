@@ -9,7 +9,7 @@ import java.util.Random;
  * @version 1.0
  *
  */
-public class Dice {
+public class ShapeDice {
 
    public ShapeSymbol rollTheDice() {
       Random random = new Random();
