@@ -1,4 +1,4 @@
-package exams2.classdiagrams.character;
+package exams2.classdiagrams.fantasygame;
 
 /**
  * Spielfigur
