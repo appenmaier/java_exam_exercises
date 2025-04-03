@@ -1,0 +1,57 @@
+package exams2.classdiagrams;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Optional;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import exams2.classdiagrams.videocollection.BluRay;
+import exams2.classdiagrams.videocollection.Genre;
+import exams2.classdiagrams.videocollection.Movie;
+import exams2.classdiagrams.videocollection.Vhs;
+import exams2.classdiagrams.videocollection.Video;
+import exams2.classdiagrams.videocollection.VideoCollection;
+
+/**
+ * VideoCollectionTest
+ *
+ * @author Daniel Appenmaier
+ * @version 1.0
+ *
+ */
+public class VideoCollectionTest {
+
+   private VideoCollection collection;
+   private BluRay evilDead;
+   private Vhs theMatrix;
+
+   @BeforeEach
+   void setUp() {
+      collection = new VideoCollection(new ArrayList<Video>());
+      theMatrix = new Vhs(new Movie("The Matrix", Genre.SCIFI, (short) 1999), false);
+      evilDead = new BluRay(new Movie("Evil Dead", Genre.HORROR, (short) 1981), 25);
+   }
+
+   @Test
+   void testGetVideoByMovieTitle() {
+      collection.addVideo(theMatrix);
+      collection.addVideo(evilDead);
+      assertEquals(Optional.of(evilDead), collection.getVideoByMovieTitle("Evil Dead"));
+      assertEquals(Optional.empty(), collection.getVideoByMovieTitle("Evil Dead 2"));
+   }
+
+   @Test
+   void testImportVideos() throws FileNotFoundException {
+      assertThrows(FileNotFoundException.class, () -> collection.importVideos(new File("")));
+
+      collection.importVideos(new File("src/test/resources/videos.txt"));
+      assertEquals(2, collection.videos().size());
+   }
+
+}
