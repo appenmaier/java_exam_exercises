@@ -1,4 +1,4 @@
-package exams2.classdiagrams;
+package exams2.classdiagrams.shoppingportal;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -6,10 +6,6 @@ import java.util.ArrayList;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import exams2.classdiagrams.shoppingportal.Product;
-import exams2.classdiagrams.shoppingportal.ShoppingCart;
-import exams2.classdiagrams.shoppingportal.ShoppingPortal;
 
 /**
  * ShoppingPortalTest

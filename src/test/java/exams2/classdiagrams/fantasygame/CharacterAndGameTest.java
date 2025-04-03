@@ -1,4 +1,4 @@
-package exams2.classdiagrams;
+package exams2.classdiagrams.fantasygame;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -8,12 +8,6 @@ import java.util.Optional;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-
-import exams2.classdiagrams.fantasygame.Character;
-import exams2.classdiagrams.fantasygame.Game;
-import exams2.classdiagrams.fantasygame.Profession;
-import exams2.classdiagrams.fantasygame.Race;
-import exams2.classdiagrams.fantasygame.Status;
 
 /**
  * CharacterAndGameTest

@@ -1,4 +1,4 @@
-package exams2.classdiagrams;
+package exams2.classdiagrams.superleague;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -9,11 +9,6 @@ import java.util.Optional;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import exams2.classdiagrams.superleague.Hero;
-import exams2.classdiagrams.superleague.SuperLeague;
-import exams2.classdiagrams.superleague.Universe;
-import exams2.classdiagrams.superleague.WrongUniverseException;
 
 /**
  * SuperLeagueTest

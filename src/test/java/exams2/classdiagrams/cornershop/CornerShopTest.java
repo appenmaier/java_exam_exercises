@@ -1,4 +1,4 @@
-package exams2.classdiagrams;
+package exams2.classdiagrams.cornershop;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -8,11 +8,6 @@ import java.util.Optional;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import exams2.classdiagrams.cornershop.ClassOfGoods;
-import exams2.classdiagrams.cornershop.CornerShop;
-import exams2.classdiagrams.cornershop.Goods;
-import exams2.classdiagrams.cornershop.OutofStockException;
 
 /**
  * CornerShopTest

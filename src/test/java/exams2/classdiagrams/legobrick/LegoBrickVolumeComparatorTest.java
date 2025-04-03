@@ -1,13 +1,8 @@
-package exams2.classdiagrams;
+package exams2.classdiagrams.legobrick;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
-
-import exams2.classdiagrams.legobrick.LegoBrick;
-import exams2.classdiagrams.legobrick.LegoBrick2x2x2;
-import exams2.classdiagrams.legobrick.LegoBrick4x2x1;
-import exams2.classdiagrams.legobrick.LegoBrickVolumeComparator;
 
 /**
  * LegoBrickVolumeComparatorTest

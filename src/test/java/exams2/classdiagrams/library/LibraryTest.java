@@ -1,4 +1,4 @@
-package exams2.classdiagrams;
+package exams2.classdiagrams.library;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -7,12 +7,6 @@ import java.util.Optional;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-
-import exams2.classdiagrams.library.Author;
-import exams2.classdiagrams.library.Book;
-import exams2.classdiagrams.library.Library;
-import exams2.classdiagrams.library.PaperBook;
-import exams2.classdiagrams.library.Status;
 
 /**
  * LibraryTest

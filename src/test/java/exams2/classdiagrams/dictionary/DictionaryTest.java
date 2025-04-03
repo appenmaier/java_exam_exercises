@@ -1,4 +1,4 @@
-package exams2.classdiagrams;
+package exams2.classdiagrams.dictionary;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -10,11 +10,6 @@ import java.util.TreeMap;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import exams2.classdiagrams.dictionary.Dictionary;
-import exams2.classdiagrams.dictionary.InvalidLanguageException;
-import exams2.classdiagrams.dictionary.Language;
-import exams2.classdiagrams.dictionary.Word;
 
 /**
  * DictionaryTest

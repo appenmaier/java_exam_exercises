@@ -1,4 +1,4 @@
-package exams2.classdiagrams;
+package exams2.classdiagrams.joboffer;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -7,8 +7,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 
 import org.junit.jupiter.api.Test;
-
-import exams2.classdiagrams.joboffer.JobOfferReader;
 
 /**
  * JobOfferReaderTest

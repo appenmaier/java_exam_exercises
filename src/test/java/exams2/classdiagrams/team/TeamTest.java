@@ -1,4 +1,4 @@
-package exams2.classdiagrams;
+package exams2.classdiagrams.team;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -7,10 +7,6 @@ import java.util.HashMap;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import exams2.classdiagrams.team.Footballer;
-import exams2.classdiagrams.team.Position;
-import exams2.classdiagrams.team.Team;
 
 /**
  * TeamTest

@@ -1,4 +1,4 @@
-package exams2.classdiagrams;
+package exams2.classdiagrams.spacestation;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -8,12 +8,6 @@ import java.util.Optional;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import exams2.classdiagrams.spacestation.BayAlreadyLoadedException;
-import exams2.classdiagrams.spacestation.SpaceFighter;
-import exams2.classdiagrams.spacestation.SpaceFighterAlreadyLandedException;
-import exams2.classdiagrams.spacestation.SpaceStation;
-import exams2.classdiagrams.spacestation.Type;
 
 /**
  * SpaceStationTest

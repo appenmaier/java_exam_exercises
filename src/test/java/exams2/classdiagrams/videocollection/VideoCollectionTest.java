@@ -1,4 +1,4 @@
-package exams2.classdiagrams;
+package exams2.classdiagrams.videocollection;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -10,13 +10,6 @@ import java.util.Optional;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import exams2.classdiagrams.videocollection.BluRay;
-import exams2.classdiagrams.videocollection.Genre;
-import exams2.classdiagrams.videocollection.Movie;
-import exams2.classdiagrams.videocollection.Vhs;
-import exams2.classdiagrams.videocollection.Video;
-import exams2.classdiagrams.videocollection.VideoCollection;
 
 /**
  * VideoCollectionTest
