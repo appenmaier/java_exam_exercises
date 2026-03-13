@@ -19,8 +19,8 @@ public class MainClass {
          dough.addIngredient(i);
       }
       Recipe filling = new Recipe("Spitzbuben-Fuellung");
-      filling.addIngredient(new Ingredient("Himbeermarmelade"));
-      filling.addIngredient(new Ingredient("Johannisbeermarmelade"));
+      filling.addIngredient(new Ingredient("Himbeermarmelade", 100, "g"));
+      filling.addIngredient(new Ingredient("Johannisbeermarmelade", 100, "g"));
 
       CookieJar cookieJar = new CookieJar();
       StuffedCookie stuffedCookie = new StuffedCookie("Spitzbuben", dough, filling);

@@ -21,7 +21,11 @@ public class IngredientsReader {
       ArrayList<Ingredient> ingredients = new ArrayList<>();
       while (sc.hasNextLine()) {
          String line = sc.nextLine();
-         Ingredient i = new Ingredient(line);
+         String[] tokens = line.split(";");
+         String name = tokens[2];
+         double amount = Double.valueOf(tokens[0]);
+         String unit = tokens[1];
+         Ingredient i = new Ingredient(name, amount, unit);
          ingredients.add(i);
       }
 

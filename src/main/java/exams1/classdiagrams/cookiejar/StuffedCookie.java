@@ -39,9 +39,6 @@ public class StuffedCookie extends Cookie {
       List<Ingredient> ingredients = super.getIngredients();
       for (int i = 0; i < jam.ingredients().size(); i++) {
          Ingredient ingredient = jam.ingredients().get(i);
-         if (ingredients.contains(ingredient)) {
-            continue;
-         }
          ingredients.add(ingredient);
       }
       return ingredients;

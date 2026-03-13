@@ -6,9 +6,9 @@ public class Player {
    private int healthPoints;
    private final Dice dice;
 
-   public Player(String name) {
+   public Player(String name, int healthPoints) {
       this.name = name;
-      healthPoints = 10;
+      this.healthPoints = healthPoints;
       dice = new Dice();
    }
 

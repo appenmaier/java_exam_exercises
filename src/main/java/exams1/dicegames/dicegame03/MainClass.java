@@ -20,11 +20,11 @@ public class MainClass {
 
       System.out.print("Spieler 1, gib bitte Deinen Namen ein: ");
       String name1 = scanner.nextLine();
-      player1 = new Player(name1);
+      player1 = new Player(name1, 10);
 
       System.out.print("Spieler 2, gib bitte Deinen Namen ein: ");
       String name2 = scanner.nextLine();
-      player2 = new Player(name2);
+      player2 = new Player(name2, 10);
 
       System.out.println();
       while (player1.getHealthPoints() > 0 && player2.getHealthPoints() > 0) {
