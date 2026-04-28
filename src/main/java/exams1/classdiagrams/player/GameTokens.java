@@ -22,7 +22,7 @@ public class GameTokens {
       Random random = new Random();
 
       while (sc.hasNextLine()) {
-         String line = sc.next();
+         String line = sc.nextLine();
          String[] tokens = line.split(";");
          GameTokenType type = GameTokenType.valueOf(tokens[0]);
          GameTokenColor color = GameTokenColor.valueOf(tokens[1]);

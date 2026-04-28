@@ -26,7 +26,7 @@ public class ShapeReader {
          if (tokens[0].equals("Circle")) {
             double r = Double.valueOf(tokens[1]);
             shapes.add(new Circle(r));
-         } else if (tokens[0].equals("Rectanlge")) {
+         } else if (tokens[0].equals("Rectangle")) {
             double a = Double.valueOf(tokens[1]);
             double b = Double.valueOf(tokens[2]);
             shapes.add(new Rectangle(a, b));

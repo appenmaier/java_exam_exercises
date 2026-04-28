@@ -20,7 +20,7 @@ public class CardsReader {
       Scanner sc = new Scanner(file);
 
       while (sc.hasNextLine()) {
-         String line = sc.next();
+         String line = sc.nextLine();
          String[] tokens = line.split(";");
          String colour = tokens[0];
          int value = Integer.valueOf(tokens[1]);
