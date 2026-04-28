@@ -1,7 +1,7 @@
 package exams2.classdiagrams.spacestation;
 
 /**
- * Typ
+ * Represents the type of a space fighter along with its maximum speed.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -17,6 +17,9 @@ public enum Type {
       this.maxSpeed = maxSpeed;
    }
 
+   /**
+    * Returns the maximum speed of this space fighter type.
+    */
    public int maxSpeed() {
       return maxSpeed;
    }

@@ -3,7 +3,7 @@ package exams1.dicegames.dicegame06;
 import java.util.Random;
 
 /**
- * Wuerfel
+ * Represents a standard six-sided dice that returns a random value when rolled.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -11,6 +11,7 @@ import java.util.Random;
  */
 public class Dice {
 
+   /** Rolls the dice and returns a random integer between 1 and 6. */
    public int rollTheDice() {
       Random random = new Random();
       int randomNumber = random.nextInt(1, 7);

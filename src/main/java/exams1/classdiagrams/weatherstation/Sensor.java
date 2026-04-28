@@ -1,7 +1,7 @@
 package exams1.classdiagrams.weatherstation;
 
 /**
- * Sensor
+ * Represents the type of sensor used in a weather station measurement.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -20,10 +20,12 @@ public enum Sensor {
       this.unitOfMeasure = unitOfMeasure;
    }
 
+   /** Returns the human-readable description of this sensor type. */
    public String getDescription() {
       return description;
    }
 
+   /** Returns the unit of measure used by this sensor type. */
    public String getUnitOfMeasure() {
       return unitOfMeasure;
    }

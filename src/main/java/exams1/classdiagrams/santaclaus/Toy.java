@@ -3,7 +3,7 @@ package exams1.classdiagrams.santaclaus;
 import java.util.Objects;
 
 /**
- * Spielzeug
+ * Represents a toy as a specific type of present with a description and price.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -35,11 +35,13 @@ public class Toy extends Present {
             && Double.doubleToLongBits(priceInEuro) == Double.doubleToLongBits(other.priceInEuro);
    }
 
+   /** Returns the description of this toy. */
    @Override
    public String getDescription() {
       return description;
    }
 
+   /** Returns the price of this toy in euros. */
    public double getPriceInEuro() {
       return priceInEuro;
    }

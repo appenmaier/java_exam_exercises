@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Spiel
+ * Represents a two-player combat game using symbol dice where players deal damage to each other.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -26,6 +26,7 @@ public class Game {
       }
    }
 
+   /** Runs the game loop until one player's points reach zero. */
    public void play() {
       while (player1.getPoints() > 0 && player2.getPoints() > 0) {
          rounds++;

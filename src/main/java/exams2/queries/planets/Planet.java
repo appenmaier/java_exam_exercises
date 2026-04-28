@@ -1,7 +1,7 @@
 package exams2.queries.planets;
 
 /**
- * Planet
+ * Represents a planet with its physical properties and classification.
  *
  * @author Daniel Appenmaier
  * @version 1.0

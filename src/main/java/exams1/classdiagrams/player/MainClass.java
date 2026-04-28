@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.util.List;
 
 /**
- * MainClass
+ * Demonstrates reading game tokens from a file and printing them in random order.
  *
  * @author Daniel Appenmaier
  * @version 1.0

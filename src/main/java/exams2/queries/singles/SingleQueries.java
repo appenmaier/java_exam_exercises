@@ -7,7 +7,7 @@ import java.util.OptionalDouble;
 import java.util.stream.Collectors;
 
 /**
- * SingleQueries
+ * Provides Stream-based query methods over a list of singles.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -15,6 +15,7 @@ import java.util.stream.Collectors;
  */
 public record SingleQueries(List<Single> singles) {
 
+   /** Prints all singles with more than 25 million sales grouped by country. */
    public void printAllSinglesWithMoreThan25MillionSalesPerCountry() {
       Map<Country, List<Single>> allSinglesWithMoreThan25MillionSalesPerCountry;
       allSinglesWithMoreThan25MillionSalesPerCountry = singles.stream()
@@ -24,6 +25,7 @@ public record SingleQueries(List<Single> singles) {
             .forEach((c, sl) -> System.out.println(c + ": " + sl));
    }
 
+   /** Prints the average birth year of all deceased artists, or -1 if none exist. */
    public void printAverageBirthYearOfAllDeceasedArtists() {
       OptionalDouble averageBirthYearOfAllDeceasedArtists;
       averageBirthYearOfAllDeceasedArtists = singles.stream()
@@ -36,6 +38,7 @@ public record SingleQueries(List<Single> singles) {
             () -> System.out.println(-1));
    }
 
+   /** Returns true if any single from China has more than 10 million sales. */
    public boolean isAnySingleFromChinaWithMoreThan10MillionSales() {
       boolean isAnySingleFromChinaWithMoreThan10MillionSales;
       isAnySingleFromChinaWithMoreThan10MillionSales = singles.stream()
@@ -44,6 +47,7 @@ public record SingleQueries(List<Single> singles) {
       return isAnySingleFromChinaWithMoreThan10MillionSales;
    }
 
+   /** Returns all singles released by Ed Sheeran. */
    public List<Single> getAllSinglesFromEdSheeran() {
       List<Single> allSinglesFromEdSheeran;
       Artist sheeran = new Artist("Ed Sheeran", Country.GBR, LocalDate.of(1991, 2, 17), true);

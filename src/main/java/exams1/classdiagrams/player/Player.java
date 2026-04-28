@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Objects;
 
 /**
- * Spieler
+ * Represents a player who holds a collection of game tokens.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -20,6 +20,7 @@ public class Player {
       this.gameTokens = gameTokens;
    }
 
+   /** Adds a game token to this player's collection. */
    public void addGameToken(GameToken gameToken) {
       gameTokens.add(gameToken);
    }
@@ -39,6 +40,7 @@ public class Player {
       return Objects.equals(gameTokens, other.gameTokens) && Objects.equals(name, other.name);
    }
 
+   /** Returns the list of game tokens held by this player. */
    public List<GameToken> gameTokens() {
       return gameTokens;
    }
@@ -48,6 +50,7 @@ public class Player {
       return Objects.hash(gameTokens, name);
    }
 
+   /** Returns the name of this player. */
    public String name() {
       return name;
    }

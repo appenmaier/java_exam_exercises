@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * JobOfferReader
+ * Utility class for reading job offers from a file.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -15,6 +15,9 @@ import java.util.Scanner;
  */
 public class JobOfferReader {
 
+   /**
+    * Reads and returns a list of job offers parsed from the given semicolon-delimited file.
+    */
    public static List<JobOffer> getJobOffers(File file) throws FileNotFoundException {
       List<JobOffer> jobOffers = new ArrayList<>();
       Scanner scanner = new Scanner(file);

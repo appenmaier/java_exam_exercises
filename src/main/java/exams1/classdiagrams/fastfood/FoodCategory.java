@@ -1,7 +1,7 @@
 package exams1.classdiagrams.fastfood;
 
 /**
- * Lebensmittelkategorie
+ * Represents the category of a food item, each with a description and health point value.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -22,10 +22,12 @@ public enum FoodCategory {
       this.points = points;
    }
 
+   /** Returns the human-readable description of this food category. */
    public String description() {
       return description;
    }
 
+   /** Returns the health point value associated with this food category. */
    public int points() {
       return points;
    }

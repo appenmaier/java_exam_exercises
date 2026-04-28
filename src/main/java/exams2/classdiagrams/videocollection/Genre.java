@@ -1,7 +1,7 @@
 package exams2.classdiagrams.videocollection;
 
 /**
- * Genre
+ * Represents the genre of a movie in the video collection.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -17,6 +17,9 @@ public enum Genre {
       this.description = description;
    }
 
+   /**
+    * Returns the human-readable description of this genre.
+    */
    public String description() {
       return description;
    }

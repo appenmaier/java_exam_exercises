@@ -3,7 +3,7 @@ package exams2.classdiagrams.cornershop;
 import java.util.Objects;
 
 /**
- * Produkt
+ * Abstract base class representing a product with a description, price, and currency.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -21,14 +21,23 @@ public abstract class Product {
       this.currency = currency;
    }
 
+   /**
+    * Returns the description of this product.
+    */
    public String description() {
       return description;
    }
 
+   /**
+    * Returns the price of this product.
+    */
    public double getPrice() {
       return price;
    }
 
+   /**
+    * Returns the currency of this product's price.
+    */
    public String getCurrency() {
       return currency;
    }

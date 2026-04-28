@@ -1,7 +1,7 @@
 package exams1.classdiagrams.player;
 
 /**
- * Spielfigurtyp
+ * Represents the type of a game token (e.g., knight, pirate, or viking).
  *
  * @author Daniel Appenmaier
  * @version 1.0

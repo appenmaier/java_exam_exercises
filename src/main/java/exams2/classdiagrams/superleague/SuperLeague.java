@@ -7,7 +7,7 @@ import java.util.Map.Entry;
 import java.util.Optional;
 
 /**
- * Uebermenschen-Liga
+ * Represents a league of super-powered beings belonging to a specific universe.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -17,6 +17,9 @@ import java.util.Optional;
 public record SuperLeague<T extends SuperHuman>(String name, Universe universe,
       Map<T, Boolean> members) {
 
+   /**
+    * Returns the most powerful member of this league, if any.
+    */
    public Optional<T> getMostPowerfulSuperHuman() {
       T mostPowerfulSuperHuman = null;
       int power = 0;
@@ -29,6 +32,9 @@ public record SuperLeague<T extends SuperHuman>(String name, Universe universe,
       return Optional.ofNullable(mostPowerfulSuperHuman);
    }
 
+   /**
+    * Adds the given super-powered being to the league, throwing an exception if their universe does not match.
+    */
    public void addSuperHuman(T t) throws WrongUniverseException {
       if (!t.universe().equals(universe)) {
          throw new WrongUniverseException();
@@ -36,6 +42,9 @@ public record SuperLeague<T extends SuperHuman>(String name, Universe universe,
       members.put(t, true);
    }
 
+   /**
+    * Returns all currently available (active) members of this league.
+    */
    public List<T> getAllAvailableSuperHumans() {
       List<T> allAvailableSuperHumans = new ArrayList<>();
       for (Entry<T, Boolean> entry : members.entrySet()) {

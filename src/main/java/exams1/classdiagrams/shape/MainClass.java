@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 
 /**
- * MainClass
+ * Demonstrates reading shapes from a file and filtering by type and minimum area.
  *
  * @author Daniel Appenmaier
  * @version 1.0

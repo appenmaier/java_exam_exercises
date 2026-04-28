@@ -3,7 +3,7 @@ package exams2.classdiagrams.legobrick;
 import java.util.Arrays;
 
 /**
- * Lego-Baustein 4x2x1
+ * Represents a flat Lego brick with dimensions 4x2x1.
  *
  * @author Daniel Appenmaier
  * @version 1.0

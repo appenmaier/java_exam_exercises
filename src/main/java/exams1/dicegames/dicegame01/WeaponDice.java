@@ -3,7 +3,7 @@ package exams1.dicegames.dicegame01;
 import java.util.Random;
 
 /**
- * Waffen-Wuerfel
+ * Represents a dice that randomly selects a weapon when rolled.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -17,10 +17,12 @@ public class WeaponDice {
       rollTheDice();
    }
 
+   /** Returns the weapon that was last rolled. */
    public Weapon getWeapon() {
       return weapon;
    }
 
+   /** Rolls the dice and randomly assigns a new weapon. */
    public void rollTheDice() {
       Random random = new Random();
       int randomNumber = random.nextInt(4);

@@ -1,7 +1,7 @@
 package exams2.classdiagrams.shop;
 
 /**
- * InvalidRatingException
+ * Thrown when a rating value outside the allowed range of 1 to 5 is provided.
  *
  * @author Daniel Appenmaier
  * @version 1.0

@@ -1,7 +1,7 @@
 package exams1.dicegames.dicegame04;
 
 /**
- * Lebensmittelkategorie
+ * Enum of food categories, each with a German description and a health-score point value.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -22,10 +22,12 @@ public enum FoodCategory {
       this.points = points;
    }
 
+   /** Returns the German display name of this food category. */
    public String description() {
       return description;
    }
 
+   /** Returns the health-score point value assigned to this food category. */
    public int points() {
       return points;
    }

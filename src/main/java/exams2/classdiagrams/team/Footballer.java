@@ -3,7 +3,7 @@ package exams2.classdiagrams.team;
 import java.util.Objects;
 
 /**
- * Fussballer
+ * Represents a footballer with a goal and assist count contributing to scorer points.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -35,6 +35,9 @@ public final class Footballer extends Sportsman {
       return numberOfAssists == other.numberOfAssists && numberOfGoals == other.numberOfGoals;
    }
 
+   /**
+    * Returns the total scorer points as the sum of goals and assists.
+    */
    @Override
    public int getScorerPoints() {
       return numberOfGoals + numberOfAssists;
@@ -48,10 +51,16 @@ public final class Footballer extends Sportsman {
       return result;
    }
 
+   /**
+    * Returns the number of assists this footballer has contributed.
+    */
    public int numberOfAssists() {
       return numberOfAssists;
    }
 
+   /**
+    * Returns the number of goals this footballer has scored.
+    */
    public int numberOfGoals() {
       return numberOfGoals;
    }

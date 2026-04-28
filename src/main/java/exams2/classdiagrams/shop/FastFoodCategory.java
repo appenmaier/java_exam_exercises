@@ -1,7 +1,7 @@
 package exams2.classdiagrams.shop;
 
 /**
- * Fast-Food-Kategorie
+ * Represents the category of a fast-food item.
  *
  * @author Daniel Appenmaier
  * @version 1.0

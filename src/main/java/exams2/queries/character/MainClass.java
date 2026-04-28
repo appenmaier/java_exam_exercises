@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Random;
 
 /**
- * MainClass
+ * Entry point and data generator for the character query exercise.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -14,6 +14,7 @@ import java.util.Random;
  */
 public class MainClass {
 
+   /** Generates and returns a list of randomly named and attributed game characters of the given size. */
    public static List<Character> getAvatars(int number) {
       String[] prefixes = {"Doom ", "Demon ", "Hell ", "Peace ", "Water ", "Fire "};
       String[] suffixes = {"Hammer", "Bringer", "Finder", "Walker", "Hunter"};

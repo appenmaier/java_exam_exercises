@@ -1,7 +1,7 @@
 package exams1.classdiagrams.parkinggarage;
 
 /**
- * Bus
+ * Represents a bus as a specific type of vehicle.
  *
  * @author Daniel Appenmaier
  * @version 1.0

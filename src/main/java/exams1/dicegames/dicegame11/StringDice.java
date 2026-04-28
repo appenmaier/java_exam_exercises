@@ -3,7 +3,7 @@ package exams1.dicegames.dicegame11;
 import java.util.Random;
 
 /**
- * Zeichenketten-Wuerfel
+ * Represents a dice that rolls a random five-character lowercase string.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -11,6 +11,7 @@ import java.util.Random;
  */
 public class StringDice {
 
+   /** Rolls the dice and returns a randomly generated five-character lowercase string. */
    public String rollTheDice() {
       String string = "";
       String alphabet = "abcdefghijklmnopqrstuvwxyz";

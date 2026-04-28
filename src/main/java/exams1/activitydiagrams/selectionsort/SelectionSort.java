@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Random;
 
 /**
- * Selectionsort
+ * Demonstrates the selection sort algorithm on a randomly generated list of integers.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -30,6 +30,7 @@ public class SelectionSort {
 
    }
 
+   /** Sorts the data list in ascending order using the selection sort algorithm. */
    private static void sort() {
       int i = 0;
       while (i < data.size() - 1) {

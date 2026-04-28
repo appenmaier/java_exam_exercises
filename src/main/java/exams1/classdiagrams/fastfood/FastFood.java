@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Objects;
 
 /**
- * Fast-Food
+ * Represents a fast food item that can be vegetarian and accumulates customer ratings.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -22,6 +22,7 @@ public class FastFood extends Food {
       ratings = new ArrayList<>();
    }
 
+   /** Adds a rating to this fast food item's list of ratings. */
    public void addRating(int rating) {
       ratings.add(rating);
    }
@@ -41,6 +42,7 @@ public class FastFood extends Food {
       return isVegetarian == other.isVegetarian && Objects.equals(ratings, other.ratings);
    }
 
+   /** Calculates and returns the average of all ratings for this fast food item. */
    public double getAverageRating() {
       int total = 0;
       for (int r : ratings) {
@@ -58,10 +60,12 @@ public class FastFood extends Food {
       return result;
    }
 
+   /** Returns whether this fast food item is vegetarian. */
    public boolean isVegetarian() {
       return isVegetarian;
    }
 
+   /** Returns the list of ratings for this fast food item. */
    public List<Integer> ratings() {
       return ratings;
    }

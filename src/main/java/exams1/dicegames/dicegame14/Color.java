@@ -1,7 +1,7 @@
 package exams1.dicegames.dicegame14;
 
 /**
- * Farbe
+ * Represents a color that can appear on the color dice.
  *
  * @author Daniel Appenmaier
  * @version 1.0

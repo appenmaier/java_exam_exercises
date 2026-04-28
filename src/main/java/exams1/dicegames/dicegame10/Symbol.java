@@ -1,7 +1,7 @@
 package exams1.dicegames.dicegame10;
 
 /**
- * Symbol
+ * Represents a combat symbol that can appear on the symbol dice.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -17,6 +17,7 @@ public enum Symbol {
       this.description = description;
    }
 
+   /** Returns the human-readable description of this symbol. */
    public String getDescription() {
       return description;
    }

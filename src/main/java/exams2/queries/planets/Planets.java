@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Planeten
+ * Provides a predefined list of solar system planets with their data.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -12,6 +12,7 @@ import java.util.List;
  */
 public class Planets {
 
+   /** Returns a list of all eight planets in the solar system. */
    public static List<Planet> getPlanets() {
       List<Planet> planets = new ArrayList<>();
 

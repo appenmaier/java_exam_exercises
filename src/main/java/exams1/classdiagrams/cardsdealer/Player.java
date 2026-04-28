@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Objects;
 
 /**
- * Spieler
+ * Represents a player who holds a hand of playing cards.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -19,10 +19,12 @@ public class Player {
       cards = new ArrayList<>();
    }
 
+   /** Adds the given card to this player's hand. */
    public void addCard(Card card) {
       cards.add(card);
    }
 
+   /** Returns all cards currently in this player's hand. */
    public List<Card> cards() {
       return cards;
    }
@@ -42,6 +44,7 @@ public class Player {
       return Objects.equals(cards, other.cards);
    }
 
+   /** Returns all cards in this player's hand that match the given colour. */
    public List<Card> getCardsByColour(String colour) {
       List<Card> cardsByColour = new ArrayList<>();
 
@@ -54,6 +57,7 @@ public class Player {
       return cardsByColour;
    }
 
+   /** Returns the card with the highest value from this player's hand. */
    public Card getCardWithHighestValue() {
       Card cardWithHighestValue = null;
       int highestValue = 0;

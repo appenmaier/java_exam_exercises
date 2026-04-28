@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Objects;
 
 /**
- * Weihnachtsmann
+ * Represents Santa Claus who manages a collection of presents to be wrapped and delivered.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -19,6 +19,7 @@ public class SantaClaus {
       this.presents = new ArrayList<>();
    }
 
+   /** Adds a present to Santa's collection. */
    public void addPresent(Present present) {
       presents.add(present);
    }
@@ -38,6 +39,7 @@ public class SantaClaus {
       return Objects.equals(presents, other.presents);
    }
 
+   /** Returns the total number of toys in Santa's present collection. */
    public int getNumberOfToys() {
       int total = 0;
       for (Present p : presents) {
@@ -58,6 +60,7 @@ public class SantaClaus {
       return "SantaClaus [presents=" + presents + "]";
    }
 
+   /** Wraps all presents in Santa's collection. */
    public void wrapAllPresents() {
       for (Present p : presents) {
          p.wrap();

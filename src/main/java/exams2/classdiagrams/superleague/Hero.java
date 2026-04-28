@@ -1,7 +1,7 @@
 package exams2.classdiagrams.superleague;
 
 /**
- * Superheld
+ * Represents a superhero belonging to a specific universe with a power level.
  *
  * @author Daniel Appenmaier
  * @version 1.0

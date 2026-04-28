@@ -1,7 +1,7 @@
 package exams2.classdiagrams.joboffer;
 
 /**
- * Recruiter
+ * Represents a recruiter responsible for managing job offers.
  *
  * @author Daniel Appenmaier
  * @version 1.0

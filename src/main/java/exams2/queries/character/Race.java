@@ -1,7 +1,7 @@
 package exams2.queries.character;
 
 /**
- * Rasse
+ * Represents the race of a game character.
  *
  * @author Daniel Appenmaier
  * @version 1.0

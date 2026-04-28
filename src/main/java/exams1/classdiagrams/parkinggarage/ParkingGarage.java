@@ -3,7 +3,7 @@ package exams1.classdiagrams.parkinggarage;
 import java.util.Arrays;
 
 /**
- * Tiefgarage
+ * Represents a parking garage that manages an array of parking spots for vehicles.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -32,6 +32,7 @@ public class ParkingGarage {
       return Arrays.equals(parkingSpots, other.parkingSpots);
    }
 
+   /** Returns the index of the next free parking spot, or -1 if the garage is full. */
    public int getNextFreeParkingSpotNumber() {
       for (int i = 0; i < parkingSpots.length; i++) {
          if (parkingSpots[i] == null) {
@@ -49,6 +50,7 @@ public class ParkingGarage {
       return result;
    }
 
+   /** Parks the given vehicle at the specified spot number and returns a status message. */
    public String parkIn(Vehicle vehicle, int number) {
       if (parkingSpots[number].getVehicle() != null) {
          return "Dieser Parkplatz ist bereits besetzt";
@@ -67,6 +69,7 @@ public class ParkingGarage {
       return "Fahrzeug erfolgreich eingeparkt";
    }
 
+   /** Removes the given vehicle from its parking spot and returns a status message. */
    public String parkOut(Vehicle vehicle) {
       for (int i = 0; i < parkingSpots.length; i++) {
          Vehicle tmp = parkingSpots[i].getVehicle();

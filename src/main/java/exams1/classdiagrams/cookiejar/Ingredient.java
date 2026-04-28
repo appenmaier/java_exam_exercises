@@ -3,7 +3,7 @@ package exams1.classdiagrams.cookiejar;
 import java.util.Objects;
 
 /**
- * Zutat
+ * Represents a single ingredient with a name, amount, and unit of measurement.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -21,14 +21,17 @@ public class Ingredient {
       this.unit = unit;
    }
 
+   /** Returns the name of this ingredient. */
    public String getName() {
       return name;
    }
 
+   /** Returns the amount of this ingredient required. */
    public double getAmount() {
       return amount;
    }
 
+   /** Returns the unit of measurement for this ingredient. */
    public String getUnit() {
       return unit;
    }

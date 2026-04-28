@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Objects;
 
 /**
- * Gefuelltes Plaetzchen
+ * Represents a cookie filled with a jam recipe in addition to the dough.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -34,6 +34,7 @@ public class StuffedCookie extends Cookie {
       return Objects.equals(jam, other.jam);
    }
 
+   /** Returns the combined ingredients from both the dough and the jam recipes. */
    @Override
    public List<Ingredient> getIngredients() {
       List<Ingredient> ingredients = super.getIngredients();

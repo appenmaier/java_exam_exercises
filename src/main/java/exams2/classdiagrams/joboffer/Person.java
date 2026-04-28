@@ -3,7 +3,7 @@ package exams2.classdiagrams.joboffer;
 import java.util.Objects;
 
 /**
- * Person
+ * Abstract base class representing a person with a name and birth date timestamp.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -19,6 +19,9 @@ public abstract class Person {
       this.birthDateTimeStamp = birthDateTimeStamp;
    }
 
+   /**
+    * Returns the birth date of this person as a Unix timestamp.
+    */
    public long birthDateTimeStamp() {
       return birthDateTimeStamp;
    }
@@ -43,6 +46,9 @@ public abstract class Person {
       return Objects.hash(birthDateTimeStamp, name);
    }
 
+   /**
+    * Returns the name of this person.
+    */
    public String name() {
       return name;
    }

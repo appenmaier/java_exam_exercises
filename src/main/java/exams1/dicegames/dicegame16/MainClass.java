@@ -3,7 +3,7 @@ package exams1.dicegames.dicegame16;
 import java.util.Scanner;
 
 /**
- * MainClass
+ * Single-player skull-and-heart dice game where skulls deal damage and hearts restore points each round.
  *
  * @author Daniel Appenmaier
  * @version 1.0

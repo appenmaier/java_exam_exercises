@@ -1,7 +1,7 @@
 package exams1.dicegames.dicegame08;
 
 /**
- * Spieler
+ * Represents a player in the dice game who owns a dice and accumulates points.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -18,18 +18,22 @@ public class Player {
       dice = new Dice();
    }
 
+   /** Returns the current points of this player. */
    public int getPoints() {
       return points;
    }
 
+   /** Sets the points of this player to the given value. */
    public void setPoints(int points) {
       this.points = points;
    }
 
+   /** Returns the name of this player. */
    public String name() {
       return name;
    }
 
+   /** Rolls this player's dice and returns the result. */
    public int rollTheDice() {
       dice.rollTheDice();
       return dice.getValue();

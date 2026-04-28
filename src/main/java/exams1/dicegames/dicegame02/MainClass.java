@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * MainClass
+ * Single-player guessing game where the player predicts whether five shape dice sum to more than 12 corners.
  *
  * @author Daniel Appenmaier
  * @version 1.0

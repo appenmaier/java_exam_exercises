@@ -3,7 +3,7 @@ package exams2.classdiagrams.videocollection;
 import java.util.Objects;
 
 /**
- * VHS
+ * Represents a VHS cassette that stores a movie and indicates whether it can be rewritten.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -41,6 +41,9 @@ public class Vhs extends Video {
       return result;
    }
 
+   /**
+    * Returns whether this VHS cassette can be rewritten.
+    */
    public boolean isRewritable() {
       return isRewritable;
    }

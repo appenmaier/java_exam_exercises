@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * CreaturesReader
+ * Reads a list of creatures and their movement instructions from a file.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -15,6 +15,7 @@ import java.util.Scanner;
  */
 public class CreaturesReader {
 
+   /** Reads creatures and their movement instructions from the given file and returns them as a list. */
    public static List<Creature> getCreatures(File file) throws FileNotFoundException {
       List<Creature> creatures = new ArrayList<>();
       Scanner sc = new Scanner(file);

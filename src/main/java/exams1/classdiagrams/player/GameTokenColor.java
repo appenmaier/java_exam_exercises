@@ -1,7 +1,7 @@
 package exams1.classdiagrams.player;
 
 /**
- * Spielfigurfarbe
+ * Represents the color of a game token.
  *
  * @author Daniel Appenmaier
  * @version 1.0

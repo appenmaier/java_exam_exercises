@@ -1,7 +1,7 @@
 package exams1.classdiagrams.fastfood;
 
 /**
- * MainClass
+ * Demonstrates a fast-food shop by adding items, rating them, and querying the best-rated burger.
  *
  * @author Daniel Appenmaier
  * @version 1.0

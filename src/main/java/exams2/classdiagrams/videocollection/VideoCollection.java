@@ -7,7 +7,7 @@ import java.util.Optional;
 import java.util.Scanner;
 
 /**
- * Videosammlung
+ * Represents a collection of video media that can be populated from a file or searched by title.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -15,10 +15,16 @@ import java.util.Scanner;
  */
 public record VideoCollection(List<Video> videos) {
 
+   /**
+    * Adds a video to this collection.
+    */
    public void addVideo(Video video) {
       videos.add(video);
    }
 
+   /**
+    * Imports videos from a semicolon-delimited file and adds them to the collection.
+    */
    public void importVideos(File file) throws FileNotFoundException {
       Scanner scanner = new Scanner(file);
       while (scanner.hasNextLine()) {
@@ -41,6 +47,9 @@ public record VideoCollection(List<Video> videos) {
       scanner.close();
    }
 
+   /**
+    * Returns the first video whose movie title matches the given string, if any.
+    */
    public Optional<Video> getVideoByMovieTitle(String title) {
       for (Video v : videos) {
          if (v.movie().title().equals(title)) {

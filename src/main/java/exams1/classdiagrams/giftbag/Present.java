@@ -3,7 +3,7 @@ package exams1.classdiagrams.giftbag;
 import java.util.Objects;
 
 /**
- * Geschenk
+ * Represents a gift with a description, price, sender, and recipient.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -23,6 +23,7 @@ public class Present {
       this.recipient = recipient;
    }
 
+   /** Returns the description of this present. */
    public String description() {
       return description;
    }
@@ -49,14 +50,17 @@ public class Present {
       return Objects.hash(description, price, recipient, sender);
    }
 
+   /** Returns the price of this present. */
    public double price() {
       return price;
    }
 
+   /** Returns the recipient of this present. */
    public Person recipient() {
       return recipient;
    }
 
+   /** Returns the sender of this present. */
    public Person sender() {
       return sender;
    }

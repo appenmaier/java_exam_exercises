@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Random;
 
 /**
- * Kartenausteiler
+ * Deals cards randomly from a deck to two players.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -22,6 +22,7 @@ public class CardsDealer {
       this.player2 = player2;
    }
 
+   /** Randomly deals the specified number of cards to each of the two players from the deck. */
    public void dealCards(int amount) {
       Random random = new Random();
 
@@ -35,14 +36,17 @@ public class CardsDealer {
       }
    }
 
+   /** Returns the remaining deck of cards. */
    public List<Card> deck() {
       return deck;
    }
 
+   /** Returns the first player. */
    public Player player1() {
       return player1;
    }
 
+   /** Returns the second player. */
    public Player player2() {
       return player2;
    }

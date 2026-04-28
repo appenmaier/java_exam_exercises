@@ -1,7 +1,7 @@
 package exams2.queries.planets;
 
 /**
- * Typ
+ * Represents the classification type of a planet.
  *
  * @author Daniel Appenmaier
  * @version 1.0

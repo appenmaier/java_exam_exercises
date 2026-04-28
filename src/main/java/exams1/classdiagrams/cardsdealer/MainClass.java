@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.util.List;
 
 /**
- * MainClass
+ * Demonstrates reading cards from a file, dealing them to two players, and querying hand contents.
  *
  * @author Daniel Appenmaier
  * @version 1.0

@@ -1,7 +1,7 @@
 package exams1.classdiagrams.cashiersystem;
 
 /**
- * Warengruppe
+ * Enumerates the categories of goods available in the cashier system.
  *
  * @author Anarchiebald
  * @version 1.0
@@ -18,6 +18,7 @@ public enum ClassOfGoods {
       this.description = description;
    }
 
+   /** Returns the human-readable German description of this goods category. */
    public String getDescription() {
       return description;
    }

@@ -8,7 +8,7 @@ import java.util.Optional;
 import lombok.Data;
 
 /**
- * Spieler
+ * Represents a player who holds hand cards, plays them onto rows, and manages action points.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -22,6 +22,9 @@ public class Player {
    private final Map<Card, Integer> playedCards;
    private int actionPoints;
 
+   /**
+    * Returns the played card with the highest power value in the specified row, if any.
+    */
    public Optional<Card> getMostPowerfulCardByRow(int row) {
       Card card = null;
       int power = 0;
@@ -36,6 +39,9 @@ public class Player {
       return Optional.ofNullable(card);
    }
 
+   /**
+    * Plays the given card from the hand onto the specified row, deducting its action point cost.
+    */
    public void playCard(Card card, int row)
          throws CardNotFoundException, NotEnoughActionPointsException {
       if (!handCards.contains(card)) {

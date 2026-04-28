@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 /**
- * Personalverwaltung
+ * Represents a human resources system that manages staff members and their telephone numbers.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -14,10 +14,16 @@ import java.util.Map.Entry;
  */
 public record HumanResources(Map<TelephoneNumber, Person> telephoneNumbers, List<Person> staff) {
 
+   /**
+    * Associates the given telephone number with the specified person.
+    */
    public void addTelephoneNumber(TelephoneNumber telephoneNumber, Person person) {
       telephoneNumbers.put(telephoneNumber, person);
    }
 
+   /**
+    * Adds the given person to the staff list, throwing an exception if they already exist.
+    */
    public void addPerson(Person person) throws DuplicateException {
       for (Person p : staff) {
          if (p.equals(person)) {
@@ -27,6 +33,9 @@ public record HumanResources(Map<TelephoneNumber, Person> telephoneNumbers, List
       staff.add(person);
    }
 
+   /**
+    * Returns all telephone numbers registered for the person with the given ID.
+    */
    public List<TelephoneNumber> getTelephoneNumbersByPersonId(int id) {
       List<TelephoneNumber> numbers = new ArrayList<>();
       for (Entry<TelephoneNumber, Person> entry : telephoneNumbers.entrySet()) {

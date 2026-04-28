@@ -3,7 +3,7 @@ package exams2.classdiagrams.library;
 import java.util.Objects;
 
 /**
- * Gedrucktes Buch
+ * Represents a physical printed book with a page count.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -41,6 +41,9 @@ public class PaperBook extends Book {
       return result;
    }
 
+   /**
+    * Returns the number of pages in this paper book.
+    */
    public int pages() {
       return pages;
    }

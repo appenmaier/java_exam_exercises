@@ -3,7 +3,7 @@ package exams1.dicegames.dicegame12;
 import java.util.Random;
 
 /**
- * Symbol-Wuerfel
+ * Represents a dice that randomly selects a rock-paper-scissors symbol when rolled.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -11,6 +11,7 @@ import java.util.Random;
  */
 public class SymbolDice {
 
+   /** Rolls the dice and returns a randomly selected rock-paper-scissors symbol. */
    public Symbol rollTheDice() {
       Random random = new Random();
       int randomNumber = random.nextInt(3);

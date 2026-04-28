@@ -3,7 +3,7 @@ package exams2.classdiagrams.library;
 import java.util.Objects;
 
 /**
- * Elektronisches Buch
+ * Represents an electronic book with a file format and file size.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -39,10 +39,16 @@ public final class EBook extends Book {
       return fileFormat == other.fileFormat && fileSize == other.fileSize;
    }
 
+   /**
+    * Returns the file format of this e-book.
+    */
    public FileFormat fileFormat() {
       return fileFormat;
    }
 
+   /**
+    * Returns the file size of this e-book in kilobytes.
+    */
    public int fileSize() {
       return fileSize;
    }

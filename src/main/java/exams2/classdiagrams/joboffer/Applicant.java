@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Objects;
 
 /**
- * Bewerber
+ * Represents a job applicant identified by an applicant ID and holding application documents.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -22,14 +22,23 @@ public final class Applicant extends Person {
       applicationDocuments = new ArrayList<>();
    }
 
+   /**
+    * Adds an application document to this applicant's list of documents.
+    */
    public void addApplicationDocument(ApplicationDocument applicationDocument) {
       applicationDocuments.add(applicationDocument);
    }
 
+   /**
+    * Returns the unique applicant identifier.
+    */
    public int applicantId() {
       return applicantId;
    }
 
+   /**
+    * Returns the list of application documents submitted by this applicant.
+    */
    public List<ApplicationDocument> applicationDocuments() {
       return applicationDocuments;
    }

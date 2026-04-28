@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * ShapeReader
+ * Reads a collection of shapes from a file and provides filtering methods.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -39,6 +39,7 @@ public class ShapeReader {
       sc.close();
    }
 
+   /** Returns a list of all circles read from the file. */
    public List<Circle> getCircles() {
       List<Circle> circles = new ArrayList<>();
       for (int i = 0; i < shapes.size(); i++) {
@@ -50,6 +51,7 @@ public class ShapeReader {
       return circles;
    }
 
+   /** Returns a list of all shapes whose area is at least the given minimum. */
    public List<Shape> getShapesWithMinArea(double minArea) {
       List<Shape> shapesWithMinArea = new ArrayList<>();
       for (int i = 0; i < shapes.size(); i++) {

@@ -1,7 +1,7 @@
 package exams2.classdiagrams.player;
 
 /**
- * CardNotFoundException
+ * Thrown when an attempt is made to play a card that is not in the player's hand.
  *
  * @author Daniel Appenmaier
  * @version 1.0

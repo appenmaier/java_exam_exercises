@@ -1,7 +1,7 @@
 package exams1.dicegames.dicegame13;
 
 /**
- * Weihnachts-Symbol
+ * Represents a Christmas-themed symbol used in the dice game.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -17,6 +17,7 @@ public enum ChristmasSymbol {
       this.description = description;
    }
 
+   /** Returns the human-readable description of this Christmas symbol. */
    public String description() {
       return description;
    }

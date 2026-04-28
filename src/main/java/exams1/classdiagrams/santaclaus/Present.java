@@ -3,7 +3,7 @@ package exams1.classdiagrams.santaclaus;
 import java.util.Objects;
 
 /**
- * Geschenk
+ * Represents an abstract present that can be wrapped or unwrapped.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -33,6 +33,7 @@ public abstract class Present implements Wrappable {
       return Objects.hash(isWrapped);
    }
 
+   /** Returns whether this present is currently wrapped. */
    public boolean isWrapped() {
       return isWrapped;
    }
@@ -42,11 +43,13 @@ public abstract class Present implements Wrappable {
       return "Present [isWrapped=" + isWrapped + "]";
    }
 
+   /** Unwraps this present by setting its wrapped state to false. */
    @Override
    public void unwrap() {
       isWrapped = false;
    }
 
+   /** Wraps this present by setting its wrapped state to true. */
    @Override
    public void wrap() {
       isWrapped = true;

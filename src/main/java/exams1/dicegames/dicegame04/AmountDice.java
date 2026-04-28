@@ -3,7 +3,7 @@ package exams1.dicegames.dicegame04;
 import java.util.Random;
 
 /**
- * Mengen-Wuerfel
+ * Represents a dice that rolls a random amount between 1 and 6.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -11,6 +11,7 @@ import java.util.Random;
  */
 public class AmountDice {
 
+   /** Rolls the dice and returns a random integer between 1 and 6. */
    public int rollTheDice() {
       Random random = new Random();
       int randomNumber = random.nextInt(1, 7);

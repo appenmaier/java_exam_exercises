@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Random;
 
 /**
- * Datensatz
+ * Represents a single measurement entry containing country, date, temperature, percentage, and category.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -23,6 +23,7 @@ public record MeasurementData(String country, LocalDate date, double temperature
          List.of("USA", "Brasilien", "Deutschland", "Japan", "Indien");
    private final static List<Character> CATEGORIES = List.of('D', 'X', 'F');
 
+   /** Generates and returns a list of randomly created measurement data entries. */
    public static ArrayList<MeasurementData> getData() {
       ArrayList<MeasurementData> measurementData = new ArrayList<>();
 

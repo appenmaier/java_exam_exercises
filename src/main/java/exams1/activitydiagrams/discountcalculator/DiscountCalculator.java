@@ -3,7 +3,7 @@ package exams1.activitydiagrams.discountcalculator;
 import java.util.Scanner;
 
 /**
- * Rabattrechner
+ * Calculates a discounted invoice amount based on a customer's annual revenue.
  *
  * @author Daniel Appenmaier
  * @version 1.0

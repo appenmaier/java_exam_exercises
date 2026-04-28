@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Kassensystem
+ * Manages a point-of-sale system including goods, cashiers, and shopping carts.
  *
  * @author Anarchiebald
  * @version 1.0
@@ -27,14 +27,17 @@ public class CashierSystem {
       cashiers = new ArrayList<>();
    }
 
+   /** Sets the active cashier for the current session. */
    public void addCashier(Cashier cashier) {
       this.cashier = cashier;
    }
 
+   /** Adds a goods item to the catalogue of available products. */
    public void addGoods(Goods goods) {
       this.goods.add(goods);
    }
 
+   /** Adds the specified amount of the goods identified by the given ID to the current shopping cart. */
    public void addItem(int id, int amount) {
       for (Goods g : goods) {
          if (g.id() == id) {
@@ -43,10 +46,12 @@ public class CashierSystem {
       }
    }
 
+   /** Creates a new empty shopping cart for the current transaction. */
    public void createShoppingCart() {
       shoppingCart = new ShoppingCart();
    }
 
+   /** Logs in the cashier with the given ID as the active cashier. */
    public void login(int id) {
       for (Cashier c : cashiers) {
          if (c.id() == id) {
@@ -55,6 +60,7 @@ public class CashierSystem {
       }
    }
 
+   /** Prints a formatted receipt for the current shopping cart to standard output. */
    public void printBon() {
       NumberFormat formatter = new DecimalFormat("0.00");
 

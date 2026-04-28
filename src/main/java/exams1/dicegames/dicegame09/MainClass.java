@@ -3,7 +3,7 @@ package exams1.dicegames.dicegame09;
 import java.util.Scanner;
 
 /**
- * MainClass
+ * Two-player colour-dice game over a fixed number of rounds where the lower-priority colour scores a point.
  *
  * @author Daniel Appenmaier
  * @version 1.0

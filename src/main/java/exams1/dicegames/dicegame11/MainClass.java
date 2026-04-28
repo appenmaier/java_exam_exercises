@@ -3,7 +3,7 @@ package exams1.dicegames.dicegame11;
 import java.util.Scanner;
 
 /**
- * MainClass
+ * Two-player hash-value dice game where players roll string dice and the higher hash code wins each round.
  *
  * @author Daniel Appenmaier
  * @version 1.0

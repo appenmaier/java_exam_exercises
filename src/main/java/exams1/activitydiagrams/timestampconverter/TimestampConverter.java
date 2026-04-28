@@ -3,7 +3,7 @@ package exams1.activitydiagrams.timestampconverter;
 import java.time.LocalDate;
 
 /**
- * Zeitstempel-Konvertierer
+ * Converts a Unix timestamp in milliseconds to a {@link java.time.LocalDate}.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -14,6 +14,7 @@ public class TimestampConverter {
    private static int year, month, dayOfMonth, totalDays, extraDays, flag;
    private static int[] daysOfMonth = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
+   /** Calculates the day of the month from the remaining days after month calculation. */
    private static void calculateDayOfMonth() {
       if (extraDays > 0) {
          dayOfMonth = extraDays;
@@ -24,6 +25,7 @@ public class TimestampConverter {
       }
    }
 
+   /** Calculates the month from the remaining days after year calculation. */
    private static void calculateMonth() {
       month = 0;
       int index = 0;
@@ -59,6 +61,7 @@ public class TimestampConverter {
       }
    }
 
+   /** Calculates the year from the total number of days since the Unix epoch. */
    private static void calculateYear() {
       year = 1970;
       while (true) {
@@ -81,6 +84,7 @@ public class TimestampConverter {
       }
    }
 
+   /** Converts a Unix timestamp in milliseconds to the corresponding {@link java.time.LocalDate}. */
    public static LocalDate convert(long timestamp) {
       totalDays = (int) (timestamp / (24 * 60 * 60 * 1000));
       calculateYear();

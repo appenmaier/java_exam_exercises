@@ -38,6 +38,7 @@ public class ParkingSpot {
             && length == other.length && Objects.equals(vehicle, other.vehicle);
    }
 
+   /** Returns the vehicle currently occupying this parking spot, or null if empty. */
    public Vehicle getVehicle() {
       return vehicle;
    }
@@ -47,18 +48,22 @@ public class ParkingSpot {
       return Objects.hash(height, isForBusesOnly, length, vehicle);
    }
 
+   /** Returns the maximum vehicle height this spot allows. */
    public double height() {
       return height;
    }
 
+   /** Returns true if this spot is reserved for buses only. */
    public boolean isForBusesOnly() {
       return isForBusesOnly;
    }
 
+   /** Returns the length of this parking spot. */
    public double length() {
       return length;
    }
 
+   /** Assigns the given vehicle to this parking spot. */
    public void setVehicle(Vehicle vehicle) {
       this.vehicle = vehicle;
    }

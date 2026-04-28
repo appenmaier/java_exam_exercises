@@ -7,7 +7,7 @@ import java.util.Map.Entry;
 import java.util.Optional;
 
 /**
- * Buecherei
+ * Represents a library that manages a collection of books and their availability status.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -15,10 +15,16 @@ import java.util.Optional;
  */
 public record Library(String name, Map<Book, Status> books) {
 
+   /**
+    * Adds the given book to the library with an initial status of available.
+    */
    public void addBook(Book book) {
       books.put(book, Status.AVAILABLE);
    }
 
+   /**
+    * Returns the book with the given title, if it exists in the library.
+    */
    public Optional<Book> getBookByTitle(String title) {
       for (Book b : books.keySet()) {
          if (b.title().equals(title)) {
@@ -28,6 +34,9 @@ public record Library(String name, Map<Book, Status> books) {
       return Optional.empty();
    }
 
+   /**
+    * Returns all paper books that currently have the given status.
+    */
    public List<PaperBook> getPaperBooksByStatus(Status status) {
       List<PaperBook> paperBooks = new ArrayList<>();
       for (Entry<Book, Status> entry : books.entrySet()) {

@@ -1,7 +1,7 @@
 package exams1.classdiagrams.giftbag;
 
 /**
- * MainClass
+ * Demonstrates adding presents to a gift bag and retrieving the most expensive one.
  *
  * @author Daniel Appenmaier
  * @version 1.0

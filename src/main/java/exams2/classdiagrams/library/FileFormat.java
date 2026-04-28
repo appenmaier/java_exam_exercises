@@ -1,7 +1,7 @@
 package exams2.classdiagrams.library;
 
 /**
- * Dateiformat
+ * Represents the supported file formats for electronic books.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -17,6 +17,9 @@ public enum FileFormat {
       this.description = description;
    }
 
+   /**
+    * Returns the human-readable description of this file format.
+    */
    public String description() {
       return description;
    }

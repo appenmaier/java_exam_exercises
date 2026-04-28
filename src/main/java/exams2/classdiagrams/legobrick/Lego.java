@@ -3,7 +3,7 @@ package exams2.classdiagrams.legobrick;
 import java.util.Objects;
 
 /**
- * Lego
+ * Abstract base class representing a Lego piece with a unique identifier.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -37,6 +37,9 @@ public abstract class Lego {
       return Objects.hash(id);
    }
 
+   /**
+    * Returns the unique identifier of this Lego piece.
+    */
    public int id() {
       return id;
    }

@@ -1,7 +1,7 @@
 package exams2.queries.character;
 
 /**
- * Spielfigur
+ * Represents a game character with a name, race, profession, level, and experience points.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -10,6 +10,7 @@ package exams2.queries.character;
 public record Character(String name, Race race, Profession profession, int level,
       int experiencePoints) implements Comparable<Character> {
 
+   /** Compares characters first by level descending, then by experience points descending. */
    @Override
    public int compareTo(Character other) {
       if (this.level == other.level) {

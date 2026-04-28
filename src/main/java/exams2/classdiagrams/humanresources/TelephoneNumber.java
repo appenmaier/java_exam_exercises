@@ -1,7 +1,7 @@
 package exams2.classdiagrams.humanresources;
 
 /**
- * Telefonnummer
+ * Represents a telephone number as an array of digits.
  *
  * @author Daniel Appenmaier
  * @version 1.0

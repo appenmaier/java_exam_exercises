@@ -3,7 +3,7 @@ package exams1.dicegames.dicegame08;
 import java.util.Scanner;
 
 /**
- * MainClass
+ * Two-player accumulation game where each player rolls a die and adds the value to their score until one reaches 50.
  *
  * @author Daniel Appenmaier
  * @version 1.0

@@ -1,7 +1,7 @@
 package exams2.classdiagrams.cornershop;
 
 /**
- * OutofStockException
+ * Thrown when a requested amount of goods is not available in the shop's stock.
  *
  * @author Daniel Appenmaier
  * @version 1.0

@@ -1,7 +1,7 @@
 package exams1.classdiagrams.shape;
 
 /**
- * Quadrat
+ * Represents a square as a rectangle with equal side lengths.
  *
  * @author Daniel Appenmaier
  * @version 1.0

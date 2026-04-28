@@ -3,7 +3,7 @@ package exams1.dicegames.dicegame14;
 import java.util.Scanner;
 
 /**
- * MainClass
+ * Single-player colour-betting game where the player guesses which colour scores highest across five colour dice.
  *
  * @author Daniel Appenmaier
  * @version 1.0

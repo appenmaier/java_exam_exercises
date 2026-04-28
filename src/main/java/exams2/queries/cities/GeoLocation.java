@@ -1,7 +1,7 @@
 package exams2.queries.cities;
 
 /**
- * GEO-Lage
+ * Represents a continental geographic region.
  *
  * @author Daniel Appenmaier
  * @version 1.0

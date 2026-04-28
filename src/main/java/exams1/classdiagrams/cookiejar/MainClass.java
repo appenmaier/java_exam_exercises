@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 
 /**
- * MainClass
+ * Demonstrates reading a recipe from file, creating cookies, and retrieving them from a cookie jar.
  *
  * @author Daniel Appenmaier
  * @version 1.0

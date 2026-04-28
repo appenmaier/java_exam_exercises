@@ -1,7 +1,7 @@
 package exams2.queries.tanks;
 
 /**
- * Typ
+ * Represents the operational classification of a tank.
  *
  * @author Daniel Appenmaier
  * @version 1.0

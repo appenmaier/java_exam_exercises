@@ -3,7 +3,7 @@ package exams1.classdiagrams.santaclaus;
 import java.util.Objects;
 
 /**
- * Buch
+ * Represents a book as a specific type of present, identified by title and author.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -34,6 +34,7 @@ public class Book extends Present {
       return Objects.equals(author, other.author) && Objects.equals(title, other.title);
    }
 
+   /** Returns a description of this book as a combination of its title and author. */
    @Override
    public String getDescription() {
       return title + " " + author;

@@ -3,7 +3,7 @@ package exams2.classdiagrams.legobrick;
 import java.util.Arrays;
 
 /**
- * Lego-Baustein 2x2x2
+ * Represents a cubic Lego brick with dimensions 2x2x2.
  *
  * @author Daniel Appenmaier
  * @version 1.0

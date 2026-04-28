@@ -1,7 +1,7 @@
 package exams2.classdiagrams.humanresources;
 
 /**
- * Person
+ * Represents a person with a unique ID and a name.
  *
  * @author Daniel Appenmaier
  * @version 1.0

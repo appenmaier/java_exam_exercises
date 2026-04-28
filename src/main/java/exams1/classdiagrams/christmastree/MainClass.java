@@ -1,7 +1,7 @@
 package exams1.classdiagrams.christmastree;
 
 /**
- * MainClass
+ * Demonstrates a Christmas tree by adding candles and lighting them.
  *
  * @author Daniel Appenmaier
  * @version 1.0

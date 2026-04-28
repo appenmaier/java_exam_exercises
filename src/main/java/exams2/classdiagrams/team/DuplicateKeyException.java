@@ -1,7 +1,7 @@
 package exams2.classdiagrams.team;
 
 /**
- * DuplicateKeyException
+ * Thrown when a team member who is already registered is added again.
  *
  * @author Daniel Appenmaier
  * @version 1.0

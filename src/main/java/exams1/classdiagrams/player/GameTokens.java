@@ -8,7 +8,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 /**
- * Spielfiguren
+ * Provides a factory method to read a list of game tokens from a file.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -16,6 +16,7 @@ import java.util.Scanner;
  */
 public class GameTokens {
 
+   /** Reads game tokens from the given file and returns them in a randomly interleaved list. */
    public static List<GameToken> getGameTokens(File file) throws FileNotFoundException {
       List<GameToken> gameTokens = new ArrayList<GameToken>();
       Scanner sc = new Scanner(file);

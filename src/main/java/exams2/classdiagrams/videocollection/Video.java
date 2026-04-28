@@ -3,7 +3,7 @@ package exams2.classdiagrams.videocollection;
 import java.util.Objects;
 
 /**
- * Video
+ * Abstract base class representing a video medium that stores a movie.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -37,6 +37,9 @@ public abstract class Video {
       return Objects.hash(movie);
    }
 
+   /**
+    * Returns the movie stored on this video medium.
+    */
    public Movie movie() {
       return movie;
    }

@@ -1,7 +1,7 @@
 package exams2.classdiagrams.superleague;
 
 /**
- * Universum
+ * Represents a comic universe to which super-powered beings belong.
  *
  * @author Daniel Appenmaier
  * @version 1.0

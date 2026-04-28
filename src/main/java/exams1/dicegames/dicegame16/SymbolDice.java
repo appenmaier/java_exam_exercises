@@ -3,7 +3,7 @@ package exams1.dicegames.dicegame16;
 import java.util.Random;
 
 /**
- * Symbol-Wuerfel
+ * Represents a weighted dice that selects a symbol based on configurable counts of skulls and hearts.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -25,12 +25,14 @@ public class SymbolDice {
       rollTheDice();
    }
 
+   /** Rolls the dice and randomly assigns a new symbol based on the configured distribution. */
    public void rollTheDice() {
       Random random = new Random();
       int randomNumber = random.nextInt(symbols.length);
       symbol = symbols[randomNumber];
    }
 
+   /** Returns the symbol from the most recent roll. */
    public Symbol getSymbol() {
       return symbol;
    }

@@ -3,7 +3,7 @@ package exams2.classdiagrams.videocollection;
 import java.util.Objects;
 
 /**
- * Blu-Ray
+ * Represents a Blu-ray disc that stores a movie with a given storage capacity.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -18,6 +18,9 @@ public class BluRay extends Video {
       this.capacity = capacity;
    }
 
+   /**
+    * Returns the storage capacity of this Blu-ray disc in gigabytes.
+    */
    public double capacity() {
       return capacity;
    }

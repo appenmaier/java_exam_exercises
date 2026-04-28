@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Objects;
 
 /**
- * Stellenangebot
+ * Represents a job offer with a title, a responsible recruiter, and a list of applicants.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -25,10 +25,16 @@ public class JobOffer {
       applicants = new ArrayList<>();
    }
 
+   /**
+    * Adds an applicant to this job offer's list of applicants.
+    */
    public void addApplicant(Applicant applicant) {
       applicants.add(applicant);
    }
 
+   /**
+    * Returns the list of applicants for this job offer.
+    */
    public List<Applicant> applicants() {
       return applicants;
    }
@@ -54,14 +60,23 @@ public class JobOffer {
       return Objects.hash(applicants, id, recruiter, title);
    }
 
+   /**
+    * Returns the unique identifier of this job offer.
+    */
    public int id() {
       return id;
    }
 
+   /**
+    * Returns the recruiter responsible for this job offer.
+    */
    public Recruiter recruiter() {
       return recruiter;
    }
 
+   /**
+    * Returns the title of this job offer.
+    */
    public String title() {
       return title;
    }

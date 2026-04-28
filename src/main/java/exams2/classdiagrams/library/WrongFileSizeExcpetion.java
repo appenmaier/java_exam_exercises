@@ -1,7 +1,7 @@
 package exams2.classdiagrams.library;
 
 /**
- * WrongFileSizeExcpetion
+ * Thrown when an e-book is created with an invalid (non-positive) file size.
  *
  * @author Daniel Appenmaier
  * @version 1.0

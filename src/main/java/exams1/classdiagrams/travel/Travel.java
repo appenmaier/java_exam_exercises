@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Objects;
 
 /**
- * Reise
+ * Represents a trip with a description, date range, and a list of associated bookings.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -26,10 +26,12 @@ public class Travel {
       bookings = new ArrayList<>();
    }
 
+   /** Adds a booking to this trip. */
    public void addBooking(Booking booking) {
       bookings.add(booking);
    }
 
+   /** Returns the sum of all booking prices for this trip in euros. */
    public double getTotalTravelCostsInEuro() {
       double totalTravelCosts = 0;
       for (Booking b : bookings) {
@@ -38,6 +40,7 @@ public class Travel {
       return totalTravelCosts;
    }
 
+   /** Returns all flight bookings contained in this trip. */
    public List<Flight> getFlights() {
       List<Flight> flights = new ArrayList<>();
       for (Booking b : bookings) {

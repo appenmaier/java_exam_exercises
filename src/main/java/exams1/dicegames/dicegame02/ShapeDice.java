@@ -3,7 +3,7 @@ package exams1.dicegames.dicegame02;
 import java.util.Random;
 
 /**
- * Formen-Wuerfel
+ * Represents a dice that randomly selects a geometric shape symbol when rolled.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -11,6 +11,7 @@ import java.util.Random;
  */
 public class ShapeDice {
 
+   /** Rolls the dice and returns a randomly selected shape symbol. */
    public ShapeSymbol rollTheDice() {
       Random random = new Random();
       int randomNumber = random.nextInt(3);

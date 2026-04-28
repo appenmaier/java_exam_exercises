@@ -3,7 +3,7 @@ package exams1.dicegames.dicegame01;
 import java.util.Scanner;
 
 /**
- * MainClass
+ * Two-player dice game where a shared weapon die determines damage dealt each round until one player runs out of points.
  *
  * @author Daniel Appenmaier
  * @version 1.0

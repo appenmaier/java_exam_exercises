@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.util.List;
 
 /**
- * MainClass
+ * Demonstrates reading creatures from a file and printing them.
  *
  * @author Daniel Appenmaier
  * @version 1.0

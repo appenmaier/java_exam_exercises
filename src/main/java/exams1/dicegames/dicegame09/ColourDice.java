@@ -3,7 +3,7 @@ package exams1.dicegames.dicegame09;
 import java.util.Random;
 
 /**
- * Farben-Wuerfel
+ * Represents a dice that randomly selects a card suit colour when rolled.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -11,6 +11,7 @@ import java.util.Random;
  */
 public class ColourDice {
 
+   /** Rolls the dice and returns a randomly selected card suit colour. */
    public Colour rollTheDice() {
       Random random = new Random();
       int randomNumber = random.nextInt(4);

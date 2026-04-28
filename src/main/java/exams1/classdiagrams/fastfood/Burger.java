@@ -1,7 +1,7 @@
 package exams1.classdiagrams.fastfood;
 
 /**
- * Burger
+ * Represents a burger as a specific type of fast food.
  *
  * @author Daniel Appenmaier
  * @version 1.0

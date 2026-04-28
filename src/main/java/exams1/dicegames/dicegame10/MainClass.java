@@ -1,7 +1,7 @@
 package exams1.dicegames.dicegame10;
 
 /**
- * MainClass
+ * Starts a two-player sword-and-shield dice battle with five symbol dice.
  *
  * @author Daniel Appenmaier
  * @version 1.0

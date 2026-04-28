@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Objects;
 
 /**
- * Kurs
+ * Represents a student course belonging to a course of studies, holding a list of lectures and enrolled students.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -25,18 +25,22 @@ public class StudentCourse {
       students = new ArrayList<>();
    }
 
+   /** Adds a lecture to this student course. */
    public void addLecture(Lecture lecture) {
       lectures.add(lecture);
    }
 
+   /** Adds a student to this student course. */
    public void addStudent(Student student) {
       students.add(student);
    }
 
+   /** Returns the course of studies this student course belongs to. */
    public CourseOfStudies courseOfStudies() {
       return courseOfStudies;
    }
 
+   /** Returns the description of this student course. */
    public String description() {
       return description;
    }
@@ -58,6 +62,7 @@ public class StudentCourse {
             && Objects.equals(lectures, other.lectures) && Objects.equals(students, other.students);
    }
 
+   /** Returns the lecture with the highest number of credit points. */
    public Lecture getLectureWithMostCreditPoints() {
       Lecture lecture = lectures.get(0);
       int creditPoints = lecture.creditPoints();
@@ -75,10 +80,12 @@ public class StudentCourse {
       return Objects.hash(courseOfStudies, description, lectures, students);
    }
 
+   /** Returns the list of lectures in this student course. */
    public List<Lecture> lectures() {
       return lectures;
    }
 
+   /** Returns the list of students enrolled in this student course. */
    public List<Student> students() {
       return students;
    }

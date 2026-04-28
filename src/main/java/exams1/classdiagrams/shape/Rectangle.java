@@ -3,7 +3,7 @@ package exams1.classdiagrams.shape;
 import java.util.Objects;
 
 /**
- * Rechteck
+ * Represents a rectangle defined by side lengths a and b.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -19,10 +19,12 @@ public class Rectangle extends Shape {
       this.b = b;
    }
 
+   /** Returns side length a of this rectangle. */
    public double a() {
       return a;
    }
 
+   /** Returns side length b of this rectangle. */
    public double b() {
       return b;
    }
@@ -43,11 +45,13 @@ public class Rectangle extends Shape {
             && Double.doubleToLongBits(b) == Double.doubleToLongBits(other.b);
    }
 
+   /** Returns the area of this rectangle. */
    @Override
    public double getArea() {
       return a * b;
    }
 
+   /** Returns the circumference of this rectangle. */
    @Override
    public double getCircumference() {
       return 2 * a + 2 * b;

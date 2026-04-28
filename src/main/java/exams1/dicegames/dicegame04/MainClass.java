@@ -3,7 +3,7 @@ package exams1.dicegames.dicegame04;
 import java.util.Scanner;
 
 /**
- * MainClass
+ * Two-player food-category dice game where each round the player with the lower score loses the difference in points.
  *
  * @author Daniel Appenmaier
  * @version 1.0

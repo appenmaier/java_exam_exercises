@@ -1,7 +1,7 @@
 package exams1.classdiagrams.zoo;
 
 /**
- * Saeugetier
+ * Represents a mammal, which is an animal that can suckle its young.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -32,6 +32,7 @@ public class Mammal extends Animal {
       return super.hashCode();
    }
 
+   /** Simulates the suckling behaviour of this mammal. */
    public void suckle() {
       System.out.println("saug, saug");
    }

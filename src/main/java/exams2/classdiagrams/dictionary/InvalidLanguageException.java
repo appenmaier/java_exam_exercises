@@ -1,7 +1,7 @@
 package exams2.classdiagrams.dictionary;
 
 /**
- * InvalidLanguageException
+ * Thrown when a word's language does not match the expected source or target language of the dictionary.
  *
  * @author Daniel Appenmaier
  * @version 1.0

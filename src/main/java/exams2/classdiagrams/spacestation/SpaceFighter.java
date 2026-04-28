@@ -1,7 +1,7 @@
 package exams2.classdiagrams.spacestation;
 
 /**
- * Sternenjaeger
+ * Represents a space fighter with a unique identifier and a ship type.
  *
  * @author Daniel Appenmaier
  * @version 1.0

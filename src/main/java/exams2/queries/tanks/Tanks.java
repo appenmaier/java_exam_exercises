@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Panzer
+ * Provides a predefined list of tanks from various nations and types.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -12,6 +12,7 @@ import java.util.List;
  */
 public class Tanks {
 
+   /** Returns a predefined list of tanks from multiple nations. */
    public static List<Tank> getTanks() {
       List<Tank> tanks = new ArrayList<Tank>();
 

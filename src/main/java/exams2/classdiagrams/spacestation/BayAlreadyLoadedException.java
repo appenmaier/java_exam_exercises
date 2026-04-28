@@ -1,7 +1,7 @@
 package exams2.classdiagrams.spacestation;
 
 /**
- * BayAlreadyLoadedException
+ * Thrown when a space fighter attempts to land in a bay that is already occupied.
  *
  * @author Daniel Appenmaier
  * @version 1.0

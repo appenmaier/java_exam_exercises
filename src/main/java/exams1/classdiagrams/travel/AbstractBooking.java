@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 /**
- * Buchung
+ * Abstract base class for bookings that stores price and booking date.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -21,11 +21,13 @@ public abstract class AbstractBooking implements Booking {
    }
 
    @Override
+   /** Returns the price of this booking in euros. */
    public final double getPriceInEuro() {
       return priceInEuro;
    }
 
    @Override
+   /** Returns the date on which this booking was created. */
    public final LocalDate getBookingDate() {
       return bookingDate;
    }

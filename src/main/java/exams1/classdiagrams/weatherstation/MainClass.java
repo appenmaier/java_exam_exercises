@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.util.List;
 
 /**
- * MainClass
+ * Demonstrates a weather station by loading measurement values from a file and computing the average temperature.
  *
  * @author Daniel Appenmaier
  * @version 1.0

@@ -1,7 +1,7 @@
 package exams2.queries.phonestore;
 
 /**
- * Verbindungstyp
+ * Represents a charging and data connection type of a smartphone.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -19,10 +19,12 @@ public enum ConnectionType {
       this.isModern = isModern;
    }
 
+   /** Returns the human-readable description of this connection type. */
    public String description() {
       return description;
    }
 
+   /** Returns whether this connection type is considered modern. */
    public boolean isModern() {
       return isModern;
    }

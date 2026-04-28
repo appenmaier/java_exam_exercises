@@ -1,7 +1,7 @@
 package exams2.classdiagrams.player;
 
 /**
- * NotEnoughActionPointsException
+ * Thrown when a player does not have enough action points to play a card.
  *
  * @author Daniel Appenmaier
  * @version 1.0

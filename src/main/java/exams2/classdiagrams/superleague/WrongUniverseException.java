@@ -1,7 +1,7 @@
 package exams2.classdiagrams.superleague;
 
 /**
- * WrongUniverseException
+ * Thrown when a super-powered being is added to a league that belongs to a different universe.
  *
  * @author Daniel Appenmaier
  * @version 1.0

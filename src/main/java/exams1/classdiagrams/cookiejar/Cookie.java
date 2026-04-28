@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Objects;
 
 /**
- * Plaetzchen
+ * Represents a cookie with a name and a dough recipe.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -20,6 +20,7 @@ public class Cookie {
       this.dough = dough;
    }
 
+   /** Returns the dough recipe used to make this cookie. */
    public Recipe dough() {
       return dough;
    }
@@ -39,6 +40,7 @@ public class Cookie {
       return Objects.equals(dough, other.dough) && Objects.equals(name, other.name);
    }
 
+   /** Returns the combined list of ingredients from the dough recipe. */
    public List<Ingredient> getIngredients() {
       return dough.ingredients();
    }
@@ -48,6 +50,7 @@ public class Cookie {
       return Objects.hash(dough, name);
    }
 
+   /** Returns the name of this cookie. */
    public String name() {
       return name;
    }

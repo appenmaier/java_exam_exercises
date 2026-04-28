@@ -3,7 +3,7 @@ package exams2.queries.cities;
 import java.util.List;
 
 /**
- * Stadt
+ * Represents a city with its geographic, demographic, and administrative data.
  *
  * @author Daniel Appenmaier
  * @version 1.0

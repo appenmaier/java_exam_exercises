@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * MainClass
+ * Two-player race game where each player rolls two dice per round and the first to reach 50 points wins.
  *
  * @author Daniel Appenmaier
  * @version 1.0

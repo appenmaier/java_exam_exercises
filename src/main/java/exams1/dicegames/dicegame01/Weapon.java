@@ -1,7 +1,7 @@
 package exams1.dicegames.dicegame01;
 
 /**
- * Waffe
+ * Represents a weapon that can be rolled on the weapon dice, each with a description and power value.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -19,10 +19,12 @@ public enum Weapon {
       this.power = power;
    }
 
+   /** Returns the human-readable description of this weapon. */
    public String description() {
       return description;
    }
 
+   /** Returns the attack power of this weapon. */
    public int power() {
       return power;
    }

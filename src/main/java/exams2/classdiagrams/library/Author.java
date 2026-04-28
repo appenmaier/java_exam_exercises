@@ -1,7 +1,7 @@
 package exams2.classdiagrams.library;
 
 /**
- * Autor
+ * Represents a book author with a name and nationality.
  *
  * @author Daniel Appenmaier
  * @version 1.0

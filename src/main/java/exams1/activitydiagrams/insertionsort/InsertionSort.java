@@ -3,7 +3,7 @@ package exams1.activitydiagrams.insertionsort;
 import java.util.Random;
 
 /**
- * Insertionsort
+ * Demonstrates the insertion sort algorithm on a randomly generated integer array.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -27,6 +27,7 @@ public class InsertionSort {
 
    }
 
+   /** Prints the current state of the data array along with the iteration counter. */
    private static void print() {
       System.out.println("Durchlauf " + counter);
       int i = 0;
@@ -36,6 +37,7 @@ public class InsertionSort {
       }
    }
 
+   /** Sorts the data array in ascending order using the insertion sort algorithm. */
    private static void sort() {
       int tmp = 0;
       int i = 1;

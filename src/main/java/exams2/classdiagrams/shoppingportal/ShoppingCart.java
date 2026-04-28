@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Objects;
 
 /**
- * Warenkorb
+ * Represents a shopping cart that holds sellable items with quantities.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -24,14 +24,23 @@ public class ShoppingCart<T extends Sellable> {
          this.amount = amount;
       }
 
+      /**
+       * Returns the quantity of the sellable item in this cart entry.
+       */
       public int amount() {
          return amount;
       }
 
+      /**
+       * Returns the subtotal for this cart entry as price multiplied by quantity.
+       */
       public double getSubTotal() {
          return sellable.price() * amount;
       }
 
+      /**
+       * Returns the sellable item of this cart entry.
+       */
       public T sellable() {
          return sellable;
       }
@@ -44,6 +53,9 @@ public class ShoppingCart<T extends Sellable> {
       items = new ArrayList<>();
    }
 
+   /**
+    * Adds a new cart entry for the given sellable item with the specified quantity.
+    */
    public void addItem(T sellable, int amount) {
       items.add(new Item(sellable, amount));
    }
@@ -64,6 +76,9 @@ public class ShoppingCart<T extends Sellable> {
       return Objects.equals(items, other.items);
    }
 
+   /**
+    * Returns the sum of all subtotals in this shopping cart.
+    */
    public double getTotal() {
       double total = 0;
       for (Item item : items) {
@@ -77,10 +92,16 @@ public class ShoppingCart<T extends Sellable> {
       return Objects.hash(items);
    }
 
+   /**
+    * Returns the list of all items currently in this shopping cart.
+    */
    public List<Item> items() {
       return items;
    }
 
+   /**
+    * Removes all cart entries matching the given sellable item.
+    */
    public void removeItem(T sellable) {
       ArrayList<Item> tmp = new ArrayList<>();
       for (Item i : items) {

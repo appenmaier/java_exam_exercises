@@ -3,7 +3,7 @@ package exams1.dicegames.dicegame12;
 import java.util.Scanner;
 
 /**
- * MainClass
+ * Two-player rock-paper-scissors dice game played over five rounds.
  *
  * @author Daniel Appenmaier
  * @version 1.0

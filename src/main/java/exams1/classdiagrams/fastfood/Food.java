@@ -3,7 +3,7 @@ package exams1.classdiagrams.fastfood;
 import java.util.Objects;
 
 /**
- * Lebensmittel
+ * Represents a food item with a name, category, and calorie count.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -21,6 +21,7 @@ public class Food {
       this.calories = calories;
    }
 
+   /** Returns the calorie count of this food item. */
    public double calories() {
       return calories;
    }
@@ -41,6 +42,7 @@ public class Food {
             && Objects.equals(name, other.name) && foodCategory == other.foodCategory;
    }
 
+   /** Returns the food category of this food item. */
    public FoodCategory foodCategory() {
       return foodCategory;
    }
@@ -50,6 +52,7 @@ public class Food {
       return Objects.hash(calories, name, foodCategory);
    }
 
+   /** Returns the name of this food item. */
    public String name() {
       return name;
    }

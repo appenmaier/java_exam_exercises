@@ -1,7 +1,7 @@
 package exams2.classdiagrams.videocollection;
 
 /**
- * Filme
+ * Represents a movie with a title, genre, and publishing year.
  *
  * @author Daniel Appenmaier
  * @version 1.0

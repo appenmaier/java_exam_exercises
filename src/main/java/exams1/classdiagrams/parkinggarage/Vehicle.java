@@ -3,7 +3,7 @@ package exams1.classdiagrams.parkinggarage;
 import java.util.Objects;
 
 /**
- * Fahrzeug
+ * Represents a vehicle with a make, model, length, and height.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -44,18 +44,22 @@ public class Vehicle {
       return Objects.hash(height, length, make, model);
    }
 
+   /** Returns the height of this vehicle. */
    public double height() {
       return height;
    }
 
+   /** Returns the length of this vehicle. */
    public double length() {
       return length;
    }
 
+   /** Returns the make (manufacturer) of this vehicle. */
    public String make() {
       return make;
    }
 
+   /** Returns the model name of this vehicle. */
    public String model() {
       return model;
    }

@@ -1,7 +1,7 @@
 package exams1.classdiagrams.creature;
 
 /**
- * Kreaturentyp
+ * Represents the type of a creature (e.g., monster, skeleton, vampire, or zombie).
  *
  * @author Daniel Appenmaier
  * @version 1.0

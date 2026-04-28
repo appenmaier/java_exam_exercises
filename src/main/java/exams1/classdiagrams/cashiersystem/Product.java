@@ -1,7 +1,7 @@
 package exams1.classdiagrams.cashiersystem;
 
 /**
- * Produkt
+ * Represents a product with an ID, description, unit, and price in euro.
  *
  * @author Anarchiebald
  * @version 1.0
@@ -21,26 +21,32 @@ public class Product {
       this.priceInEuro = priceInEuro;
    }
 
+   /** Returns the description of this product. */
    public String description() {
       return description;
    }
 
+   /** Returns the price of this product in euro. */
    public double getPriceInEuro() {
       return priceInEuro;
    }
 
+   /** Returns the unit of measure for this product. */
    public String getUnit() {
       return unit;
    }
 
+   /** Returns the unique identifier of this product. */
    public int id() {
       return id;
    }
 
+   /** Sets the price of this product in euro. */
    public void setPriceInEuro(double priceInEuro) {
       this.priceInEuro = priceInEuro;
    }
 
+   /** Sets the unit of measure for this product. */
    public void setUnit(String unit) {
       this.unit = unit;
    }

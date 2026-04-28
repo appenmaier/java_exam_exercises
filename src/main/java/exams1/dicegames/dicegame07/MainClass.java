@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * MainClass
+ * Single-player guessing game where the player bets whether five dice will sum above 17.
  *
  * @author Daniel Appenmaier
  * @version 1.0

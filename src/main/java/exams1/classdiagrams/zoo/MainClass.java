@@ -3,7 +3,7 @@ package exams1.classdiagrams.zoo;
 import java.util.ArrayList;
 
 /**
- * MainClass
+ * Demonstrates a zoo by adding animals and querying the largest animal and fish by colour.
  *
  * @author Daniel Appenmaier
  * @version 1.0

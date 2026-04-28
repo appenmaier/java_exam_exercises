@@ -1,7 +1,7 @@
 package exams2.queries.phonestore;
 
 /**
- * Marke
+ * Represents the brand of a smartphone.
  *
  * @author Daniel Appenmaier
  * @version 1.0

@@ -1,7 +1,7 @@
 package exams1.classdiagrams.cashiersystem;
 
 /**
- * MainClass
+ * Demonstrates the cashier system by logging in a cashier, adding goods, and printing a receipt.
  *
  * @author Anarchiebald
  * @version 1.0

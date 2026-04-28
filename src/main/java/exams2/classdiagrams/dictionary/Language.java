@@ -1,7 +1,7 @@
 package exams2.classdiagrams.dictionary;
 
 /**
- * Sprache
+ * Represents a supported language in the dictionary system.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -19,10 +19,16 @@ public enum Language {
       this.description = description;
    }
 
+   /**
+    * Returns the ISO language code for this language.
+    */
    public String code() {
       return code;
    }
 
+   /**
+    * Returns the human-readable name of this language.
+    */
    public String description() {
       return description;
    }

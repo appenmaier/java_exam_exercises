@@ -1,7 +1,7 @@
 package exams1.dicegames.dicegame09;
 
 /**
- * Farbe
+ * Represents a card suit colour used in the dice game, each with a description and priority.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -19,10 +19,12 @@ public enum Colour {
       this.priority = priority;
    }
 
+   /** Returns the human-readable description of this colour. */
    public String getDescription() {
       return description;
    }
 
+   /** Returns the priority value of this colour used for comparison. */
    public int getPriority() {
       return priority;
    }

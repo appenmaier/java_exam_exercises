@@ -1,7 +1,7 @@
 package exams2.queries.character;
 
 /**
- * Klasse
+ * Represents the profession (class) of a game character.
  *
  * @author Daniel Appenmaier
  * @version 1.0

@@ -1,7 +1,7 @@
 package exams1.dicegames.dicegame02;
 
 /**
- * Geometrische Form
+ * Represents a geometric shape symbol with a number of corners.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -17,6 +17,7 @@ public enum ShapeSymbol {
       this.corners = corners;
    }
 
+   /** Returns the number of corners of this shape symbol. */
    public int corners() {
       return corners;
    }

@@ -1,7 +1,7 @@
 package exams2.classdiagrams.humanresources;
 
 /**
- * DuplicateException
+ * Thrown when attempting to add a person who already exists in the staff list.
  *
  * @author Daniel Appenmaier
  * @version 1.0

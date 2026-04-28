@@ -3,7 +3,7 @@ package exams1.activitydiagrams.timestampconverter;
 import java.time.LocalDate;
 
 /**
- * MainClass
+ * Demonstrates converting the current system timestamp to a {@link java.time.LocalDate}.
  *
  * @author Daniel Appenmaier
  * @version 1.0

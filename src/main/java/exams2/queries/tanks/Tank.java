@@ -1,7 +1,7 @@
 package exams2.queries.tanks;
 
 /**
- * Panzer
+ * Represents a military tank with its technical and national properties.
  *
  * @author Daniel Appenmaier
  * @version 1.0

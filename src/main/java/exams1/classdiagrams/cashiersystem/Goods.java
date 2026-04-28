@@ -1,7 +1,7 @@
 package exams1.classdiagrams.cashiersystem;
 
 /**
- * Ware
+ * Represents a purchasable goods item that belongs to a specific class of goods.
  *
  * @author Anarchiebald
  * @version 1.0
@@ -17,6 +17,7 @@ public class Goods extends Product {
       this.classOfGoods = classOfGoods;
    }
 
+   /** Returns the class of goods this item belongs to. */
    public ClassOfGoods classOfGoods() {
       return classOfGoods;
    }

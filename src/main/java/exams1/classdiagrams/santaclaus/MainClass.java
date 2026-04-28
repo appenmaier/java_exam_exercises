@@ -1,7 +1,7 @@
 package exams1.classdiagrams.santaclaus;
 
 /**
- * MainClass
+ * Demonstrates Santa Claus adding and wrapping presents, then counting toys.
  *
  * @author Daniel Appenmaier
  * @version 1.0

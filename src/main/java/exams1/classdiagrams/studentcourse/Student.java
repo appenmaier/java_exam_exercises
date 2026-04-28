@@ -3,7 +3,7 @@ package exams1.classdiagrams.studentcourse;
 import java.util.Objects;
 
 /**
- * Studierender
+ * Represents a student identified by a matriculation number and name.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -40,10 +40,12 @@ public class Student {
       return Objects.hash(matriculationNumber, name);
    }
 
+   /** Returns the matriculation number of this student. */
    public MatriculationNumber matriculationNumber() {
       return matriculationNumber;
    }
 
+   /** Returns the name of this student. */
    public String name() {
       return name;
    }

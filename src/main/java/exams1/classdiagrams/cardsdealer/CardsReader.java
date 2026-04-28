@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * CardsReader
+ * Reads a list of cards from a semicolon-delimited file.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -15,6 +15,7 @@ import java.util.Scanner;
  */
 public class CardsReader {
 
+   /** Parses the given file and returns a list of cards read from it. */
    public static List<Card> getCards(File file) throws FileNotFoundException {
       List<Card> cards = new ArrayList<>();
       Scanner sc = new Scanner(file);

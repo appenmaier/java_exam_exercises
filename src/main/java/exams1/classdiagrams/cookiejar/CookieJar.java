@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Objects;
 
 /**
- * Plaetzchendose
+ * Represents a jar that stores a collection of cookies.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -19,10 +19,12 @@ public class CookieJar {
       cookies = new ArrayList<>();
    }
 
+   /** Adds the given cookie to this jar. */
    public void addCookie(Cookie cookie) {
       cookies.add(cookie);
    }
 
+   /** Returns all cookies currently in this jar. */
    public List<Cookie> cookies() {
       return cookies;
    }
@@ -42,6 +44,7 @@ public class CookieJar {
       return Objects.equals(cookies, other.cookies);
    }
 
+   /** Removes and returns the first cookie with the given name, or null if not found. */
    public Cookie getCookieByName(String name) {
       for (int i = 0; i < cookies.size(); i++) {
          Cookie cookie = cookies.get(i);
@@ -53,6 +56,7 @@ public class CookieJar {
       return null;
    }
 
+   /** Removes and returns the first stuffed cookie from the jar, or null if none exists. */
    public StuffedCookie getStuffedCookie() {
       for (int i = 0; i < cookies.size(); i++) {
          Cookie cookie = cookies.get(i);

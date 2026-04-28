@@ -1,7 +1,7 @@
 package exams1.classdiagrams.cashiersystem;
 
 /**
- * Kassierer
+ * Represents a cashier identified by an ID and a name.
  *
  * @author Anarchiebald
  * @version 1.0
@@ -17,10 +17,12 @@ public class Cashier {
       this.name = name;
    }
 
+   /** Returns the unique identifier of this cashier. */
    public int id() {
       return id;
    }
 
+   /** Returns the name of this cashier. */
    public String name() {
       return name;
    }

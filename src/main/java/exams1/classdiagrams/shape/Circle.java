@@ -3,7 +3,7 @@ package exams1.classdiagrams.shape;
 import java.util.Objects;
 
 /**
- * Kreis
+ * Represents a circle defined by its radius.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -32,11 +32,13 @@ public class Circle extends Shape {
       return Double.doubleToLongBits(r) == Double.doubleToLongBits(other.r);
    }
 
+   /** Returns the area of this circle. */
    @Override
    public double getArea() {
       return Math.PI * r * r;
    }
 
+   /** Returns the circumference of this circle. */
    @Override
    public double getCircumference() {
       return 2 * Math.PI * r;
@@ -47,6 +49,7 @@ public class Circle extends Shape {
       return Objects.hash(r);
    }
 
+   /** Returns the radius of this circle. */
    public double r() {
       return r;
    }

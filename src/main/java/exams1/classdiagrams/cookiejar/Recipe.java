@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Objects;
 
 /**
- * Rezept
+ * Represents a baking recipe with a name and a list of ingredients.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -21,6 +21,7 @@ public class Recipe {
       ingredients = new ArrayList<>();
    }
 
+   /** Adds an ingredient to this recipe. */
    public void addIngredient(Ingredient ingredient) {
       ingredients.add(ingredient);
    }
@@ -45,10 +46,12 @@ public class Recipe {
       return Objects.hash(ingredients, name);
    }
 
+   /** Returns the list of ingredients in this recipe. */
    public List<Ingredient> ingredients() {
       return ingredients;
    }
 
+   /** Returns the name of this recipe. */
    public String name() {
       return name;
    }

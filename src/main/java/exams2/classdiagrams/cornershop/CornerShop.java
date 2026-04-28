@@ -5,7 +5,7 @@ import java.util.Map.Entry;
 import java.util.Optional;
 
 /**
- * Tante-Emma-Laden
+ * Represents a corner shop that manages its stock of goods.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -13,6 +13,9 @@ import java.util.Optional;
  */
 public record CornerShop(String name, Map<Goods, Integer> store) {
 
+   /**
+    * Returns the stock amount of the goods matching the given description, if present.
+    */
    public Optional<Integer> getAmountByDescription(String description) {
       for (Entry<Goods, Integer> entry : store.entrySet()) {
          if (entry.getKey().description().equals(description)) {
@@ -22,6 +25,9 @@ public record CornerShop(String name, Map<Goods, Integer> store) {
       return Optional.empty();
    }
 
+   /**
+    * Reduces the stock of the given goods by the specified amount, or throws an exception if insufficient stock exists.
+    */
    public void sellGoods(Goods goods, int amount) throws OutofStockException {
       if (!store.containsKey(goods) || store.get(goods) < amount) {
          throw new OutofStockException();
@@ -30,6 +36,9 @@ public record CornerShop(String name, Map<Goods, Integer> store) {
       store.put(goods, store.get(goods) - amount);
    }
 
+   /**
+    * Increases the stock of the given goods by the specified amount, adding it to the store if not yet present.
+    */
    public void buyGoods(Goods goods, int amount) {
       if (store.containsKey(goods)) {
          store.put(goods, store.get(goods) + amount);

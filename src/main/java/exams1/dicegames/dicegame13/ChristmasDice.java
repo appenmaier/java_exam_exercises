@@ -3,7 +3,7 @@ package exams1.dicegames.dicegame13;
 import java.util.Random;
 
 /**
- * Weihnachts-Wuerfel
+ * Represents a dice that randomly selects a Christmas symbol when rolled.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -17,6 +17,7 @@ public class ChristmasDice {
       rollTheDice();
    }
 
+   /** Rolls the dice and stores a randomly selected Christmas symbol. */
    public void rollTheDice() {
       Random random = new Random();
       int randomNumber = random.nextInt(1, 4);
@@ -27,6 +28,7 @@ public class ChristmasDice {
       };
    }
 
+   /** Returns the Christmas symbol from the most recent roll. */
    public ChristmasSymbol getValue() {
       return value;
    }

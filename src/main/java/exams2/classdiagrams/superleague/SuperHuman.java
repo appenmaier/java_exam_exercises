@@ -3,7 +3,7 @@ package exams2.classdiagrams.superleague;
 import java.util.Objects;
 
 /**
- * Uebermensch
+ * Abstract base class representing a super-powered being belonging to a comic universe.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -21,14 +21,23 @@ public abstract class SuperHuman {
       this.power = power;
    }
 
+   /**
+    * Returns the name of this super-powered being.
+    */
    public String name() {
       return name;
    }
 
+   /**
+    * Returns the power level of this super-powered being.
+    */
    public int power() {
       return power;
    }
 
+   /**
+    * Returns the universe this super-powered being belongs to.
+    */
    public Universe universe() {
       return universe;
    }

@@ -1,7 +1,7 @@
 package exams2.queries.cities;
 
 /**
- * Buergermeister
+ * Represents the mayor of a city, identified by name and gender.
  *
  * @author Daniel Appenmaier
  * @version 1.0

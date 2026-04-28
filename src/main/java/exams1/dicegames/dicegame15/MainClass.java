@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * MainClass
+ * Single-player accumulation game where a configurable number of dice are rolled until a target score is reached.
  *
  * @author Daniel Appenmaier
  * @version 1.0

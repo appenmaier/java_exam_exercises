@@ -3,7 +3,7 @@ package exams1.classdiagrams.giftbag;
 import java.util.Objects;
 
 /**
- * Person
+ * Represents a person with a name, age, and gender.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -36,10 +36,12 @@ public class Person {
       return age == other.age && gender == other.gender && Objects.equals(name, other.name);
    }
 
+   /** Returns the age of this person. */
    public int gage() {
       return age;
    }
 
+   /** Returns the gender of this person. */
    public char gender() {
       return gender;
    }
@@ -49,6 +51,7 @@ public class Person {
       return Objects.hash(age, gender, name);
    }
 
+   /** Returns the name of this person. */
    public String name() {
       return name;
    }

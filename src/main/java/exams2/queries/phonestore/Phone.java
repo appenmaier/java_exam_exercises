@@ -1,7 +1,7 @@
 package exams2.queries.phonestore;
 
 /**
- * Smartphone
+ * Represents a smartphone with its technical specifications and price.
  *
  * @author Daniel Appenmaier
  * @version 1.0

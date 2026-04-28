@@ -5,7 +5,7 @@ import java.util.Map.Entry;
 import java.util.Optional;
 
 /**
- * Raumstation
+ * Represents a space station with a set of numbered landing bays for space fighters.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -13,6 +13,9 @@ import java.util.Optional;
  */
 public record SpaceStation(String name, Map<Integer, SpaceFighter> bays) {
 
+   /**
+    * Docks the given space fighter at the specified bay number, throwing exceptions if the bay or the fighter is already occupied.
+    */
    public void land(SpaceFighter spaceFighter, Integer bayNumber)
          throws SpaceFighterAlreadyLandedException, BayAlreadyLoadedException {
       for (Entry<Integer, SpaceFighter> entry : bays.entrySet()) {
@@ -26,6 +29,9 @@ public record SpaceStation(String name, Map<Integer, SpaceFighter> bays) {
       bays.put(bayNumber, spaceFighter);
    }
 
+   /**
+    * Returns the docked space fighter with the highest maximum speed, if any.
+    */
    public Optional<SpaceFighter> getFastestSpaceFighter() {
       SpaceFighter fastestSpaceFighter = null;
       int maxSpeed = 0;

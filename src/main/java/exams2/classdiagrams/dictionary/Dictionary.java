@@ -7,7 +7,7 @@ import java.util.Optional;
 import java.util.Scanner;
 
 /**
- * Woerterbuch
+ * Represents a bilingual dictionary that maps words from a source language to a target language.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -16,6 +16,9 @@ import java.util.Scanner;
 public record Dictionary(Language sourceLanguage, Language targetLanguage,
       Map<Word, Word> entries) {
 
+   /**
+    * Adds a word pair to the dictionary, validating that both words match the expected languages.
+    */
    public void addEntry(Word sourceWord, Word targetWord) throws InvalidLanguageException {
       if (!sourceWord.language().equals(sourceLanguage)
             || !targetWord.language().equals(targetLanguage)) {
@@ -25,6 +28,9 @@ public record Dictionary(Language sourceLanguage, Language targetLanguage,
       entries.put(sourceWord, targetWord);
    }
 
+   /**
+    * Imports word pairs from a semicolon-delimited file into the dictionary.
+    */
    public void importEntries(File file) throws FileNotFoundException {
       Scanner scanner = new Scanner(file);
       while (scanner.hasNextLine()) {
@@ -41,6 +47,9 @@ public record Dictionary(Language sourceLanguage, Language targetLanguage,
       scanner.close();
    }
 
+   /**
+    * Returns the translation of the given word value, searching in both directions.
+    */
    public Optional<String> getTranslation(String word) {
       for (Map.Entry<Word, Word> entry : entries.entrySet()) {
          if (entry.getKey().value().equals(word)) {

@@ -1,7 +1,7 @@
 package exams2.classdiagrams.shoppingportal;
 
 /**
- * Verkaufbar
+ * Interface for items that can be sold, requiring a price accessor.
  *
  * @author Daniel Appenmaier
  * @version 1.0

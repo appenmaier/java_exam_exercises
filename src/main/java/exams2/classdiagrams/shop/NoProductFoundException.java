@@ -1,7 +1,7 @@
 package exams2.classdiagrams.shop;
 
 /**
- * NoProductFoundException
+ * Thrown when a requested product does not exist in the shop's assortment.
  *
  * @author Daniel Appenmaier
  * @version 1.0

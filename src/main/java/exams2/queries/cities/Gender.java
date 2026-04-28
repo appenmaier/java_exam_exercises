@@ -1,7 +1,7 @@
 package exams2.queries.cities;
 
 /**
- * Geschlecht
+ * Represents the gender of a person.
  *
  * @author Daniel Appenmaier
  * @version 1.0

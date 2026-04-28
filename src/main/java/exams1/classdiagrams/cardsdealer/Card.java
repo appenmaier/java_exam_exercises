@@ -3,7 +3,7 @@ package exams1.classdiagrams.cardsdealer;
 import java.util.Objects;
 
 /**
- * Spielkarte
+ * Represents a playing card with a colour and a numeric value.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -19,6 +19,7 @@ public class Card {
       this.value = value;
    }
 
+   /** Returns the colour of this card. */
    public String colour() {
       return colour;
    }
@@ -48,6 +49,7 @@ public class Card {
       return "Card [colour=" + colour + ", value=" + value + "]";
    }
 
+   /** Returns the numeric value of this card. */
    public int value() {
       return value;
    }

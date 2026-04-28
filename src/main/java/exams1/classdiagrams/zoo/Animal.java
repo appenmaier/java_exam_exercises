@@ -3,7 +3,7 @@ package exams1.classdiagrams.zoo;
 import java.util.Objects;
 
 /**
- * Tier
+ * Represents an animal with a description, size, and weight.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -21,6 +21,7 @@ public class Animal {
       this.weightInKG = weightInKG;
    }
 
+   /** Returns the description of this animal. */
    public String description() {
       return description;
    }
@@ -47,6 +48,7 @@ public class Animal {
       return Objects.hash(description, sizeInM, weightInKG);
    }
 
+   /** Returns the size of this animal in metres. */
    public double sizeInM() {
       return sizeInM;
    }
@@ -57,6 +59,7 @@ public class Animal {
             + weightInKG + "]";
    }
 
+   /** Returns the weight of this animal in kilograms. */
    public double weightInKG() {
       return weightInKG;
    }

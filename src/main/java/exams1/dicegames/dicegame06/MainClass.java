@@ -3,7 +3,7 @@ package exams1.dicegames.dicegame06;
 import java.util.Scanner;
 
 /**
- * MainClass
+ * Two-player game of five rounds where each player rolls three dice and the higher sum wins the round.
  *
  * @author Daniel Appenmaier
  * @version 1.0

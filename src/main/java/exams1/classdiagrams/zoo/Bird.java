@@ -1,7 +1,7 @@
 package exams1.classdiagrams.zoo;
 
 /**
- * Vogel
+ * Represents a bird, which is an animal that can fly.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -27,6 +27,7 @@ public class Bird extends Animal {
       return true;
    }
 
+   /** Simulates the flying behaviour of this bird. */
    public void fly() {
       System.out.println("flatter, flatter");
    }

@@ -3,7 +3,7 @@ package exams2.classdiagrams.cornershop;
 import java.util.Objects;
 
 /**
- * Ware
+ * Represents a specific goods item with a category and unit of measurement.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -21,15 +21,22 @@ public class Goods extends Product implements Comparable<Goods> {
       this.unit = unit;
    }
 
+   /**
+    * Returns the category this goods item belongs to.
+    */
    public ClassOfGoods classOfGoods() {
       return classOfGoods;
    }
 
+   /** Compares this goods item to another by description alphabetically. */
    @Override
    public int compareTo(Goods other) {
       return description().compareTo(other.description());
    }
 
+   /**
+    * Returns the unit of measurement for this goods item.
+    */
    public String unit() {
       return unit;
    }

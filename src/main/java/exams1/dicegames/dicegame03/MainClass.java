@@ -3,7 +3,7 @@ package exams1.dicegames.dicegame03;
 import java.util.Scanner;
 
 /**
- * MainClass
+ * Two-player combat game where each player rolls a standard die and the loser of each round loses one health point.
  *
  * @author Daniel Appenmaier
  * @version 1.0

@@ -3,7 +3,7 @@ package exams1.classdiagrams.christmastree;
 import java.util.Objects;
 
 /**
- * Elektrische Kerze
+ * Represents a battery-powered electric candle that consumes power each time it is lit.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -41,6 +41,7 @@ public class ElectricCandle extends Candle {
       return result;
    }
 
+   /** Lights this electric candle if it has remaining power, consuming 10 units of charge. */
    @Override
    public void lightACandle() {
       if (power > 0) {
@@ -49,6 +50,7 @@ public class ElectricCandle extends Candle {
       }
    }
 
+   /** Recharges this electric candle to full power. */
    public void recharge() {
       power = 100;
    }

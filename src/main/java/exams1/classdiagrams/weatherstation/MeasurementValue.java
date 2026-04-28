@@ -3,7 +3,7 @@ package exams1.classdiagrams.weatherstation;
 import java.util.Objects;
 
 /**
- * Messwert
+ * Represents a single measurement value recorded by a sensor at a specific timestamp.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -37,14 +37,17 @@ public class MeasurementValue {
             && Double.doubleToLongBits(value) == Double.doubleToLongBits(other.value);
    }
 
+   /** Returns the sensor that recorded this measurement value. */
    public Sensor getSensor() {
       return sensor;
    }
 
+   /** Returns the timestamp at which this measurement value was recorded. */
    public long getTimestamp() {
       return timestamp;
    }
 
+   /** Returns the numeric value of this measurement. */
    public double getValue() {
       return value;
    }

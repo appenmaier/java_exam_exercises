@@ -3,7 +3,7 @@ package exams1.classdiagrams.zoo;
 import java.util.Objects;
 
 /**
- * Fisch
+ * Represents a fish, which is an animal with a color that can swim.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -41,6 +41,7 @@ public class Fish extends Animal {
       return result;
    }
 
+   /** Simulates the swimming behaviour of this fish. */
    public void swim() {
       System.out.println("schwimm, schwimm");
    }

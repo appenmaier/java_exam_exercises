@@ -1,7 +1,7 @@
 package exams2.queries.tanks;
 
 /**
- * Nation
+ * Represents the nation of origin of a tank.
  *
  * @author Daniel Appenmaier
  * @version 1.0

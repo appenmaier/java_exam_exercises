@@ -3,7 +3,7 @@ package exams1.classdiagrams.player;
 import java.util.Objects;
 
 /**
- * Spielfigur
+ * Represents a game token with a type, color, and numeric value.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -36,14 +36,17 @@ public class GameToken {
       return color == other.color && type == other.type && value == other.value;
    }
 
+   /** Returns the color of this game token. */
    public GameTokenColor getColor() {
       return color;
    }
 
+   /** Returns the type of this game token. */
    public GameTokenType getType() {
       return type;
    }
 
+   /** Returns the numeric value of this game token. */
    public int getValue() {
       return value;
    }

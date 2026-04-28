@@ -1,7 +1,7 @@
 package exams2.classdiagrams.fantasygame;
 
 /**
- * Rasse
+ * Represents the playable races available to characters in the fantasy game.
  *
  * @author Daniel Appenmaier
  * @version 1.0

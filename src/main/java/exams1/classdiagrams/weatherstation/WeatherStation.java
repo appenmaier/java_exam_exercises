@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Objects;
 
 /**
- * Wetterstation
+ * Represents a weather station at a specific location that collects measurement values from sensors.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -25,6 +25,7 @@ public class WeatherStation {
       measurementValues = new ArrayList<>();
    }
 
+   /** Adds a measurement value to this weather station's collection. */
    public void addMeasurementValue(MeasurementValue measurementValue) {
       measurementValues.add(measurementValue);
    }
@@ -45,6 +46,7 @@ public class WeatherStation {
             && Objects.equals(measurementValues, other.measurementValues);
    }
 
+   /** Returns the average measurement value for the given sensor within the specified time range. */
    public double getAverageValueBySensor(Sensor sensor, long start, long end) {
       double total = 0;
       int counter = 0;
@@ -57,14 +59,17 @@ public class WeatherStation {
       return total / counter;
    }
 
+   /** Returns the unique identifier of this weather station. */
    public int getId() {
       return id;
    }
 
+   /** Returns the location of this weather station. */
    public String getLocation() {
       return location;
    }
 
+   /** Returns all measurement values recorded by this weather station. */
    public List<MeasurementValue> getMeasurementValues() {
       return measurementValues;
    }

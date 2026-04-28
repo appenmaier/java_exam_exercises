@@ -1,7 +1,7 @@
 package exams1.classdiagrams.parkinggarage;
 
 /**
- * MainClass
+ * Demonstrates parking and retrieving vehicles in a parking garage with multiple spots.
  *
  * @author Daniel Appenmaier
  * @version 1.0

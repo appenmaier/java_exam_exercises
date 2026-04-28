@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Objects;
 
 /**
- * Lego-Baustein
+ * Abstract base class representing a Lego brick with dimensions and a color.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -21,6 +21,9 @@ public abstract class LegoBrick extends Lego {
       this.color = color;
    }
 
+   /**
+    * Returns the color of this Lego brick.
+    */
    public String color() {
       return color;
    }
@@ -40,6 +43,9 @@ public abstract class LegoBrick extends Lego {
       return Objects.equals(color, other.color) && Arrays.equals(dimensions, other.dimensions);
    }
 
+   /**
+    * Returns the dimensions array of this Lego brick.
+    */
    public int[] getDimensions() {
       return dimensions;
    }

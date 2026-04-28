@@ -1,7 +1,7 @@
 package exams1.dicegames.dicegame12;
 
 /**
- * Symbol
+ * Represents a rock-paper-scissors symbol used in the dice game.
  *
  * @author Daniel Appenmaier
  * @version 1.0

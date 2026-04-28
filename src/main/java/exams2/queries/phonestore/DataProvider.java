@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Datenlieferant
+ * Provides a predefined list of phones for use in phone store queries.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -12,6 +12,7 @@ import java.util.List;
  */
 public class DataProvider {
 
+   /** Returns a predefined list of phones from multiple brands. */
    public static List<Phone> getPhones() {
       List<Phone> phones = new ArrayList<>();
       phones.add(

@@ -1,7 +1,7 @@
 package exams2.classdiagrams.spacestation;
 
 /**
- * SpaceFighterAlreadyLandedException
+ * Thrown when a space fighter that is already docked attempts to land again.
  *
  * @author Daniel Appenmaier
  * @version 1.0

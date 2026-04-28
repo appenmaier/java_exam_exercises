@@ -3,7 +3,7 @@ package exams1.classdiagrams.creature;
 import java.util.Objects;
 
 /**
- * Position
+ * Represents a mutable 2D position defined by x and y coordinates.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -18,10 +18,12 @@ public class Position {
       this.y = y;
    }
 
+   /** Decrements the x coordinate by one. */
    public void decreaseX() {
       x--;
    }
 
+   /** Decrements the y coordinate by one. */
    public void decreaseY() {
       y--;
    }
@@ -41,10 +43,12 @@ public class Position {
       return x == other.x && y == other.y;
    }
 
+   /** Returns the x coordinate of this position. */
    public int getX() {
       return x;
    }
 
+   /** Returns the y coordinate of this position. */
    public int getY() {
       return y;
    }
@@ -54,10 +58,12 @@ public class Position {
       return Objects.hash(x, y);
    }
 
+   /** Increments the x coordinate by one. */
    public void increaseX() {
       x++;
    }
 
+   /** Increments the y coordinate by one. */
    public void increaseY() {
       y++;
    }

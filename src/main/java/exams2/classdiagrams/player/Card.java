@@ -1,7 +1,7 @@
 package exams2.classdiagrams.player;
 
 /**
- * Spielkarte
+ * Represents a game card with a description, an action point cost, and a power value.
  *
  * @author Daniel Appenmaier
  * @version 1.0

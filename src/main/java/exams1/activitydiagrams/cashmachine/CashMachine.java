@@ -3,7 +3,7 @@ package exams1.activitydiagrams.cashmachine;
 import java.util.Scanner;
 
 /**
- * Geldautomat
+ * Simulates an ATM that allows a user to log in, check their balance, and withdraw money.
  *
  * @author Daniel Appenmaier
  * @version 1.0

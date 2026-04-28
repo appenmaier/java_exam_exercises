@@ -1,7 +1,7 @@
 package exams2.classdiagrams.superleague;
 
 /**
- * Boesewicht
+ * Represents a villain belonging to a specific universe with a power level.
  *
  * @author Daniel Appenmaier
  * @version 1.0

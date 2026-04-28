@@ -3,7 +3,7 @@ package exams1.classdiagrams.studentcourse;
 import java.util.Objects;
 
 /**
- * Vorlesung
+ * Represents a lecture with a code, description, and credit points.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -21,14 +21,17 @@ public class Lecture {
       this.creditPoints = creditPoints;
    }
 
+   /** Returns the unique code of this lecture. */
    public String code() {
       return code;
    }
 
+   /** Returns the number of credit points awarded for this lecture. */
    public int creditPoints() {
       return creditPoints;
    }
 
+   /** Returns the description of this lecture. */
    public String description() {
       return description;
    }

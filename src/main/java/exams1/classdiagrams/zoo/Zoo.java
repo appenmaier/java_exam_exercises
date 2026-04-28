@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Objects;
 
 /**
- * Zoo
+ * Represents a zoo that manages a collection of animals.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -21,10 +21,12 @@ public class Zoo {
       this.animals = animals;
    }
 
+   /** Adds an animal to this zoo. */
    public void addAnimal(Animal animal) {
       animals.add(animal);
    }
 
+   /** Returns the list of all animals in this zoo. */
    public List<Animal> animals() {
       return animals;
    }
@@ -44,6 +46,7 @@ public class Zoo {
       return Objects.equals(animals, other.animals) && Objects.equals(name, other.name);
    }
 
+   /** Returns the largest animal in this zoo by size. */
    public Animal getBiggestAnimal() {
       double sizeInM = 0;
       Animal animal = null;
@@ -58,6 +61,7 @@ public class Zoo {
       return animal;
    }
 
+   /** Returns all fish in this zoo that match the given color. */
    public List<Fish> getFishesByColor(String color) {
       List<Fish> fishes = new ArrayList<>();
 
@@ -77,6 +81,7 @@ public class Zoo {
       return Objects.hash(animals, name);
    }
 
+   /** Returns the name of this zoo. */
    public String name() {
       return name;
    }

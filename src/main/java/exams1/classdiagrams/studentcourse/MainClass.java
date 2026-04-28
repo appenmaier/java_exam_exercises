@@ -1,7 +1,7 @@
 package exams1.classdiagrams.studentcourse;
 
 /**
- * MainClass
+ * Demonstrates a student course by adding lectures and students, then querying the lecture with the most credit points.
  *
  * @author Daniel Appenmaier
  * @version 1.0

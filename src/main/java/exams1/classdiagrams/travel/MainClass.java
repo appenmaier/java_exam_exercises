@@ -3,7 +3,7 @@ package exams1.classdiagrams.travel;
 import java.time.LocalDate;
 
 /**
- * MainClass
+ * Demonstrates a trip to New York by adding flights and accommodation, then printing total costs.
  *
  * @author Daniel Appenmaier
  * @version 1.0

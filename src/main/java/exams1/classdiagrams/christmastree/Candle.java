@@ -3,7 +3,7 @@ package exams1.classdiagrams.christmastree;
 import java.util.Objects;
 
 /**
- * Kerze
+ * Represents a candle with a colour that can be lit or extinguished.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -18,6 +18,7 @@ public class Candle {
       this.colour = colour;
    }
 
+   /** Returns the colour of this candle. */
    public String colour() {
       return colour;
    }
@@ -42,10 +43,12 @@ public class Candle {
       return Objects.hash(colour, isBurning);
    }
 
+   /** Returns whether this candle is currently burning. */
    public boolean isBurning() {
       return isBurning;
    }
 
+   /** Lights this candle so that it is burning. */
    public void lightACandle() {
       isBurning = true;
    }
@@ -55,6 +58,7 @@ public class Candle {
       return "Candle [colour=" + colour + ", isBurning=" + isBurning + "]";
    }
 
+   /** Extinguishes this candle so that it is no longer burning. */
    public void turnOffACandle() {
       isBurning = false;
    }

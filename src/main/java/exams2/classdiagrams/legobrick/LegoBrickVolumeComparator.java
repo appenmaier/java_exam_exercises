@@ -3,7 +3,7 @@ package exams2.classdiagrams.legobrick;
 import java.util.Comparator;
 
 /**
- * LegoBrickVolumeComparator
+ * Comparator that orders Lego bricks by their volume in ascending order.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -11,6 +11,7 @@ import java.util.Comparator;
  */
 public class LegoBrickVolumeComparator implements Comparator<LegoBrick> {
 
+   /** Compares two Lego bricks by their volume (width × depth × height). */
    @Override
    public int compare(LegoBrick legoBrick1, LegoBrick legoBrick2) {
       int[] dimensionsLegoBrick1 = legoBrick1.getDimensions();

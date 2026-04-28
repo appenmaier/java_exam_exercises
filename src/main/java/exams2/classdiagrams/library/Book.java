@@ -4,7 +4,7 @@ import java.util.Objects;
 import java.util.UUID;
 
 /**
- * Buch
+ * Abstract base class representing a book with an author, a title, and a unique UUID.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -22,6 +22,9 @@ public abstract class Book {
       this.title = title;
    }
 
+   /**
+    * Returns the author of this book.
+    */
    public Author author() {
       return author;
    }
@@ -47,10 +50,16 @@ public abstract class Book {
       return Objects.hash(author, id, title);
    }
 
+   /**
+    * Returns the unique identifier of this book.
+    */
    public UUID id() {
       return id;
    }
 
+   /**
+    * Returns the title of this book.
+    */
    public String title() {
       return title;
    }

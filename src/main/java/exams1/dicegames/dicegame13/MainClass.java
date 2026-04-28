@@ -3,7 +3,7 @@ package exams1.dicegames.dicegame13;
 import java.util.Scanner;
 
 /**
- * MainClass
+ * Single-player Christmas symbol guessing game where the player tries to predict the rolled symbol each round.
  *
  * @author Daniel Appenmaier
  * @version 1.0
