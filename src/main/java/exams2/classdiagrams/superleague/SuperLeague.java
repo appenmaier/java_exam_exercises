@@ -39,7 +39,7 @@ public record SuperLeague<T extends SuperHuman>(String name, Universe universe,
    public List<T> getAllAvailableSuperHumans() {
       List<T> allAvailableSuperHumans = new ArrayList<>();
       for (Entry<T, Boolean> entry : members.entrySet()) {
-         if (entry.getValue().equals(true)) {
+         if (entry.getValue()) {
             allAvailableSuperHumans.add(entry.getKey());
          }
       }

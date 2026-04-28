@@ -15,7 +15,7 @@ public record Game(Map<Character, Status> characters) {
 
    public Status setStatus(Character character, Status newStatus) throws Exception {
       Status oldStatus = characters.get(character);
-      if (oldStatus.equals(oldStatus)) {
+      if (oldStatus.equals(newStatus)) {
          throw new Exception();
       }
       characters.put(character, newStatus);

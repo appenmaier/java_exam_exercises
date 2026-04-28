@@ -47,7 +47,7 @@ public class Creature {
    }
 
    public void moveLeft() {
-      position.decreaseY();
+      position.decreaseX();
    }
 
    public void moveRight() {

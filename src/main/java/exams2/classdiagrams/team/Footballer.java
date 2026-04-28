@@ -48,7 +48,7 @@ public final class Footballer extends Sportsman {
       return result;
    }
 
-   public int numberOfAssitss() {
+   public int numberOfAssists() {
       return numberOfAssists;
    }
 
