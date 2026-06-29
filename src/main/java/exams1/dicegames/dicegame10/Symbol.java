@@ -13,6 +13,11 @@ public enum Symbol {
 
    private final String description;
 
+   /**
+    * Creates a symbol enum constant with the given description.
+    *
+    * @param description the human-readable name of this symbol
+    */
    Symbol(String description) {
       this.description = description;
    }

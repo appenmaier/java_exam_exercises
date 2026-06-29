@@ -16,6 +16,13 @@ public final class Applicant extends Person {
    private final int applicantId;
    private final List<ApplicationDocument> applicationDocuments;
 
+   /**
+    * Creates an applicant with the given name, birth date, and applicant ID.
+    *
+    * @param name               the applicant's name
+    * @param birthDateTimeStamp the birth date as a Unix timestamp
+    * @param applicantId        the unique applicant identifier
+    */
    public Applicant(String name, long birthDateTimeStamp, int applicantId) {
       super(name, birthDateTimeStamp);
       this.applicantId = applicantId;
@@ -24,6 +31,8 @@ public final class Applicant extends Person {
 
    /**
     * Adds an application document to this applicant's list of documents.
+    *
+    * @param applicationDocument the document to add
     */
    public void addApplicationDocument(ApplicationDocument applicationDocument) {
       applicationDocuments.add(applicationDocument);

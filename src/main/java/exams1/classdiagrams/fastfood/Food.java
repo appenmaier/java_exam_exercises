@@ -15,6 +15,13 @@ public class Food {
    private final FoodCategory foodCategory;
    private final String name;
 
+   /**
+    * Creates a new food item with the given name, food category, and calorie count.
+    *
+    * @param name          the name of the food item
+    * @param foodCategory  the food category of the food item
+    * @param calories      the calorie count of the food item
+    */
    public Food(String name, FoodCategory foodCategory, double calories) {
       this.name = name;
       this.foodCategory = foodCategory;

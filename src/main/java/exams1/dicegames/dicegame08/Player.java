@@ -13,6 +13,11 @@ public class Player {
    private int points;
    private final Dice dice;
 
+   /**
+    * Creates a player with the given name.
+    *
+    * @param name the player's name
+    */
    public Player(String name) {
       this.name = name;
       dice = new Dice();

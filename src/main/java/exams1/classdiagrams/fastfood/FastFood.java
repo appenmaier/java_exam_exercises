@@ -16,6 +16,14 @@ public class FastFood extends Food {
    private boolean isVegetarian;
    private List<Integer> ratings;
 
+   /**
+    * Creates a new fast food item with the given name, food category, calorie count, and vegetarian flag.
+    *
+    * @param name          the name of the fast food item
+    * @param foodCategory  the food category of the fast food item
+    * @param calories      the calorie count of the fast food item
+    * @param isVegetarian  whether the fast food item is vegetarian
+    */
    public FastFood(String name, FoodCategory foodCategory, double calories, boolean isVegetarian) {
       super(name, foodCategory, calories);
       this.isVegetarian = isVegetarian;

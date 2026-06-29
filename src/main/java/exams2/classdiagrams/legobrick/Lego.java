@@ -13,6 +13,11 @@ public abstract class Lego {
 
    private final int id;
 
+   /**
+    * Creates a Lego piece with the given unique identifier.
+    *
+    * @param id the unique identifier for this Lego piece
+    */
    public Lego(int id) {
       this.id = id;
    }

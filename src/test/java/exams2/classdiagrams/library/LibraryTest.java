@@ -30,11 +30,13 @@ public class LibraryTest {
       library.addBook(misery);
    }
 
+   /** Verifies that a book can be found by its title. */
    @Test
    void testGetBookByTitle() {
       assertEquals(Optional.of(misery), library.getBookByTitle("Misery"));
    }
 
+   /** Verifies that retrieving paper books by status returns the correct count. */
    @Test
    void testGetPaperBooksByStatus() {
       assertEquals(2, library.getPaperBooksByStatus(Status.AVAILABLE).size());

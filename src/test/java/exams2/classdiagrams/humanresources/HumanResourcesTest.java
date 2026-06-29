@@ -39,6 +39,7 @@ public class HumanResourcesTest {
       humanResources.addTelephoneNumber(petraMuellerMobilePhoneNumber, petraMueller);
    }
 
+   /** Verifies that adding a duplicate person throws an exception and unique persons are added correctly. */
    @Test
    void testAddPerson() throws DuplicateException {
       assertThrows(DuplicateException.class, () -> humanResources.addPerson(maxMaier));
@@ -47,12 +48,14 @@ public class HumanResourcesTest {
       assertTrue(humanResources.staff().size() == 2);
    }
 
+   /** Verifies that a telephone number is correctly associated with a person. */
    @Test
    void testAddTelephoneNumber() {
       humanResources.addTelephoneNumber(maxMaierPhoneNumber, maxMaier);
       assertEquals(maxMaier, humanResources.telephoneNumbers().get(maxMaierPhoneNumber));
    }
 
+   /** Verifies that all telephone numbers for a given person ID are returned correctly. */
    @Test
    void testGetTelephoneNumbersByPersonId() {
       assertEquals(2, humanResources.getTelephoneNumbersByPersonId(2).size());

@@ -14,6 +14,13 @@ public final class Footballer extends Sportsman {
    private int numberOfGoals;
    private int numberOfAssists;
 
+   /**
+    * Creates a footballer with the given name, goal count, and assist count.
+    *
+    * @param name            the footballer's name
+    * @param numberOfGoals   the number of goals scored
+    * @param numberOfAssists the number of assists contributed
+    */
    public Footballer(String name, int numberOfGoals, int numberOfAssists) {
       super(name);
       this.numberOfGoals = numberOfGoals;

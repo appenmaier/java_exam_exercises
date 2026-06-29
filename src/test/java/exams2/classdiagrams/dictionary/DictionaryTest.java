@@ -28,6 +28,7 @@ public class DictionaryTest {
       dictionary.addEntry(new Word("Blume", Language.DE), new Word("Flower", Language.EN));
    }
 
+   /** Verifies that adding an entry with an invalid language throws an exception. */
    @Test
    void testAddEntry() {
       assertThrows(InvalidLanguageException.class,
@@ -37,6 +38,7 @@ public class DictionaryTest {
                   new Word("Voiture", Language.FR)));
    }
 
+   /** Verifies that translating a known word returns the correct translation and unknown returns empty. */
    @Test
    void testGetTranslation() {
       assertEquals(Optional.of("Flower"), dictionary.getTranslation("Blume"));
@@ -44,6 +46,7 @@ public class DictionaryTest {
       assertEquals(Optional.empty(), dictionary.getTranslation("Auto"));
    }
 
+   /** Verifies that importing entries from a file populates the dictionary correctly. */
    @Test
    void testImportEntries() throws FileNotFoundException {
       dictionary.importEntries(new File("src/test/resources/dictionary.txt"));

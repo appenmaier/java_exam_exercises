@@ -13,6 +13,11 @@ public enum FileFormat {
 
    private final String description;
 
+   /**
+    * Creates a file format enum constant with the given description.
+    *
+    * @param description the human-readable name of this file format
+    */
    FileFormat(String description) {
       this.description = description;
    }

@@ -14,6 +14,9 @@ public record ShoppingPortal(String user, List<Product> products,
 
    /**
     * Adds the given product in the specified quantity to the shopping cart.
+    *
+    * @param product the product to add
+    * @param amount  the quantity to add
     */
    public void addProductToShoppingCart(Product product, int amount) {
       shoppingCart.addItem(product, amount);
@@ -28,6 +31,8 @@ public record ShoppingPortal(String user, List<Product> products,
 
    /**
     * Removes all cart entries for the given product from the shopping cart.
+    *
+    * @param product the product to remove
     */
    public void removeProductFromShoppingCart(Product product) {
       shoppingCart.removeItem(product);

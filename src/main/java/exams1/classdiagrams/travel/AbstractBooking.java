@@ -15,19 +15,24 @@ public abstract class AbstractBooking implements Booking {
    private final double priceInEuro;
    private final LocalDate bookingDate;
 
+   /**
+    * Creates a new abstract booking with the given price; records today as the booking date.
+    *
+    * @param priceInEuro the price of the booking in euros
+    */
    public AbstractBooking(double priceInEuro) {
       this.priceInEuro = priceInEuro;
       bookingDate = LocalDate.now();
    }
 
-   @Override
    /** Returns the price of this booking in euros. */
+   @Override
    public final double getPriceInEuro() {
       return priceInEuro;
    }
 
-   @Override
    /** Returns the date on which this booking was created. */
+   @Override
    public final LocalDate getBookingDate() {
       return bookingDate;
    }

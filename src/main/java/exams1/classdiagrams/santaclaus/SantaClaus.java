@@ -15,6 +15,9 @@ public class SantaClaus {
 
    private final List<Present> presents;
 
+   /**
+    * Creates a new Santa Claus instance with an empty list of presents.
+    */
    public SantaClaus() {
       this.presents = new ArrayList<>();
    }

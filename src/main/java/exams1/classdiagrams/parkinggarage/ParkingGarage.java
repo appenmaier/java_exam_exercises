@@ -13,6 +13,11 @@ public class ParkingGarage {
 
    private ParkingSpot[] parkingSpots;
 
+   /**
+    * Creates a new parking garage with the given array of parking spots.
+    *
+    * @param parkingSpots the array of parking spots in this garage
+    */
    public ParkingGarage(ParkingSpot[] parkingSpots) {
       this.parkingSpots = parkingSpots;
    }

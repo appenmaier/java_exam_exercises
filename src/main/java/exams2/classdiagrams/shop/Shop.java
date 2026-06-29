@@ -18,6 +18,8 @@ public record Shop<T extends Comparable<T>>(String name, Map<T, List<Integer>> a
 
    /**
     * Adds the given product to the assortment if it is not already present.
+    *
+    * @param product the product to add
     */
    public void addProduct(T product) {
       if (!assortment.containsKey(product)) {
@@ -27,6 +29,11 @@ public record Shop<T extends Comparable<T>>(String name, Map<T, List<Integer>> a
 
    /**
     * Records a rating for the given product, throwing exceptions for unknown products or out-of-range values.
+    *
+    * @param product the product to rate
+    * @param rating  the rating value (must be between 1 and 5 inclusive)
+    * @throws NoProductFoundException  if the product is not in the assortment
+    * @throws InvalidRatingException   if the rating is outside the range 1 to 5
     */
    public void rateProduct(T product, int rating)
          throws NoProductFoundException, InvalidRatingException {

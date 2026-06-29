@@ -16,6 +16,9 @@ public record HumanResources(Map<TelephoneNumber, Person> telephoneNumbers, List
 
    /**
     * Associates the given telephone number with the specified person.
+    *
+    * @param telephoneNumber the telephone number to add
+    * @param person          the person this number belongs to
     */
    public void addTelephoneNumber(TelephoneNumber telephoneNumber, Person person) {
       telephoneNumbers.put(telephoneNumber, person);
@@ -23,6 +26,9 @@ public record HumanResources(Map<TelephoneNumber, Person> telephoneNumbers, List
 
    /**
     * Adds the given person to the staff list, throwing an exception if they already exist.
+    *
+    * @param person the person to add
+    * @throws DuplicateException if the person already exists in the staff list
     */
    public void addPerson(Person person) throws DuplicateException {
       for (Person p : staff) {
@@ -35,6 +41,9 @@ public record HumanResources(Map<TelephoneNumber, Person> telephoneNumbers, List
 
    /**
     * Returns all telephone numbers registered for the person with the given ID.
+    *
+    * @param id the person's ID to look up
+    * @return a list of telephone numbers belonging to the specified person
     */
    public List<TelephoneNumber> getTelephoneNumbersByPersonId(int id) {
       List<TelephoneNumber> numbers = new ArrayList<>();

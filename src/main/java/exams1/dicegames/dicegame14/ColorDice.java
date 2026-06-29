@@ -14,6 +14,7 @@ public class ColorDice {
    private Color color;
    private int value;
 
+   /** Creates a new color dice and performs an initial roll. */
    public ColorDice() {
       rollTheDice();
    }

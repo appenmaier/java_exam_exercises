@@ -14,6 +14,11 @@ public enum ClassOfGoods {
 
    private final String description;
 
+   /**
+    * Creates a goods category enum constant with the given description.
+    *
+    * @param description the German display name of this goods category
+    */
    ClassOfGoods(String description) {
       this.description = description;
    }

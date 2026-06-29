@@ -13,6 +13,7 @@ public class SymbolDice {
 
    private Symbol symbol;
 
+   /** Creates a new symbol dice and performs an initial roll. */
    public SymbolDice() {
       rollTheDice();
    }

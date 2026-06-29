@@ -13,6 +13,11 @@ public enum Type {
 
    private final int maxSpeed;
 
+   /**
+    * Creates a space fighter type enum constant with the given maximum speed.
+    *
+    * @param maxSpeed the maximum speed of this space fighter type in MGLT
+    */
    Type(int maxSpeed) {
       this.maxSpeed = maxSpeed;
    }

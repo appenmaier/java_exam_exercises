@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 /**
- * Flug
+ * Represents a flight booking identified by a flight ID and flight date.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -15,16 +15,25 @@ public class Flight extends AbstractBooking {
    private final String flightId;
    private final LocalDate flightDate;
 
+   /**
+    * Creates a new flight booking with the given flight ID, flight date, and price.
+    *
+    * @param flightId    the unique identifier of the flight
+    * @param flightDate  the date of the flight
+    * @param priceInEuro the price of the flight in euros
+    */
    public Flight(String flightId, LocalDate flightDate, double priceInEuro) {
       super(priceInEuro);
       this.flightId = flightId;
       this.flightDate = flightDate;
    }
 
+   /** Returns the unique identifier of this flight. */
    public String getFlightId() {
       return flightId;
    }
 
+   /** Returns the date of this flight. */
    public LocalDate getFlightDate() {
       return flightDate;
    }

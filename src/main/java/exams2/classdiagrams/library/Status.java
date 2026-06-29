@@ -13,6 +13,11 @@ public enum Status {
 
    private String description;
 
+   /**
+    * Creates a status enum constant with the given German description.
+    *
+    * @param description the German display name of this status
+    */
    Status(String description) {
       this.description = description;
    }

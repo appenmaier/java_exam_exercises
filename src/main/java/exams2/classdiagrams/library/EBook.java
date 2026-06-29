@@ -14,6 +14,15 @@ public final class EBook extends Book {
    private final FileFormat fileFormat;
    private final int fileSize;
 
+   /**
+    * Creates an e-book with the given author, title, file format, and file size.
+    *
+    * @param author     the author of the e-book
+    * @param title      the title of the e-book
+    * @param fileFormat the file format of the e-book
+    * @param fileSize   the file size in kilobytes (must be positive)
+    * @throws WrongFileSizeExcpetion if the file size is not positive
+    */
    public EBook(Author author, String title, FileFormat fileFormat, int fileSize)
          throws WrongFileSizeExcpetion {
       super(author, title);

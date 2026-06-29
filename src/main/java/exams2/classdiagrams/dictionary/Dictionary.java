@@ -18,6 +18,10 @@ public record Dictionary(Language sourceLanguage, Language targetLanguage,
 
    /**
     * Adds a word pair to the dictionary, validating that both words match the expected languages.
+    *
+    * @param sourceWord the word in the source language
+    * @param targetWord the word in the target language
+    * @throws InvalidLanguageException if either word's language does not match the dictionary's languages
     */
    public void addEntry(Word sourceWord, Word targetWord) throws InvalidLanguageException {
       if (!sourceWord.language().equals(sourceLanguage)
@@ -30,6 +34,9 @@ public record Dictionary(Language sourceLanguage, Language targetLanguage,
 
    /**
     * Imports word pairs from a semicolon-delimited file into the dictionary.
+    *
+    * @param file the file to import from
+    * @throws java.io.FileNotFoundException if the given file does not exist
     */
    public void importEntries(File file) throws FileNotFoundException {
       Scanner scanner = new Scanner(file);
@@ -49,6 +56,9 @@ public record Dictionary(Language sourceLanguage, Language targetLanguage,
 
    /**
     * Returns the translation of the given word value, searching in both directions.
+    *
+    * @param word the word value to look up
+    * @return an {@link java.util.Optional} containing the translated word value, or empty if not found
     */
    public Optional<String> getTranslation(String word) {
       for (Map.Entry<Word, Word> entry : entries.entrySet()) {

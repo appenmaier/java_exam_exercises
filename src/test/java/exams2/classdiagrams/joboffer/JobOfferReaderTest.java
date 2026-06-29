@@ -17,6 +17,7 @@ import org.junit.jupiter.api.Test;
  */
 public class JobOfferReaderTest {
 
+   /** Verifies that reading job offers from a file returns the correct IDs and throws for invalid files. */
    @Test
    void testGetJobOffers() throws FileNotFoundException {
       assertThrows(FileNotFoundException.class, () -> JobOfferReader.getJobOffers(new File("")));

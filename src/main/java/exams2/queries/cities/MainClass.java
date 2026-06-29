@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
- * MainClass
+ * Entry point for the city queries exercise.
  *
  * @author Daniel Appenmaier
  * @version 1.0

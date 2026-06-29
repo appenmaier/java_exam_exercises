@@ -16,6 +16,12 @@ public abstract class Book {
    private final UUID id;
    private final String title;
 
+   /**
+    * Creates a book with the given author and title, assigning it a random UUID.
+    *
+    * @param author the author of the book
+    * @param title  the title of the book
+    */
    public Book(Author author, String title) {
       id = UUID.randomUUID();
       this.author = author;

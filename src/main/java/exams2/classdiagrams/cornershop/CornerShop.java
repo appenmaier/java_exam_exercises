@@ -15,6 +15,9 @@ public record CornerShop(String name, Map<Goods, Integer> store) {
 
    /**
     * Returns the stock amount of the goods matching the given description, if present.
+    *
+    * @param description the description to search for
+    * @return an {@link java.util.Optional} containing the stock amount, or empty if not found
     */
    public Optional<Integer> getAmountByDescription(String description) {
       for (Entry<Goods, Integer> entry : store.entrySet()) {
@@ -27,6 +30,10 @@ public record CornerShop(String name, Map<Goods, Integer> store) {
 
    /**
     * Reduces the stock of the given goods by the specified amount, or throws an exception if insufficient stock exists.
+    *
+    * @param goods  the goods to sell
+    * @param amount the quantity to sell
+    * @throws OutofStockException if the goods are not in stock or the available quantity is insufficient
     */
    public void sellGoods(Goods goods, int amount) throws OutofStockException {
       if (!store.containsKey(goods) || store.get(goods) < amount) {
@@ -38,6 +45,9 @@ public record CornerShop(String name, Map<Goods, Integer> store) {
 
    /**
     * Increases the stock of the given goods by the specified amount, adding it to the store if not yet present.
+    *
+    * @param goods  the goods to restock
+    * @param amount the quantity to add
     */
    public void buyGoods(Goods goods, int amount) {
       if (store.containsKey(goods)) {

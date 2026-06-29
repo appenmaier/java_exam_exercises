@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Singles
+ * Provides a predefined list of music singles for use in single queries.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -13,6 +13,7 @@ import java.util.List;
  */
 public class Singles {
 
+   /** Returns a predefined list of well-known music singles. */
    public static List<Single> getSingles() {
       List<Single> singles = new ArrayList<>();
 

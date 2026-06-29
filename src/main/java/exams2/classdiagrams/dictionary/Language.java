@@ -14,6 +14,12 @@ public enum Language {
    private final String code;
    private final String description;
 
+   /**
+    * Creates a language enum constant with the given ISO code and German display name.
+    *
+    * @param code        the ISO language code
+    * @param description the German display name of this language
+    */
    Language(String code, String description) {
       this.code = code;
       this.description = description;

@@ -9,6 +9,13 @@ package exams1.classdiagrams.zoo;
  */
 public class Bird extends Animal {
 
+   /**
+    * Creates a new bird with the given description, size, and weight.
+    *
+    * @param description the description (name) of the bird
+    * @param sizeInM     the size of the bird in metres
+    * @param weightInKG  the weight of the bird in kilograms
+    */
    public Bird(String description, double sizeInM, double weightInKG) {
       super(description, sizeInM, weightInKG);
    }

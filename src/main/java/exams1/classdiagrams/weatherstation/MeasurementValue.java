@@ -15,6 +15,13 @@ public class MeasurementValue {
    private final Sensor sensor;
    private final double value;
 
+   /**
+    * Creates a new measurement value with the given timestamp, sensor type, and measured value.
+    *
+    * @param timestamp the timestamp of the measurement in milliseconds since epoch
+    * @param sensor    the sensor that recorded this value
+    * @param value     the measured numeric value
+    */
    public MeasurementValue(long timestamp, Sensor sensor, double value) {
       this.timestamp = timestamp;
       this.sensor = sensor;

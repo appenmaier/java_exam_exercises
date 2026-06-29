@@ -13,6 +13,7 @@ public class Dice {
 
    private int value;
 
+   /** Creates a new dice and performs an initial roll. */
    public Dice() {
       rollTheDice();
    }

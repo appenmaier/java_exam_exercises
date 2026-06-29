@@ -31,12 +31,14 @@ public class CharacterAndGameTest {
       game = new Game(new HashMap<>());
    }
 
+   /** Verifies that character comparison by name follows the expected natural ordering. */
    @Test
    void testCompareTo() {
       assertTrue(balin.compareTo(valyon) < 0);
       assertTrue(balin.compareTo(snagagor) < 0);
    }
 
+   /** Verifies that retrieving a character by status returns the correct character or empty. */
    @Test
    void testGetCharacter() {
       game.characters().put(balin, Status.STUN);

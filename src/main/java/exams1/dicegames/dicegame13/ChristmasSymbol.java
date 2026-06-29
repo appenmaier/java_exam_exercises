@@ -13,6 +13,11 @@ public enum ChristmasSymbol {
 
    private final String description;
 
+   /**
+    * Creates a Christmas symbol enum constant with the given description.
+    *
+    * @param description the human-readable German name of this symbol
+    */
    ChristmasSymbol(String description) {
       this.description = description;
    }

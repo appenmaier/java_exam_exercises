@@ -17,6 +17,10 @@ public class JobOfferReader {
 
    /**
     * Reads and returns a list of job offers parsed from the given semicolon-delimited file.
+    *
+    * @param file the file to read job offers from
+    * @return a list of parsed {@link JobOffer} instances
+    * @throws java.io.FileNotFoundException if the given file does not exist
     */
    public static List<JobOffer> getJobOffers(File file) throws FileNotFoundException {
       List<JobOffer> jobOffers = new ArrayList<>();

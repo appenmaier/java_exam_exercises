@@ -13,6 +13,11 @@ public enum ShapeSymbol {
 
    private final int corners;
 
+   /**
+    * Creates a shape symbol enum constant with the given number of corners.
+    *
+    * @param corners the number of corners for this shape
+    */
    ShapeSymbol(int corners) {
       this.corners = corners;
    }

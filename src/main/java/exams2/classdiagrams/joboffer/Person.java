@@ -14,6 +14,12 @@ public abstract class Person {
    private final long birthDateTimeStamp;
    private final String name;
 
+   /**
+    * Creates a person with the given name and birth date timestamp.
+    *
+    * @param name               the person's name
+    * @param birthDateTimeStamp the birth date as a Unix timestamp
+    */
    public Person(String name, long birthDateTimeStamp) {
       this.name = name;
       this.birthDateTimeStamp = birthDateTimeStamp;

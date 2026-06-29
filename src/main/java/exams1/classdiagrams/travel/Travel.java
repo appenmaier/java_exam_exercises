@@ -19,6 +19,13 @@ public class Travel {
    private final LocalDate end;
    private final List<Booking> bookings;
 
+   /**
+    * Creates a new travel entry with the given description, start date, and end date.
+    *
+    * @param description the name or description of the trip
+    * @param start       the start date of the trip
+    * @param end         the end date of the trip
+    */
    public Travel(String description, LocalDate start, LocalDate end) {
       this.description = description;
       this.start = start;

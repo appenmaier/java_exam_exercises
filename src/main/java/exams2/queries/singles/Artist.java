@@ -3,7 +3,7 @@ package exams2.queries.singles;
 import java.time.LocalDate;
 
 /**
- * Künstler
+ * Represents a music artist with their name, country of origin, birthdate, and living status.
  *
  * @author Daniel Appenmaier
  * @version 1.0

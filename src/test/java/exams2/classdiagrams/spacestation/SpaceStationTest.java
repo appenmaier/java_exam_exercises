@@ -35,11 +35,13 @@ public class SpaceStationTest {
       spaceStation = new SpaceStation("SpaceStation X", bays);
    }
 
+   /** Verifies that the fastest space fighter is identified correctly. */
    @Test
    void testGetFastestSpaceFighter() {
       assertEquals(Optional.of(sf1), spaceStation.getFastestSpaceFighter());
    }
 
+   /** Verifies that landing throws the correct exception when a bay is occupied or the fighter has already landed. */
    @Test
    void testLand() {
       assertThrows(BayAlreadyLoadedException.class, () -> spaceStation.land(sf3, 1));

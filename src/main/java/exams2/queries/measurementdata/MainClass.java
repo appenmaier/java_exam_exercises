@@ -5,7 +5,7 @@ import java.util.OptionalDouble;
 import java.util.stream.Collectors;
 
 /**
- * MainClass
+ * Entry point for the measurement data queries exercise.
  *
  * @author Daniel Appenmaier
  * @version 1.0

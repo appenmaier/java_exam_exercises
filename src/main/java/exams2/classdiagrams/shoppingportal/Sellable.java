@@ -9,6 +9,11 @@ package exams2.classdiagrams.shoppingportal;
  */
 public interface Sellable {
 
+   /**
+    * Returns the price of this sellable item.
+    *
+    * @return the price
+    */
    double price();
 
 }

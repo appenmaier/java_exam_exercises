@@ -15,6 +15,12 @@ public class Player {
    private final String name;
    private final List<GameToken> gameTokens;
 
+   /**
+    * Creates a new player with the given name and initial list of game tokens.
+    *
+    * @param name        the name of the player
+    * @param gameTokens  the initial list of game tokens for this player
+    */
    public Player(String name, List<GameToken> gameTokens) {
       this.name = name;
       this.gameTokens = gameTokens;

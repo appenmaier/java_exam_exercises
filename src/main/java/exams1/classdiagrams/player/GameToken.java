@@ -15,6 +15,13 @@ public class GameToken {
    private final GameTokenColor color;
    private final int value;
 
+   /**
+    * Creates a new game token with the given type, color, and value.
+    *
+    * @param type  the type of the game token
+    * @param color the color of the game token
+    * @param value the numeric value of the game token
+    */
    public GameToken(GameTokenType type, GameTokenColor color, int value) {
       this.type = type;
       this.color = color;

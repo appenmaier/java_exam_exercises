@@ -14,6 +14,12 @@ public class Student {
    private final MatriculationNumber matriculationNumber;
    private final String name;
 
+   /**
+    * Creates a new student with the given matriculation number and name.
+    *
+    * @param matriculationNumber the matriculation number of the student
+    * @param name                the name of the student
+    */
    public Student(MatriculationNumber matriculationNumber, String name) {
       this.matriculationNumber = matriculationNumber;
       this.name = name;

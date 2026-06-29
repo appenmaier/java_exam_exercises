@@ -14,6 +14,12 @@ public class SymbolDice {
    private final Symbol[] symbols;
    private Symbol symbol;
 
+   /**
+    * Creates a weighted symbol dice with the specified number of skull and heart faces.
+    *
+    * @param skulls the number of skull faces on this dice
+    * @param hearts the number of heart faces on this dice
+    */
    public SymbolDice(int skulls, int hearts) {
       symbols = new Symbol[skulls + hearts];
       for (int i = 0; i < skulls; i++) {

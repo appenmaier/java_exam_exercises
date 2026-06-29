@@ -13,6 +13,11 @@ public enum Genre {
 
    private final String description;
 
+   /**
+    * Creates a genre enum constant with the given description.
+    *
+    * @param description the human-readable name of this genre
+    */
    private Genre(String description) {
       this.description = description;
    }

@@ -13,6 +13,7 @@ public class ChristmasDice {
 
    private ChristmasSymbol value;
 
+   /** Creates a new Christmas dice and performs an initial roll. */
    public ChristmasDice() {
       rollTheDice();
    }

@@ -12,7 +12,7 @@ import java.util.Optional;
  * @author Daniel Appenmaier
  * @version 1.0
  *
- * @param <T>
+ * @param <T> the type of super-powered beings in this league
  */
 public record SuperLeague<T extends SuperHuman>(String name, Universe universe,
       Map<T, Boolean> members) {
@@ -34,6 +34,9 @@ public record SuperLeague<T extends SuperHuman>(String name, Universe universe,
 
    /**
     * Adds the given super-powered being to the league, throwing an exception if their universe does not match.
+    *
+    * @param t the super-powered being to add
+    * @throws WrongUniverseException if the being's universe does not match this league's universe
     */
    public void addSuperHuman(T t) throws WrongUniverseException {
       if (!t.universe().equals(universe)) {

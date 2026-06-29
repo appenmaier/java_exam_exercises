@@ -9,6 +9,13 @@ package exams2.classdiagrams.superleague;
  */
 public class Hero extends SuperHuman {
 
+   /**
+    * Creates a hero with the given name, universe, and power level.
+    *
+    * @param name     the hero's name
+    * @param universe the universe this hero belongs to
+    * @param power    the power level of this hero
+    */
    public Hero(String name, Universe universe, int power) {
       super(name, universe, power);
    }

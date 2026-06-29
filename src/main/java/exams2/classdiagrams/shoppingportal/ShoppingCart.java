@@ -10,7 +10,7 @@ import java.util.Objects;
  * @author Daniel Appenmaier
  * @version 1.0
  *
- * @param <T>
+ * @param <T> the type of sellable items in this cart
  */
 public class ShoppingCart<T extends Sellable> {
 
@@ -49,12 +49,16 @@ public class ShoppingCart<T extends Sellable> {
 
    private final List<Item> items;
 
+   /** Creates an empty shopping cart. */
    public ShoppingCart() {
       items = new ArrayList<>();
    }
 
    /**
     * Adds a new cart entry for the given sellable item with the specified quantity.
+    *
+    * @param sellable the item to add
+    * @param amount   the quantity to add
     */
    public void addItem(T sellable, int amount) {
       items.add(new Item(sellable, amount));
@@ -101,6 +105,8 @@ public class ShoppingCart<T extends Sellable> {
 
    /**
     * Removes all cart entries matching the given sellable item.
+    *
+    * @param sellable the item to remove
     */
    public void removeItem(T sellable) {
       ArrayList<Item> tmp = new ArrayList<>();

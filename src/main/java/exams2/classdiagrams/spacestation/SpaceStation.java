@@ -15,6 +15,11 @@ public record SpaceStation(String name, Map<Integer, SpaceFighter> bays) {
 
    /**
     * Docks the given space fighter at the specified bay number, throwing exceptions if the bay or the fighter is already occupied.
+    *
+    * @param spaceFighter the space fighter to land
+    * @param bayNumber    the bay number to land in
+    * @throws SpaceFighterAlreadyLandedException if the space fighter is already docked
+    * @throws BayAlreadyLoadedException          if the bay is already occupied
     */
    public void land(SpaceFighter spaceFighter, Integer bayNumber)
          throws SpaceFighterAlreadyLandedException, BayAlreadyLoadedException {

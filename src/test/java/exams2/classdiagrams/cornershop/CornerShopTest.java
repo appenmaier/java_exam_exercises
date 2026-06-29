@@ -36,6 +36,7 @@ public class CornerShopTest {
       cornerShop.store().put(milk, 5);
    }
 
+   /** Verifies that buying goods increases the stock amount correctly. */
    @Test
    void testBuyGoods() {
       cornerShop.buyGoods(bread, 5);
@@ -46,12 +47,14 @@ public class CornerShopTest {
       assertEquals(1, cornerShop.store().get(eggs));
    }
 
+   /** Verifies that retrieving the amount by description returns the correct optional value. */
    @Test
    void testGetAmountByDescription() {
       assertEquals(5, cornerShop.getAmountByDescription("Milch").get());
       assertEquals(Optional.empty(), cornerShop.getAmountByDescription("Eier"));
    }
 
+   /** Verifies that selling goods decreases stock and throws an exception when out of stock. */
    @Test
    void testSellGoods() throws OutofStockException {
       cornerShop.sellGoods(bread, 2);

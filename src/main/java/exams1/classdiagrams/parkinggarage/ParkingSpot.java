@@ -3,7 +3,7 @@ package exams1.classdiagrams.parkinggarage;
 import java.util.Objects;
 
 /**
- * Parkplatz
+ * Represents a parking spot with defined dimensions and an optional bus-only restriction.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -16,6 +16,13 @@ public class ParkingSpot {
    private final double length;
    private Vehicle vehicle;
 
+   /**
+    * Creates a new parking spot with the given length, height, and bus-only restriction.
+    *
+    * @param length         the length of the parking spot in metres
+    * @param height         the maximum vehicle height allowed in metres
+    * @param isForBusesOnly whether this spot is reserved for buses only
+    */
    public ParkingSpot(double length, double height, boolean isForBusesOnly) {
       this.length = length;
       this.height = height;

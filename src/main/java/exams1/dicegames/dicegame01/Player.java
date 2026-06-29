@@ -12,6 +12,12 @@ public class Player {
    private final String name;
    private int points;
 
+   /**
+    * Creates a player with the given name and starting points.
+    *
+    * @param name   the player's name
+    * @param points the initial points of the player
+    */
    public Player(String name, int points) {
       this.name = name;
       this.points = points;

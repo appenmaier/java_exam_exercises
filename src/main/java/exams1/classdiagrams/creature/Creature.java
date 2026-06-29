@@ -15,6 +15,13 @@ public class Creature {
    private final Position position;
    private final Type type;
 
+   /**
+    * Creates a new creature with the given name, type, and starting position.
+    *
+    * @param name     the name of the creature
+    * @param type     the type of the creature
+    * @param position the initial position of the creature
+    */
    public Creature(String name, Type type, Position position) {
       this.name = name;
       this.type = type;

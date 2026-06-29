@@ -14,6 +14,12 @@ public enum Colour {
    private final String description;
    private final int priority;
 
+   /**
+    * Creates a colour enum constant with the given description and priority.
+    *
+    * @param description the human-readable name of the colour
+    * @param priority    the priority value used for comparison
+    */
    private Colour(String description, int priority) {
       this.description = description;
       this.priority = priority;

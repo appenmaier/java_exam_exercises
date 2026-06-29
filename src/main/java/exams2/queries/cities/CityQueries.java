@@ -31,7 +31,12 @@ public record CityQueries(List<City> cities) {
       return names;
    }
 
-   /** Returns the name of the mayor of the city with the given name, if found. */
+   /**
+    * Returns the name of the mayor of the city with the given name, if found.
+    *
+    * @param nameOfCity the name of the city to look up
+    * @return an {@link java.util.Optional} containing the mayor's name, or empty if not found
+    */
    public Optional<String> getNameOfMajorByNameOfCity(String nameOfCity) {
       Optional<String> majorName = cities.stream()
             .filter(c -> c.name().equals(nameOfCity))

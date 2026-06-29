@@ -14,6 +14,12 @@ public enum Weapon {
    private final String description;
    private final int power;
 
+   /**
+    * Creates a weapon enum constant with the given description and power value.
+    *
+    * @param description the human-readable weapon name
+    * @param power       the attack power of the weapon
+    */
    Weapon(String description, int power) {
       this.description = description;
       this.power = power;

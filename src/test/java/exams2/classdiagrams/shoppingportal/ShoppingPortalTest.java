@@ -32,6 +32,7 @@ public class ShoppingPortalTest {
       shoppingPortal.addProductToShoppingCart(gow2, 1);
    }
 
+   /** Verifies that adding products to the shopping cart updates the total price correctly. */
    @Test
    void testAddProductToShoppingCart() {
       double total = 499.99 + 79.99 + 2 * 69.99;
@@ -39,12 +40,14 @@ public class ShoppingPortalTest {
       assertEquals(total, shoppingPortal.shoppingCart().getTotal());
    }
 
+   /** Verifies that clearing the shopping cart removes all items. */
    @Test
    void testClearShoppingCart() {
       shoppingPortal.clearShoppingCart();
       assertEquals(0, shoppingPortal.shoppingCart().items().size());
    }
 
+   /** Verifies that removing a product from the shopping cart reduces the item count. */
    @Test
    void testRemoveProductFromShoppingCart() {
       shoppingPortal.removeProductFromShoppingCart(ps5);

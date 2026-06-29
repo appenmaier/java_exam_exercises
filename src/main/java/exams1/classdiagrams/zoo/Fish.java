@@ -13,6 +13,14 @@ public class Fish extends Animal {
 
    public String color;
 
+   /**
+    * Creates a new fish with the given description, size, weight, and color.
+    *
+    * @param description the description (name) of the fish
+    * @param sizeInM     the size of the fish in metres
+    * @param weightInKG  the weight of the fish in kilograms
+    * @param color       the color of the fish
+    */
    public Fish(String description, double sizeInM, double weightInKG, String color) {
       super(description, sizeInM, weightInKG);
       this.color = color;

@@ -12,6 +12,11 @@ public class Player {
    private final String name;
    private int points;
 
+   /**
+    * Creates a player with the given name.
+    *
+    * @param name the player's name
+    */
    public Player(String name) {
       this.name = name;
    }

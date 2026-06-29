@@ -17,6 +17,10 @@ public record Team<T extends Sportsman>(String name, Map<T, Position> members) {
 
    /**
     * Adds a team member with the given position, throwing an exception if the member already exists.
+    *
+    * @param member   the team member to add
+    * @param position the playing position to assign
+    * @throws DuplicateKeyException if the member is already registered in the team
     */
    public void addTeamMember(T member, Position position) throws DuplicateKeyException {
       if (members.containsKey(member)) {
@@ -44,6 +48,9 @@ public record Team<T extends Sportsman>(String name, Map<T, Position> members) {
 
    /**
     * Returns all team members assigned to the specified position.
+    *
+    * @param position the position to filter by
+    * @return a list of team members assigned to the specified position
     */
    public List<T> getAllTeamMembersByPosition(Position position) {
       List<T> membersByPosition = new ArrayList<>();

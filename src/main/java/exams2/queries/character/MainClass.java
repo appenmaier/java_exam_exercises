@@ -14,7 +14,12 @@ import java.util.Random;
  */
 public class MainClass {
 
-   /** Generates and returns a list of randomly named and attributed game characters of the given size. */
+   /**
+    * Generates and returns a list of randomly named and attributed game characters of the given size.
+    *
+    * @param number the number of characters to generate
+    * @return a list of randomly generated game characters
+    */
    public static List<Character> getAvatars(int number) {
       String[] prefixes = {"Doom ", "Demon ", "Hell ", "Peace ", "Water ", "Fire "};
       String[] suffixes = {"Hammer", "Bringer", "Finder", "Walker", "Hunter"};

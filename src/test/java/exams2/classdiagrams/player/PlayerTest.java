@@ -30,6 +30,7 @@ public class PlayerTest {
       player = new Player("Hans-Peter", new ArrayList<>(), new HashMap<>());
    }
 
+   /** Verifies that the most powerful card in a row is returned correctly or empty for empty rows. */
    @Test
    void testGetMostPowerfulCardByRow()
          throws CardNotFoundException, NotEnoughActionPointsException {
@@ -42,6 +43,7 @@ public class PlayerTest {
       assertEquals(Optional.empty(), player.getMostPowerfulCardByRow(2));
    }
 
+   /** Verifies that playing a card throws the correct exception when the card is not in hand or action points are insufficient. */
    @Test
    void testPlayCard() {
       player.getHandCards().add(zombie);

@@ -15,6 +15,13 @@ public class Lecture {
    private final int creditPoints;
    private final String description;
 
+   /**
+    * Creates a new lecture with the given code, description, and credit points.
+    *
+    * @param code         the unique code of the lecture
+    * @param description  the description of the lecture
+    * @param creditPoints the number of credit points awarded for this lecture
+    */
    public Lecture(String code, String description, int creditPoints) {
       this.code = code;
       this.description = description;

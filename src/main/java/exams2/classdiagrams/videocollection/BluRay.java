@@ -13,6 +13,12 @@ public class BluRay extends Video {
 
    private final double capacity;
 
+   /**
+    * Creates a Blu-ray disc with the given movie and storage capacity.
+    *
+    * @param movie    the movie stored on this disc
+    * @param capacity the storage capacity in gigabytes
+    */
    public BluRay(Movie movie, double capacity) {
       super(movie);
       this.capacity = capacity;

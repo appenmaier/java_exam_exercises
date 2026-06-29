@@ -15,6 +15,13 @@ import java.util.Scanner;
  */
 public class IngredientsReader {
 
+   /**
+    * Reads ingredients from the given file and returns them as a list.
+    *
+    * @param file the file to read from
+    * @return the list of ingredients parsed from the file
+    * @throws FileNotFoundException if the file does not exist
+    */
    public static List<Ingredient> readIngredients(File file) throws FileNotFoundException {
       Scanner sc = new Scanner(file);
 

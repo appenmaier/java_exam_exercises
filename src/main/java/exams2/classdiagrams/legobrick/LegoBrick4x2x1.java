@@ -11,6 +11,12 @@ import java.util.Arrays;
  */
 public final class LegoBrick4x2x1 extends LegoBrick {
 
+   /**
+    * Creates a 4x2x1 Lego brick with the given ID and color.
+    *
+    * @param id    the unique identifier for this brick
+    * @param color the color of this brick
+    */
    public LegoBrick4x2x1(int id, String color) {
       super(id, new int[] {4, 2, 1}, color);
    }

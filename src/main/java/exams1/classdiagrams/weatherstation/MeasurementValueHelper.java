@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * MeasurementValueHelper
+ * Provides a utility method for reading measurement values from a file.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -15,6 +15,13 @@ import java.util.Scanner;
  */
 public class MeasurementValueHelper {
 
+   /**
+    * Reads measurement values from the given file and returns them as a list.
+    *
+    * @param file the file to read from
+    * @return the list of measurement values parsed from the file
+    * @throws FileNotFoundException if the file does not exist
+    */
    public static List<MeasurementValue> getValues(File file) throws FileNotFoundException {
       List<MeasurementValue> values = new ArrayList<>();
 

@@ -25,7 +25,12 @@ public record CharacterQueries(List<Character> characters) {
       return orcHunter;
    }
 
-   /** Returns the number of characters whose name matches the given name exactly. */
+   /**
+    * Returns the number of characters whose name matches the given name exactly.
+    *
+    * @param name the name to search for
+    * @return the count of characters with the given name
+    */
    public long getNumberOfCharactersByName(String name) {
       long numberOfCharacters;
       numberOfCharacters = characters.stream().filter(c -> c.name().equals(name)).count();

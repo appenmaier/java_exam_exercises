@@ -14,6 +14,12 @@ public class Rectangle extends Shape {
    private final double a;
    private final double b;
 
+   /**
+    * Creates a new rectangle with the given side lengths.
+    *
+    * @param a the first side length
+    * @param b the second side length
+    */
    public Rectangle(double a, double b) {
       this.a = a;
       this.b = b;

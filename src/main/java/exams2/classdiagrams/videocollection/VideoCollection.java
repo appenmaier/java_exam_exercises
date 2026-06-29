@@ -17,6 +17,8 @@ public record VideoCollection(List<Video> videos) {
 
    /**
     * Adds a video to this collection.
+    *
+    * @param video the video to add
     */
    public void addVideo(Video video) {
       videos.add(video);
@@ -24,6 +26,9 @@ public record VideoCollection(List<Video> videos) {
 
    /**
     * Imports videos from a semicolon-delimited file and adds them to the collection.
+    *
+    * @param file the file to import from
+    * @throws java.io.FileNotFoundException if the given file does not exist
     */
    public void importVideos(File file) throws FileNotFoundException {
       Scanner scanner = new Scanner(file);
@@ -49,6 +54,9 @@ public record VideoCollection(List<Video> videos) {
 
    /**
     * Returns the first video whose movie title matches the given string, if any.
+    *
+    * @param title the movie title to search for
+    * @return an {@link java.util.Optional} containing the matching video, or empty if not found
     */
    public Optional<Video> getVideoByMovieTitle(String title) {
       for (Video v : videos) {

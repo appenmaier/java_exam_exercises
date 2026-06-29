@@ -31,6 +31,7 @@ public class VideoCollectionTest {
       evilDead = new BluRay(new Movie("Evil Dead", Genre.HORROR, (short) 1981), 25);
    }
 
+   /** Verifies that a video can be found by its movie title and returns empty for unknown titles. */
    @Test
    void testGetVideoByMovieTitle() {
       collection.addVideo(theMatrix);
@@ -39,6 +40,7 @@ public class VideoCollectionTest {
       assertEquals(Optional.empty(), collection.getVideoByMovieTitle("Evil Dead 2"));
    }
 
+   /** Verifies that importing videos from a file populates the collection and throws for invalid files. */
    @Test
    void testImportVideos() throws FileNotFoundException {
       assertThrows(FileNotFoundException.class, () -> collection.importVideos(new File("")));

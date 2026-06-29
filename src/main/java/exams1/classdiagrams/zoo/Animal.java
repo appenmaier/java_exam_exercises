@@ -15,6 +15,13 @@ public class Animal {
    private final double sizeInM;
    private final double weightInKG;
 
+   /**
+    * Creates a new animal with the given description, size, and weight.
+    *
+    * @param description the description (name) of the animal
+    * @param sizeInM     the size of the animal in metres
+    * @param weightInKG  the weight of the animal in kilograms
+    */
    public Animal(String description, double sizeInM, double weightInKG) {
       this.description = description;
       this.sizeInM = sizeInM;

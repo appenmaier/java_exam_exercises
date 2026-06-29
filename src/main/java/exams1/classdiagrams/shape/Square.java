@@ -9,6 +9,11 @@ package exams1.classdiagrams.shape;
  */
 public class Square extends Rectangle {
 
+   /**
+    * Creates a new square with the given side length.
+    *
+    * @param a the side length of the square
+    */
    public Square(double a) {
       super(a, a);
    }

@@ -13,6 +13,7 @@ public class WeaponDice {
 
    private Weapon weapon;
 
+   /** Creates a new weapon dice and performs an initial roll. */
    public WeaponDice() {
       rollTheDice();
    }

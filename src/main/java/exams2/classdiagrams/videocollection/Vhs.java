@@ -13,6 +13,12 @@ public class Vhs extends Video {
 
    private final boolean isRewritable;
 
+   /**
+    * Creates a VHS cassette with the given movie and rewritability flag.
+    *
+    * @param movie        the movie stored on this cassette
+    * @param isRewritable whether this cassette can be rewritten
+    */
    public Vhs(Movie movie, boolean isRewritable) {
       super(movie);
       this.isRewritable = isRewritable;

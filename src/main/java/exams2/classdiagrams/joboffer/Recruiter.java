@@ -9,6 +9,12 @@ package exams2.classdiagrams.joboffer;
  */
 public final class Recruiter extends Person {
 
+   /**
+    * Creates a recruiter with the given name and birth date timestamp.
+    *
+    * @param name               the recruiter's name
+    * @param birthDateTimeStamp the birth date as a Unix timestamp
+    */
    public Recruiter(String name, long birthDateTimeStamp) {
       super(name, birthDateTimeStamp);
    }

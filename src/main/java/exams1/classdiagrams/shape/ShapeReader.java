@@ -17,6 +17,12 @@ public class ShapeReader {
 
    private final List<Shape> shapes = new ArrayList<>();
 
+   /**
+    * Creates a new ShapeReader by reading shapes from the given file.
+    *
+    * @param file the file to read shapes from
+    * @throws FileNotFoundException if the file does not exist
+    */
    public ShapeReader(File file) throws FileNotFoundException {
       Scanner sc = new Scanner(file);
 

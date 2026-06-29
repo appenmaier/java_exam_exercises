@@ -34,17 +34,20 @@ public class SuperLeagueTest {
       avengers.members().put(spiderman, false);
    }
 
+   /** Verifies that adding a super-human from the wrong universe throws a WrongUniverseException. */
    @Test
    void testAddSuperHuman() {
       assertThrows(WrongUniverseException.class, () -> avengers.addSuperHuman(superman));
    }
 
+   /** Verifies that only available super-humans are returned. */
    @Test
    void testGetAllAvailableSuperHumans() {
       List<Hero> heroes = avengers.getAllAvailableSuperHumans();
       assertEquals(1, heroes.size());
    }
 
+   /** Verifies that the most powerful super-human is identified correctly. */
    @Test
    void testGetMostPowerfulSuperHuman() {
       assertEquals(Optional.of(spiderman), avengers.getMostPowerfulSuperHuman());

@@ -13,6 +13,13 @@ public class PaperBook extends Book {
 
    private int pages;
 
+   /**
+    * Creates a paper book with the given author, title, and page count.
+    *
+    * @param author the author of the book
+    * @param title  the title of the book
+    * @param pages  the number of pages in the book
+    */
    public PaperBook(Author author, String title, int pages) {
       super(author, title);
       this.pages = pages;

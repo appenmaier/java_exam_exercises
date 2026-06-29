@@ -15,6 +15,13 @@ public abstract class Product {
    private double price;
    private String currency;
 
+   /**
+    * Creates a product with the given description, price, and currency.
+    *
+    * @param description the description of this product
+    * @param price       the price of this product
+    * @param currency    the currency in which the price is expressed
+    */
    public Product(String description, double price, String currency) {
       this.description = description;
       this.price = price;

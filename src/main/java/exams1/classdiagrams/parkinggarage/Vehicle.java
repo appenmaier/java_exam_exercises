@@ -16,6 +16,14 @@ public class Vehicle {
    private final String make;
    private final String model;
 
+   /**
+    * Creates a new vehicle with the given make, model, length, and height.
+    *
+    * @param make   the manufacturer of the vehicle
+    * @param model  the model name of the vehicle
+    * @param length the length of the vehicle in metres
+    * @param height the height of the vehicle in metres
+    */
    public Vehicle(String make, String model, double length, double height) {
       this.make = make;
       this.model = model;

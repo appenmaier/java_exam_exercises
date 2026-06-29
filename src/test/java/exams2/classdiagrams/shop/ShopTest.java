@@ -36,12 +36,14 @@ public class ShopTest {
       shop = new Shop<>("MyShop", new HashMap<>());
    }
 
+   /** Verifies that adding a product initializes its rating list in the assortment. */
    @Test
    void testAddProduct() {
       shop.addProduct(product1);
       assertNotNull(shop.assortment().get(product1));
    }
 
+   /** Verifies that products are returned in their natural sort order. */
    @Test
    void testGetAllProductsSortedByNaturalOrdering() {
       when(product1.compareTo(product2)).thenReturn(-1);
@@ -58,6 +60,7 @@ public class ShopTest {
       assertEquals(product3, shop.getAllProductsSortedByNaturalOrdering().get(2));
    }
 
+   /** Verifies that the best-rated product is returned correctly and empty when no products exist. */
    @Test
    void testGetBestRatedProduct() throws NoProductFoundException, InvalidRatingException {
       assertEquals(Optional.empty(), shop.getBestRatedProduct());
@@ -70,6 +73,7 @@ public class ShopTest {
       assertEquals(product1, shop.getBestRatedProduct().get());
    }
 
+   /** Verifies that invalid ratings throw exceptions and valid ratings are stored correctly. */
    @Test
    void testRateProduct() throws NoProductFoundException, InvalidRatingException {
       assertThrows(NoProductFoundException.class, () -> shop.rateProduct(product1, 1));

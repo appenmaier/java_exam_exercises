@@ -9,6 +9,14 @@ package exams1.classdiagrams.parkinggarage;
  */
 public class Bus extends Vehicle {
 
+   /**
+    * Creates a new bus with the given make, model, length, and height.
+    *
+    * @param make   the manufacturer of the bus
+    * @param model  the model name of the bus
+    * @param length the length of the bus in metres
+    * @param height the height of the bus in metres
+    */
    public Bus(String make, String model, double length, double height) {
       super(make, model, length, height);
    }

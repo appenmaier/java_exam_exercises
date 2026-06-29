@@ -18,6 +18,12 @@ public class StudentCourse {
    private final List<Lecture> lectures;
    private final List<Student> students;
 
+   /**
+    * Creates a new student course with the given description and course of studies.
+    *
+    * @param description     the description code of the student course
+    * @param courseOfStudies the course of studies this student course belongs to
+    */
    public StudentCourse(String description, CourseOfStudies courseOfStudies) {
       this.description = description;
       this.courseOfStudies = courseOfStudies;

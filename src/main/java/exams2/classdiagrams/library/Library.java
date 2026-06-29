@@ -17,6 +17,8 @@ public record Library(String name, Map<Book, Status> books) {
 
    /**
     * Adds the given book to the library with an initial status of available.
+    *
+    * @param book the book to add
     */
    public void addBook(Book book) {
       books.put(book, Status.AVAILABLE);
@@ -24,6 +26,9 @@ public record Library(String name, Map<Book, Status> books) {
 
    /**
     * Returns the book with the given title, if it exists in the library.
+    *
+    * @param title the title to search for
+    * @return an {@link java.util.Optional} containing the matching book, or empty if not found
     */
    public Optional<Book> getBookByTitle(String title) {
       for (Book b : books.keySet()) {
@@ -36,6 +41,9 @@ public record Library(String name, Map<Book, Status> books) {
 
    /**
     * Returns all paper books that currently have the given status.
+    *
+    * @param status the status to filter by
+    * @return a list of paper books with the specified status
     */
    public List<PaperBook> getPaperBooksByStatus(Status status) {
       List<PaperBook> paperBooks = new ArrayList<>();

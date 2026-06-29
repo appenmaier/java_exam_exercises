@@ -14,6 +14,15 @@ public class Goods extends Product implements Comparable<Goods> {
    private final ClassOfGoods classOfGoods;
    private final String unit;
 
+   /**
+    * Creates a goods item with the given attributes.
+    *
+    * @param description  the description of this goods item
+    * @param price        the price of this goods item
+    * @param currency     the currency of the price
+    * @param classOfGoods the category this goods item belongs to
+    * @param unit         the unit of measurement for this goods item
+    */
    public Goods(String description, double price, String currency, ClassOfGoods classOfGoods,
          String unit) {
       super(description, price, currency);

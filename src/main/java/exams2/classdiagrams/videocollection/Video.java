@@ -13,6 +13,11 @@ public abstract class Video {
 
    private final Movie movie;
 
+   /**
+    * Creates a video medium with the given movie.
+    *
+    * @param movie the movie stored on this medium
+    */
    public Video(Movie movie) {
       this.movie = movie;
    }

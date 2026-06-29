@@ -14,6 +14,12 @@ public class Toy extends Present {
    private final String description;
    private final double priceInEuro;
 
+   /**
+    * Creates a new toy with the given description and price.
+    *
+    * @param description  the description of the toy
+    * @param priceInEuro  the price of the toy in euros
+    */
    public Toy(String description, double priceInEuro) {
       this.description = description;
       this.priceInEuro = priceInEuro;

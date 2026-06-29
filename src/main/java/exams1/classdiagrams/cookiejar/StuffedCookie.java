@@ -14,6 +14,13 @@ public class StuffedCookie extends Cookie {
 
    private final Recipe jam;
 
+   /**
+    * Creates a new stuffed cookie with the given name, dough recipe, and jam recipe.
+    *
+    * @param name  the name of the stuffed cookie
+    * @param dough the dough recipe
+    * @param jam   the jam (filling) recipe
+    */
    public StuffedCookie(String name, Recipe dough, Recipe jam) {
       super(name, dough);
       this.jam = jam;

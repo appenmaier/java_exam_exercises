@@ -16,6 +16,11 @@ public class FastFoodShop {
    private List<FastFood> fastFood;
    private String name;
 
+   /**
+    * Creates a new fast food shop with the given name and an empty menu.
+    *
+    * @param name the name of the fast food shop
+    */
    public FastFoodShop(String name) {
       this.name = name;
       fastFood = new ArrayList<>();

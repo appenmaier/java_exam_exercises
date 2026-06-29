@@ -18,6 +18,13 @@ public class JobOffer {
    private Recruiter recruiter;
    private final String title;
 
+   /**
+    * Creates a job offer with the given ID, title, and recruiter.
+    *
+    * @param id        the unique identifier for this job offer
+    * @param title     the title of this job offer
+    * @param recruiter the recruiter responsible for this job offer
+    */
    public JobOffer(int id, String title, Recruiter recruiter) {
       this.id = id;
       this.title = title;
@@ -27,6 +34,8 @@ public class JobOffer {
 
    /**
     * Adds an applicant to this job offer's list of applicants.
+    *
+    * @param applicant the applicant to add
     */
    public void addApplicant(Applicant applicant) {
       applicants.add(applicant);

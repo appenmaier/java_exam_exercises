@@ -9,6 +9,14 @@ package exams1.classdiagrams.fastfood;
  */
 public class Burger extends FastFood {
 
+   /**
+    * Creates a new burger with the given name, food category, calorie count, and vegetarian flag.
+    *
+    * @param name          the name of the burger
+    * @param foodCategory  the food category of the burger
+    * @param calories      the calorie count of the burger
+    * @param isVegetarian  whether the burger is vegetarian
+    */
    public Burger(String name, FoodCategory foodCategory, double calories, boolean isVegetarian) {
       super(name, foodCategory, calories, isVegetarian);
    }

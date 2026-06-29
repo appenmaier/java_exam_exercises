@@ -15,6 +15,9 @@ public class GiftBag {
 
    private final List<Present> presents;
 
+   /**
+    * Creates a new empty gift bag.
+    */
    public GiftBag() {
       this.presents = new ArrayList<>();
    }

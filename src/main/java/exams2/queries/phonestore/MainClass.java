@@ -1,7 +1,7 @@
 package exams2.queries.phonestore;
 
 /**
- * MainClass
+ * Entry point for the phone store queries exercise.
  *
  * @author Daniel Appenmaier
  * @version 1.0

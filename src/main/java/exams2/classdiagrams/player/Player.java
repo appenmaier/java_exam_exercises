@@ -24,6 +24,9 @@ public class Player {
 
    /**
     * Returns the played card with the highest power value in the specified row, if any.
+    *
+    * @param row the row index to search
+    * @return an {@link java.util.Optional} containing the most powerful card in that row, or empty if the row is empty
     */
    public Optional<Card> getMostPowerfulCardByRow(int row) {
       Card card = null;
@@ -41,6 +44,11 @@ public class Player {
 
    /**
     * Plays the given card from the hand onto the specified row, deducting its action point cost.
+    *
+    * @param card the card to play
+    * @param row  the row index to place the card in
+    * @throws CardNotFoundException          if the card is not in the player's hand
+    * @throws NotEnoughActionPointsException if the player does not have enough action points
     */
    public void playCard(Card card, int row)
          throws CardNotFoundException, NotEnoughActionPointsException {

@@ -13,6 +13,11 @@ public class Circle extends Shape {
 
    private final double r;
 
+   /**
+    * Creates a new circle with the given radius.
+    *
+    * @param r the radius of the circle
+    */
    public Circle(double r) {
       this.r = r;
    }

@@ -16,6 +16,12 @@ public class Zoo {
    private final List<Animal> animals;
    private final String name;
 
+   /**
+    * Creates a new zoo with the given name and initial list of animals.
+    *
+    * @param name    the name of the zoo
+    * @param animals the initial list of animals
+    */
    public Zoo(String name, List<Animal> animals) {
       this.name = name;
       this.animals = animals;

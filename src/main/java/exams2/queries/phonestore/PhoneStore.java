@@ -33,7 +33,12 @@ public record PhoneStore(List<Phone> phones) {
             .average();
    }
 
-   /** Returns phones within the given price limit that have a modern connection type and CPU below 2.4 GHz, sorted by price ascending. */
+   /**
+    * Returns phones within the given price limit that have a modern connection type and CPU below 2.4 GHz, sorted by price ascending.
+    *
+    * @param maxPriceInEuro the maximum price in euros to filter by
+    * @return a list of matching phones sorted by price ascending
+    */
    public List<Phone> query3(double maxPriceInEuro) {
       return phones.stream()
             .filter(p -> p.priceInEuro() <= maxPriceInEuro)

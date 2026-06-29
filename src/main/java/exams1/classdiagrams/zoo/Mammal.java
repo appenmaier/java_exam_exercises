@@ -9,6 +9,13 @@ package exams1.classdiagrams.zoo;
  */
 public class Mammal extends Animal {
 
+   /**
+    * Creates a new mammal with the given description, size, and weight.
+    *
+    * @param description the description (name) of the mammal
+    * @param sizeInM     the size of the mammal in metres
+    * @param weightInKG  the weight of the mammal in kilograms
+    */
    public Mammal(String description, double sizeInM, double weightInKG) {
       super(description, sizeInM, weightInKG);
    }

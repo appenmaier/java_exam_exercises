@@ -15,6 +15,13 @@ public class Person {
    private final char gender;
    private final String name;
 
+   /**
+    * Creates a new person with the given name, age, and gender.
+    *
+    * @param name   the name of the person
+    * @param age    the age of the person
+    * @param gender the gender of the person
+    */
    public Person(String name, int age, char gender) {
       this.name = name;
       this.age = age;

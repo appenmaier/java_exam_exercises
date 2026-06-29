@@ -15,6 +15,13 @@ public abstract class SuperHuman {
    private final Universe universe;
    private final int power;
 
+   /**
+    * Creates a super-powered being with the given name, universe, and power level.
+    *
+    * @param name     the name of this being
+    * @param universe the universe this being belongs to
+    * @param power    the power level of this being
+    */
    public SuperHuman(String name, Universe universe, int power) {
       this.name = name;
       this.universe = universe;

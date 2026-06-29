@@ -16,6 +16,14 @@ public class Present {
    private final Person recipient;
    private final Person sender;
 
+   /**
+    * Creates a new present with the given description, price, sender, and recipient.
+    *
+    * @param description the description of the present
+    * @param price       the price of the present
+    * @param sender      the person who gives this present
+    * @param recipient   the person who receives this present
+    */
    public Present(String description, double price, Person sender, Person recipient) {
       this.description = description;
       this.price = price;

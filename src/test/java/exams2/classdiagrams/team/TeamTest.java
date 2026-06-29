@@ -33,16 +33,19 @@ public class TeamTest {
       dfbWomen.members().put(leaSchueller, Position.STRIKER);
    }
 
+   /** Verifies that adding a team member who is already in the team throws an exception. */
    @Test
    void testAddTeamMember() {
       assertThrows(Exception.class, () -> dfbWomen.addTeamMember(alexandraPopp, Position.STRIKER));
    }
 
+   /** Verifies that retrieving team members by position returns the correct count. */
    @Test
    void testGetAllTeamMembersByPositio() {
       assertEquals(2, dfbWomen.getAllTeamMembersByPosition(Position.STRIKER).size());
    }
 
+   /** Verifies that the best scorer is identified correctly based on goal count. */
    @Test
    void testGetBestScorer() {
       assertEquals(alexandraPopp, dfbWomen.getBestScorer().get());

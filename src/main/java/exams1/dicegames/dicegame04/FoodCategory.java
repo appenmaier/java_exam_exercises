@@ -17,6 +17,12 @@ public enum FoodCategory {
    private final String description;
    private final int points;
 
+   /**
+    * Creates a food category enum constant with the given description and point value.
+    *
+    * @param description the German display name of the food category
+    * @param points      the health-score point value for this category
+    */
    FoodCategory(String description, int points) {
       this.description = description;
       this.points = points;

@@ -16,6 +16,11 @@ public class Recipe {
    private final List<Ingredient> ingredients;
    private final String name;
 
+   /**
+    * Creates a new recipe with the given name and an empty ingredient list.
+    *
+    * @param name the name of the recipe
+    */
    public Recipe(String name) {
       this.name = name;
       ingredients = new ArrayList<>();

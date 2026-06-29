@@ -3,7 +3,7 @@ package exams1.dicegames.dicegame04;
 import java.util.Random;
 
 /**
- * Lebensmittelkatgorie-Wuerfel
+ * Represents a dice that randomly selects a food category when rolled.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -11,6 +11,11 @@ import java.util.Random;
  */
 public class FoodCategoryDice {
 
+   /**
+    * Rolls the dice and returns a randomly selected food category.
+    *
+    * @return a randomly selected {@link FoodCategory}
+    */
    public FoodCategory rollTheDice() {
       Random random = new Random();
       FoodCategory foodCategory =

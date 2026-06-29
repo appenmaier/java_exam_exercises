@@ -17,6 +17,13 @@ public class Game {
    private List<SymbolDice> dices;
    private int rounds;
 
+   /**
+    * Creates a new game with two named players and a specified number of symbol dice.
+    *
+    * @param name1          the name of the first player
+    * @param name2          the name of the second player
+    * @param numberOfDices  the number of symbol dice to use in the game
+    */
    public Game(String name1, String name2, int numberOfDices) {
       player1 = new Player(name1);
       player2 = new Player(name2);

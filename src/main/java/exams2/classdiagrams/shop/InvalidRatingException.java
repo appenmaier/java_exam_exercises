@@ -10,6 +10,11 @@ package exams2.classdiagrams.shop;
 @SuppressWarnings("serial")
 public class InvalidRatingException extends Exception {
 
+   /**
+    * Creates an exception for the given invalid rating value.
+    *
+    * @param rating the invalid rating value that was provided
+    */
    public InvalidRatingException(int rating) {
       super(rating + " is not a valid rating. Ratings must be in range 1 to 5");
    }

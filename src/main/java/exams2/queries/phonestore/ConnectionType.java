@@ -14,6 +14,12 @@ public enum ConnectionType {
    private final String description;
    private final boolean isModern;
 
+   /**
+    * Creates a connection type enum constant with the given description and modernity flag.
+    *
+    * @param description the human-readable name of this connection type
+    * @param isModern    whether this connection type is considered modern
+    */
    ConnectionType(String description, boolean isModern) {
       this.description = description;
       this.isModern = isModern;

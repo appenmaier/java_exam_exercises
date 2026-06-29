@@ -1,7 +1,7 @@
 package exams2.queries.tanks;
 
 /**
- * MainClass
+ * Entry point for the tanks queries exercise.
  *
  * @author Daniel Appenmaier
  * @version 1.0

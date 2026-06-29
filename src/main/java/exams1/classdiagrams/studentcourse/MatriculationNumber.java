@@ -3,7 +3,7 @@ package exams1.classdiagrams.studentcourse;
 import java.util.Arrays;
 
 /**
- * Matrikelnummer
+ * Represents a seven-digit matriculation number for a student.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -13,6 +13,17 @@ public class MatriculationNumber {
 
    private final int[] digits;
 
+   /**
+    * Creates a new matriculation number from the given seven individual digits.
+    *
+    * @param digit1 the first digit
+    * @param digit2 the second digit
+    * @param digit3 the third digit
+    * @param digit4 the fourth digit
+    * @param digit5 the fifth digit
+    * @param digit6 the sixth digit
+    * @param digit7 the seventh digit
+    */
    public MatriculationNumber(int digit1, int digit2, int digit3, int digit4, int digit5,
          int digit6, int digit7) {
       digits = new int[7];

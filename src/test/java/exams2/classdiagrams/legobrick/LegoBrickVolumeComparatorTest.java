@@ -13,6 +13,7 @@ import org.junit.jupiter.api.Test;
  */
 public class LegoBrickVolumeComparatorTest {
 
+   /** Verifies that two bricks with equal volume are considered equal by the comparator. */
    @Test
    void testCompare() {
       LegoBrickVolumeComparator comparator = new LegoBrickVolumeComparator();

@@ -9,6 +9,14 @@ package exams1.classdiagrams.parkinggarage;
  */
 public class Car extends Vehicle {
 
+   /**
+    * Creates a new car with the given make, model, length, and height.
+    *
+    * @param make   the manufacturer of the car
+    * @param model  the model name of the car
+    * @param length the length of the car in metres
+    * @param height the height of the car in metres
+    */
    public Car(String make, String model, double length, double height) {
       super(make, model, length, height);
    }

@@ -11,6 +11,11 @@ public abstract class Sportsman implements Comparable<Sportsman> {
 
    private final String name;
 
+   /**
+    * Creates a sportsman with the given name.
+    *
+    * @param name the sportsman's name
+    */
    public Sportsman(String name) {
       this.name = name;
    }

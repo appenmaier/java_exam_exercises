@@ -15,6 +15,13 @@ public abstract class LegoBrick extends Lego {
    private final String color;
    private final int[] dimensions;
 
+   /**
+    * Creates a Lego brick with the given ID, dimensions, and color.
+    *
+    * @param id         the unique identifier for this brick
+    * @param dimensions the dimensions array (width, depth, height)
+    * @param color      the color of this brick
+    */
    public LegoBrick(int id, int[] dimensions, String color) {
       super(id);
       this.dimensions = dimensions;

@@ -2,6 +2,9 @@ package exams1.activitydiagrams.cashmachine;
 
 /**
  * Stub implementation of a bank account used to simulate account operations in the cash machine.
+ *
+ * @author Daniel Appenmaier
+ * @version 1.0
  */
 public class AccountStub {
 

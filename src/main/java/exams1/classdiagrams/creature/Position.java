@@ -13,6 +13,12 @@ public class Position {
 
    private int x, y;
 
+   /**
+    * Creates a new position with the given x and y coordinates.
+    *
+    * @param x the x coordinate
+    * @param y the y coordinate
+    */
    public Position(int x, int y) {
       this.x = x;
       this.y = y;

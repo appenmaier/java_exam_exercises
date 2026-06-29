@@ -18,6 +18,11 @@ public class WeatherStation {
    private final String location;
    private final List<MeasurementValue> measurementValues;
 
+   /**
+    * Creates a new weather station at the given location with an auto-incremented ID.
+    *
+    * @param location the location of the weather station
+    */
    public WeatherStation(String location) {
       counter++;
       id = counter;

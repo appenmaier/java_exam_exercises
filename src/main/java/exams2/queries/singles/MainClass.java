@@ -1,7 +1,7 @@
 package exams2.queries.singles;
 
 /**
- * MainClass
+ * Entry point for the singles queries exercise.
  *
  * @author Daniel Appenmaier
  * @version 1.0

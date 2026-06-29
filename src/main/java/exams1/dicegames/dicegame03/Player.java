@@ -13,6 +13,12 @@ public class Player {
    private int healthPoints;
    private final Dice dice;
 
+   /**
+    * Creates a player with the given name and starting health points.
+    *
+    * @param name         the player's name
+    * @param healthPoints the initial health points of the player
+    */
    public Player(String name, int healthPoints) {
       this.name = name;
       this.healthPoints = healthPoints;
