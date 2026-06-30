@@ -4,7 +4,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## About This Repository
 
-Model solutions ("Musterlösungen") for Java exam exercises from [Programmieren mit Java](https://jappuccini.github.io/java-docs/production/). Exercise names and comments are in German. All Javadoc comments are in English.
+Model solutions ("Musterlösungen") for Java exam exercises from [Programmieren mit Java](https://jappuccini.github.io/java-docs/production/).
+
+## Coding Conventions
+
+- **Javadoc**: every class has a Javadoc comment including `@author` and `@version` tags
+- **Identifiers**: always in English (class names, method names, variable names, etc.)
+- **Comments**: always in English
+- **Strings** (user-facing output, enum constants used as labels, etc.): in German
 
 ## Build & Test Commands
 
@@ -31,17 +38,28 @@ mvn clean package
 - `src/main/java/exams1/` — Exam 1 exercises (activity diagrams, class diagrams, dice games)
 - `src/main/java/exams2/` — Exam 2 exercises (class diagrams, stream/collection queries)
 - `src/main/resources/` — Data files (`.txt`, `.csv`) read by exercises
-- `src/test/java/exams2/classdiagrams/` — JUnit 5 tests (14 test classes, primarily for exams2)
+- `src/test/java/exams2/classdiagrams/` — JUnit 5 tests (15 test classes, only for exams2)
 
 ### Exercise Categories
 
 | Package | Content |
 |---|---|
-| `exams1/activitydiagrams/` | Implementations from UML activity diagrams (sorting, calculators) |
-| `exams1/classdiagrams/` | 12 OOP design exercises (cards, shapes, zoo, weather station, travel, etc.) |
-| `exams1/dicegames/` | 16 interactive dice game simulations |
-| `exams2/classdiagrams/` | Advanced OOP exercises (library, fantasy game, HR, shop, superleague, etc.) |
-| `exams2/queries/` | Stream API exercises (filtering, sorting, transforming collections) |
+| `exams1/activitydiagrams/` | Implementations from UML activity diagrams (sorting, calculators, cash machine) |
+| `exams1/classdiagrams/` | 16 OOP design exercises (cards, shapes, zoo, weather station, travel, restaurant, etc.) |
+| `exams1/dicegames/` | 17 interactive dice game simulations |
+| `exams2/classdiagrams/` | 16 advanced OOP exercises (library, fantasy game, HR, shop, superleague, space station, etc.) |
+| `exams2/queries/` | 8 Stream API exercises (characters, cities, planets, phone store, tanks, etc.) |
+
+### Focus Topics
+
+**Java 1 (exams1):**
+- Procedural programming basics: variables, conditionals, loops, arrays
+- OOP basics: classes, attributes, methods, objects, inheritance, Java API
+
+**Java 2 (exams2):**
+- Advanced programming techniques: Generics, Maps, Optionals, Exceptions, Interfaces, Lambdas, Records
+- Java Stream API
+- Unit tests, Mockito
 
 ## Architecture Patterns
 
