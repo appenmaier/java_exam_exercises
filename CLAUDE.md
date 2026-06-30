@@ -8,10 +8,11 @@ Model solutions ("Musterlösungen") for Java exam exercises from [Programmieren 
 
 ## Coding Conventions
 
-- **Javadoc**: every class has a Javadoc comment including `@author` and `@version` tags
+- **Javadoc**: every class has a Javadoc comment including `@author` and `@version` tags; no Javadoc on getters, setters, or standard object methods (`toString`, `equals`, `hashCode`)
 - **Identifiers**: always in English (class names, method names, variable names, etc.)
 - **Comments**: always in English
 - **Strings** (user-facing output, enum constants used as labels, etc.): in German
+- **Entity classes** (mutable classes with `@Data` / `@Getter`): always implement `toString`, `equals`, and `hashCode` based on all fields (generated via Lombok or IDE)
 
 ## Build & Test Commands
 
