@@ -5,6 +5,10 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
+import exams2.classdiagrams.fantasygame.Character;
+import exams2.classdiagrams.fantasygame.Profession;
+import exams2.classdiagrams.fantasygame.Race;
+
 /**
  * Entry point and data generator for the character query exercise.
  *
@@ -15,7 +19,8 @@ import java.util.Random;
 public class MainClass {
 
    /**
-    * Generates and returns a list of randomly named and attributed game characters of the given size.
+    * Generates and returns a list of randomly named and attributed game characters of the given
+    * size.
     *
     * @param number the number of characters to generate
     * @return a list of randomly generated game characters

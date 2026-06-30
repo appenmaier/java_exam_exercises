@@ -6,6 +6,10 @@ import java.util.Optional;
 import java.util.OptionalDouble;
 import java.util.stream.Collectors;
 
+import exams2.classdiagrams.fantasygame.Character;
+import exams2.classdiagrams.fantasygame.Profession;
+import exams2.classdiagrams.fantasygame.Race;
+
 /**
  * Provides stream-based query operations over a list of game characters.
  *
