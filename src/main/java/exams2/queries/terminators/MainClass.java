@@ -4,6 +4,9 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+import exams2.classdiagrams.roboterfactory.Series;
+import exams2.classdiagrams.roboterfactory.Terminator;
+
 /**
  * Entry point for the terminators query exercise.
  *

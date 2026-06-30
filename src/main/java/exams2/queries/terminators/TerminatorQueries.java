@@ -5,6 +5,8 @@ import java.util.Map;
 import java.util.OptionalDouble;
 import java.util.stream.Collectors;
 
+import exams2.classdiagrams.roboterfactory.Terminator;
+
 /**
  * Stream-based queries over a list of terminators.
  *
